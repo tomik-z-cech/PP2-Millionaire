@@ -23,11 +23,22 @@ body {/** set background color**/
     top: 5%;    
     left: 10%;
     width: 80%;
-    height: 90%; 
+    height: 70%; 
+}
+#how-to-play-navbar{
+    width: 40%;
+    height: 5%;
+    position: absolute;
+    bottom: 18%;
+    left: 30%;
 }
 #name-to-enter{
     position: absolute;
     width: 90%;
+    height: 10%;
     bottom: 5%;
     left: 5%;
+}
+#name-to-enter input{
+    background-color: red;
 }
