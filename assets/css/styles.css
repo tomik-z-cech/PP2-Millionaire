@@ -35,10 +35,16 @@ body {/** set background color**/
 #name-to-enter{
     position: absolute;
     width: 90%;
-    height: 10%;
+    height: auto;
     bottom: 5%;
     left: 5%;
 }
-#name-to-enter input{
-    background-color: red;
+#get-name{
+    line-height: 100%;
+}
+#name-input{
+    height: 90%;
+}
+#button-play{
+    height: 3%;
 }
