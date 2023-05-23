@@ -1,8 +1,33 @@
-* {
+* {/** general elements rule**/
     margin : 0;
     padding : 0;
-    borer: none;
+    border: none;
+    border: 1px solid red;
 }
-body {
+
+body {/** set background color**/
     background-color: #77aaf7;
+    color: #94B8F1 ;
+}
+
+#rules{
+    width: 80%;
+    height: 80%;
+    background-color: #053278;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#explanation{
+    position: absolute;
+    top: 5%;    
+    left: 10%;
+    width: 80%;
+    height: 90%; 
+}
+#name-to-enter{
+    position: absolute;
+    width: 90%;
+    bottom: 5%;
+    left: 5%;
 }
