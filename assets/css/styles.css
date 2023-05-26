@@ -1,50 +1,75 @@
+/** Imports **/
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Rubik&display=swap');
+
 * {/** general elements rule**/
     margin : 0;
     padding : 0;
     border: none;
-    border: 1px solid red;
+    font-family: 'Rubik', sans-serif;
 }
-
-body {/** set background color**/
+body {/** set background color **/
     background-color: #77aaf7;
-    color: #94B8F1 ;
+    color: #f5eed8;
 }
-
-#rules{
-    width: 80%;
-    height: 80%;
+::placeholder {/** Color of placeholder text **/
+    color: #77aaf7;
+}
+:-ms-input-placeholder {/** Color of placeholder text **/
+    color: #77aaf7;
+}
+::-ms-input-placeholder {/** Color of placeholder text **/
+    color: #77aaf7;
+}
+#rules-outer-container{/** position and size of outer rules container **/
+    width: 90%;
+    height: 90%;
     background-color: #053278;
+    background: url(../images/rules-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
 }
-#explanation{
+#rules-inner-container{/** position and size if inner rules container **/
+    background-color: rgba(49, 54, 57, 0.95);
+    border: 2px solid #77aaf7;
     position: absolute;
     top: 5%;    
     left: 10%;
     width: 80%;
     height: 70%; 
+    padding: 10px;
 }
-#how-to-play-navbar{
+#rules-navbar{/** position and size of rules navbar **/
+    background-color: rgba(49, 54, 57, 0.95);
+    border: 2px solid #77aaf7;
     width: 40%;
     height: 5%;
     position: absolute;
-    bottom: 18%;
+    bottom: 14%;
     left: 30%;
 }
-#name-to-enter{
+#rules-user-details{/** position and size of user detials and play button form **/
+    background-color: rgba(49, 54, 57, 0.95);
+    border: 2px solid #77aaf7;
     position: absolute;
     width: 90%;
-    height: auto;
-    bottom: 5%;
+    height: 60px;
+    bottom: 3%;
     left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#get-name{
-    line-height: 100%;
+#play-button{
+    height: 50px;
+    margin-left: 60px;
 }
-#name-input{
-    height: 90%;
-}
-#button-play{
-    height: 3%;
+#player-name-input{
+    height:30px;
+    background: transparent;
+    border: 1px solid #77aaf7;
+    margin-left: 20px;
+    padding-left: 10px;
 }
