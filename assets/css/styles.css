@@ -37,16 +37,16 @@ p {
     height: 100px;
     width: 100px;
 }
-#rules-outer-container{/** position and size of outer rules container **/
-    width: 90%;
-    height: 90%;
+#display-container{/** position and size of outer rules container **/
+    width: 95%;
+    height: 95%;
     background-color: #053278;
     background: url(../images/rules-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 2.5%;
+    left: 2.5%;
 }
 #rules-inner-container{/** position and size if inner rules container **/
     background-color: rgba(49, 54, 57, 0.95);
@@ -79,15 +79,25 @@ p {
     justify-content: center;
     align-items: center;
 }
-#play-button{/** size of button image **/
-    height: 50px;
-    margin-left: 60px;
-}
 #player-name-input{/** size and properties of input field **/
     color: #f5eed8;
-    height:30px;
+    height: 40px;
     background: transparent;
     border: 1px solid #77aaf7;
     margin-left: 20px;
     padding-left: 10px;
+}
+#play-button {/** Set Inner container - Reservations - submit button **/
+    height: 40px;
+    width: 150px;
+    margin-left: 60px;
+    background-color: rgba(49, 54, 57, 0.95);
+    color: #77aaf7;
+    border: 2px solid #77aaf7;
+    font-family: 'Rubik', sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+}
+#play-button:hover {/** Set Inner container - Reservations - submit button - event:hover **/
+    background-color: #ecf01a;
 }
