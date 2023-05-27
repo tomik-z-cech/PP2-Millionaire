@@ -83,6 +83,11 @@ function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
     </div>`;
+    document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `pica`;   
+    playSound('sound0');
+    document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `kokot`;
+    playSound('sound0');
+    document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `zmrd`;
     playSound('sound0');
 }
 
