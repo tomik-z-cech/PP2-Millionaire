@@ -1,9 +1,9 @@
 let playerName = '';
-document.addEventListener("DOMContentLoaded", startingPoint);
+document.addEventListener('DOMContentLoaded', startingPoint);
 console.log('Script loaded ...');
 
 /**
- * This function is called after first click on the play button
+ * Function is called after first click on the play button
  */
 function startingPoint(){
 document.getElementById('play-button').addEventListener('click', checkName);
@@ -34,6 +34,20 @@ function alertMessage(message){
         alertWindow.remove();
         console.log('Closing alert window ...');
     });
+}
+
+/**
+ * Function for playing audio effects
+ */
+function playSound(track){
+    var sound0 = new Audio ('../assets/audio/ding.wav');
+    switch (track){
+        case 'sound0' : {
+            sound0.play();
+            break;
+        }
+    }
+    console.log('Playing sound ...');
 }
 
 /**
@@ -69,6 +83,7 @@ function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
     </div>`;
+    playSound('sound0');
 }
 
 /**
@@ -101,6 +116,5 @@ function prepareUserView(){
  * Main function that starts the game
  */
 function startGame(){
-    //playSound();
     prepareUserView();
 }
