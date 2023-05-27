@@ -1,10 +1,17 @@
 let playerName = '';
 document.addEventListener("DOMContentLoaded", startingPoint);
 console.log('Script loaded ...');
+
+/**
+ * This function is called after first click on the play button
+ */
 function startingPoint(){
 document.getElementById('play-button').addEventListener('click', checkName);
 };
 
+/**
+ * Function creates an alert window and take "display message" as parameter
+ */
 function alertMessage(message){
     console.log(`Displaying alert window : ${message}`);
     document.body.innerHTML = document.body.innerHTML + `
@@ -29,7 +36,11 @@ function alertMessage(message){
     });
 }
 
-// Function validates users input of name
+/**
+ * Function checks if name input is empty string.
+ * If true alert message is displayed
+ * If flase game starts
+ */
 function checkName(){
     if (document.getElementById('player-name-input').value === '') {
         console.log('Name empty !')
@@ -39,35 +50,57 @@ function checkName(){
         playerName = document.getElementById('player-name-input').value;
         console.log(`Name OK ... ${playerName}`)
         console.log('Starting game ...')
-        prepareUserView();
+        startGame();
     }
 }
 
-// Function clears display area
+/**
+ * Function clears the display area
+ */
 function clearDisplayArea(){
     console.log('Clearing display area ...');
     document.getElementById('display-container').innerHTML = '';
 }
 
+/**
+ * Function creates the life lines section with animated effects
+ */
 function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
     </div>`;
 }
 
+/**
+ * Function creates the moneybar section with animated effects
+ */
 function createMoneyBar(){
     console.log('Creating Money Bar ...');
 }
 
+/**
+ * Function welcomes player in the game
+ */
 function welcomePlayer(){
     console.log('Displaying welcome message ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `Hello ${playerName} !`;
 }
 
+/**
+ * Function prepares the user view for game
+ */
 function prepareUserView(){
     clearDisplayArea();
     document.getElementById('display-container').style.backgroundImage = "url('assets/images/game-background.jpg')";
     welcomePlayer();
     createLifelines();
     createMoneyBar();
+}
+
+/**
+ * Main function that starts the game
+ */
+function startGame(){
+    //playSound();
+    prepareUserView();
 }
