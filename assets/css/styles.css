@@ -37,6 +37,16 @@ p {
     height: 100px;
     width: 100px;
 }
+.align-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-border{
+    border: 2px solid #77aaf7;
+}
+
 #display-container{/** position and size of outer rules container **/
     width: 95%;
     height: 95%;
@@ -50,7 +60,6 @@ p {
 }
 #rules-inner-container{/** position and size if inner rules container **/
     background-color: rgba(49, 54, 57, 0.95);
-    border: 2px solid #77aaf7;
     position: absolute;
     top: 5%;    
     left: 10%;
@@ -60,7 +69,6 @@ p {
 }
 #rules-navbar{/** position and size of rules navbar **/
     background-color: rgba(49, 54, 57, 0.95);
-    border: 2px solid #77aaf7;
     width: 40%;
     height: 5%;
     position: absolute;
@@ -69,28 +77,23 @@ p {
 }
 #rules-user-details{/** position and size of user detials and play button form **/
     background-color: rgba(49, 54, 57, 0.95);
-    border: 2px solid #77aaf7;
     position: absolute;
     width: 90%;
     height: 60px;
     bottom: 3%;
     left: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #player-name-input{/** size and properties of input field **/
     color: #f5eed8;
     height: 40px;
     background: transparent;
-    border: 1px solid #77aaf7;
+    border: 2px solid #77aaf7;
     margin-left: 20px;
     padding-left: 10px;
 }
-#play-button {/** size and properties of play-button **/
+.button {/** size and properties of buttons **/
     height: 40px;
     width: 150px;
-    margin-left: 60px;
     background-color: rgba(49, 54, 57, 0.95);
     color: #77aaf7;
     border: 2px solid #77aaf7;
@@ -98,6 +101,37 @@ p {
     font-size: 150%;
     font-weight: 600;
 }
-#play-button:hover {/** play-button - event:hover **/
+.button:hover {/** buttons - event:hover **/
     background-color: #ecf01a;
+}
+
+#ok-button{
+    position: absolute;
+    bottom: 15px;
+}
+
+#play-button{
+    margin-left: 60px;
+}
+
+#alert-window {
+    background-color: rgb(86, 43, 165);
+    background-image: url(../images/alert-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 36%;
+    height: 28%;
+    top: 32%;
+    left: 32%;
+    padding-top: 1%;
+}
+
+#info-icon {
+    width: 7%;
+    margin-right: 20px;
+}
+
+#alert-message {
+    margin-top: 10%;
 }

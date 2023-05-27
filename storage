@@ -1,0 +1,14 @@
+<aside>
+        <div id="alert" class="blue-border">
+            <div class="align-center-center">
+                <img src="assets/images/info-icon.png" alt="Info icon" id="info-icon">
+                <h2>Information ...</h2>
+            </div>
+            <div class="align-center-center">
+                <h3 id="alert-message">Vole ...</h3>
+            </div>
+            <div class="align-center-center">
+                <button class="button" id="ok-button">OK</button>
+            </div>
+        </div>
+    </aside>
