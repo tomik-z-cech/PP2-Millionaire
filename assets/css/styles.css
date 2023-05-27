@@ -1,6 +1,8 @@
 /** Imports **/
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Rubik&display=swap');
 
+/** GENERAL RULES **/
+
 * {/** general elements rule**/
     margin : 0;
     padding : 0;
@@ -33,10 +35,6 @@ label {/** properties of label elements **/
 p {
     margin-top: 10px;
 }
-#logo {/** properties of logo elements **/
-    height: 100px;
-    width: 100px;
-}
 .align-center-center {/** alignment of elements center vertiaclly and horizontally **/
     display: flex;
     justify-content: center;
@@ -45,7 +43,28 @@ p {
 .blue-border {/** blue border for elements **/
     border: 2px solid #77aaf7;
 }
+.button {/** size and properties of buttons **/
+    height: 40px;
+    width: 150px;
+    color: #77aaf7;
+    border: 2px solid #77aaf7;
+    font-family: 'Rubik', sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+}
+.button:hover {/** buttons - event:hover **/
+    background-color: #ecf01a;
+}
+.grey-background {/** grey background class for elements **/
+    background-color: rgba(49, 54, 57, 0.95);
+}
 
+/** RULES PAGE **/
+
+#logo {/** properties of logo elements **/
+    height: 100px;
+    width: 100px;
+}
 #display-container {/** position and size of outer rules container **/
     width: 95%;
     height: 95%;
@@ -87,27 +106,15 @@ p {
     margin-left: 20px;
     padding-left: 10px;
 }
-.button {/** size and properties of buttons **/
-    height: 40px;
-    width: 150px;
-    color: #77aaf7;
-    border: 2px solid #77aaf7;
-    font-family: 'Rubik', sans-serif;
-    font-size: 150%;
-    font-weight: 600;
+#play-button {/** position of play button **/
+    margin-left: 60px;
 }
-.button:hover {/** buttons - event:hover **/
-    background-color: #ecf01a;
-}
-.grey-background {/** grey background class for elements **/
-    background-color: rgba(49, 54, 57, 0.95);
-}
+
+/** ALERT MESSAGE **/
+
 #ok-button {/** position of ok button of alert message **/
     position: absolute;
     bottom: 15px;
-}
-#play-button {/** position of play button **/
-    margin-left: 60px;
 }
 #alert-window {/** size and properties of alert message window **/
     background-color: rgb(86, 43, 165);
