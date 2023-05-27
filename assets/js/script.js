@@ -37,7 +37,7 @@ function checkName(){
         startingPoint();
     }else{
         playerName = document.getElementById('player-name-input').value;
-        console.log('Name OK ...')
+        console.log(`Name OK ... ${playerName}`)
         console.log('Starting game ...')
         prepareUserView();
     }
@@ -51,6 +51,7 @@ function clearDisplayArea(){
 
 function createLifelines(){
     console.log('Creating lifelines ...');
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `mrdka z krtka`
 }
 
 function createMoneyBar(){
@@ -59,7 +60,7 @@ function createMoneyBar(){
 
 function welcomePlayer(){
     console.log('Displaying welcome message ...');
-    document.getElementById('display-container').innerHTML = `Hello ${playerName} !`;
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `Hello ${playerName} !`;
 }
 
 function prepareUserView(){

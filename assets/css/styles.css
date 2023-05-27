@@ -33,21 +33,20 @@ label {/** properties of label elements **/
 p {
     margin-top: 10px;
 }
-#logo{/** properties of logo elements **/
+#logo {/** properties of logo elements **/
     height: 100px;
     width: 100px;
 }
-.align-center-center {
+.align-center-center {/** alignment of elements center vertiaclly and horizontally **/
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.blue-border{
+.blue-border {/** blue border for elements **/
     border: 2px solid #77aaf7;
 }
 
-#display-container{/** position and size of outer rules container **/
+#display-container {/** position and size of outer rules container **/
     width: 95%;
     height: 95%;
     background-color: #053278;
@@ -58,8 +57,7 @@ p {
     top: 2.5%;
     left: 2.5%;
 }
-#rules-inner-container{/** position and size if inner rules container **/
-    background-color: rgba(49, 54, 57, 0.95);
+#rules-inner-container {/** position and size if inner rules container **/
     position: absolute;
     top: 5%;    
     left: 10%;
@@ -67,23 +65,21 @@ p {
     height: 70%; 
     padding: 10px;
 }
-#rules-navbar{/** position and size of rules navbar **/
-    background-color: rgba(49, 54, 57, 0.95);
+#rules-navbar {/** position and size of rules navbar **/
     width: 40%;
     height: 5%;
     position: absolute;
     bottom: 14%;
     left: 30%;
 }
-#rules-user-details{/** position and size of user detials and play button form **/
-    background-color: rgba(49, 54, 57, 0.95);
+#rules-user-details {/** position and size of user detials and play button form **/
     position: absolute;
     width: 90%;
     height: 60px;
     bottom: 3%;
     left: 5%;
 }
-#player-name-input{/** size and properties of input field **/
+#player-name-input {/** size and properties of input field **/
     color: #f5eed8;
     height: 40px;
     background: transparent;
@@ -94,7 +90,6 @@ p {
 .button {/** size and properties of buttons **/
     height: 40px;
     width: 150px;
-    background-color: rgba(49, 54, 57, 0.95);
     color: #77aaf7;
     border: 2px solid #77aaf7;
     font-family: 'Rubik', sans-serif;
@@ -104,17 +99,17 @@ p {
 .button:hover {/** buttons - event:hover **/
     background-color: #ecf01a;
 }
-
-#ok-button{
+.grey-background {/** grey background class for elements **/
+    background-color: rgba(49, 54, 57, 0.95);
+}
+#ok-button {/** position of ok button of alert message **/
     position: absolute;
     bottom: 15px;
 }
-
-#play-button{
+#play-button {/** position of play button **/
     margin-left: 60px;
 }
-
-#alert-window {
+#alert-window {/** size and properties of alert message window **/
     background-color: rgb(86, 43, 165);
     background-image: url(../images/alert-background.png);
     background-repeat: no-repeat;
@@ -126,12 +121,10 @@ p {
     left: 32%;
     padding-top: 1%;
 }
-
-#info-icon {
+#info-icon {/** size and properties of info icon in alert window **/
     width: 7%;
     margin-right: 20px;
 }
-
-#alert-message {
+#alert-message {/** margin of actuall message text **/
     margin-top: 10%;
 }
