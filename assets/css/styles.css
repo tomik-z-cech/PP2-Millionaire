@@ -41,7 +41,7 @@ p {
     width: 95%;
     height: 95%;
     background-color: #053278;
-    background: url(../images/rules-background.png);
+    background-image: url(../images/rules-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -87,7 +87,7 @@ p {
     margin-left: 20px;
     padding-left: 10px;
 }
-#play-button {/** Set Inner container - Reservations - submit button **/
+#play-button {/** size and properties of play-button **/
     height: 40px;
     width: 150px;
     margin-left: 60px;
@@ -98,6 +98,6 @@ p {
     font-size: 150%;
     font-weight: 600;
 }
-#play-button:hover {/** Set Inner container - Reservations - submit button - event:hover **/
+#play-button:hover {/** play-button - event:hover **/
     background-color: #ecf01a;
 }
