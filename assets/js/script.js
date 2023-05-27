@@ -51,7 +51,8 @@ function clearDisplayArea(){
 
 function createLifelines(){
     console.log('Creating lifelines ...');
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `mrdka z krtka`
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
+    </div>`;
 }
 
 function createMoneyBar(){

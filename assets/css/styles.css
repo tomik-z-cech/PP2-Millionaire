@@ -22,6 +22,9 @@ body {/** set background color **/
 ::-ms-input-placeholder {/** Color of placeholder text **/
     color: #77aaf7;
 }
+.audio {/** rule not to display audio elements **/
+    display: none;
+}
 h1 {/** properties of h1 elements **/
     padding-bottom: 20px;
     left: 130px;
@@ -134,4 +137,15 @@ p {
 }
 #alert-message {/** margin of actuall message text **/
     margin-top: 10%;
+}
+
+/** LIFE-LINES **/
+
+#life-lines-container{
+    width: 10%;
+    height: 55%;
+    position: absolute;
+    bottom: 25%;
+    right: 6%;
+
 }
