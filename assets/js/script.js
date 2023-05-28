@@ -40,7 +40,7 @@ function alertMessage(message){
  * Function for playing audio effects
  */
 function playSound(track){
-    var sound0 = new Audio ('../assets/audio/ding.wav');
+    var sound0 = new Audio ('/assets/audio/ding.wav');
     switch (track){
         case 'sound0' : {
             sound0.play();
@@ -83,12 +83,18 @@ function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
     </div>`;
-    document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `pica`;   
-    playSound('sound0');
-    document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `kokot`;
-    playSound('sound0');
-    document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `zmrd`;
-    playSound('sound0');
+    setTimeout(() => {
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `prvni`;
+        playSound('sound0');
+    }, 300);
+    setTimeout(() => {
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `druhy`;
+        playSound('sound0');
+    }, 1300);
+    setTimeout(() => {
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `treti`;
+        playSound('sound0');
+    }, 2300);
 }
 
 /**
@@ -109,7 +115,7 @@ function welcomePlayer(){
 /**
  * Function prepares the user view for game
  */
-function prepareUserView(){
+function prepareGameView(){
     clearDisplayArea();
     document.getElementById('display-container').style.backgroundImage = "url('assets/images/game-background.jpg')";
     welcomePlayer();
@@ -121,5 +127,5 @@ function prepareUserView(){
  * Main function that starts the game
  */
 function startGame(){
-    prepareUserView();
+    prepareGameView();
 }
