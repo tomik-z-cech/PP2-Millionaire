@@ -40,7 +40,7 @@ function alertMessage(message){
  * Function for playing audio effects
  */
 function playSound(track){
-    var sound0 = new Audio ('/assets/audio/ding.wav');
+    var sound0 = new Audio ('./assets/audio/ding.wav');
     switch (track){
         case 'sound0' : {
             sound0.play();
