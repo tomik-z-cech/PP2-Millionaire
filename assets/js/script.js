@@ -40,7 +40,7 @@ function alertMessage(message){
  * Function for playing audio effects
  */
 function playSound(track){
-    var sound0 = new Audio ('./assets/audio/ding.wav');
+    var sound0 = new Audio ('https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/ding.wav');
     switch (track){
         case 'sound0' : {
             sound0.play();
@@ -86,15 +86,15 @@ function createLifelines(){
     setTimeout(() => {
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `prvni`;
         playSound('sound0');
-    }, 300);
+    }, 800);
     setTimeout(() => {
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `druhy`;
         playSound('sound0');
-    }, 1300);
+    }, 1600);
     setTimeout(() => {
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `treti`;
         playSound('sound0');
-    }, 2300);
+    }, 2400);
 }
 
 /**
