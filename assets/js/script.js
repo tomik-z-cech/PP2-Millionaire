@@ -37,7 +37,9 @@ function alertMessage(message){
 }
 
 /**
- * Function for playing audio effects
+ * Function for playing audio effects - function take number of track as parameter
+ *  #0 - 3 dings
+ *  #1 - 
  */
 function playSound(track){
     let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3'];

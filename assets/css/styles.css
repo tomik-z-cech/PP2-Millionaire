@@ -22,8 +22,17 @@ body {/** set background color **/
 ::-ms-input-placeholder {/** Color of placeholder text **/
     color: #77aaf7;
 }
-.audio {/** rule not to display audio elements **/
-    display: none;
+::-webkit-scrollbar {/** Scrollbar styling **/
+    width: 10px;
+}
+::-webkit-scrollbar-track {/** Scrollbars styling **/
+    background: rgba(49, 54, 57, 0.95);
+}
+::-webkit-scrollbar-thumb {/** Scrollbars styling **/
+    background: #77aaf7;
+}
+::-webkit-scrollbar-thumb:hover {/** Scrollbars styling **/
+    background: #3a1f64;
 }
 h1 {/** properties of h1 elements **/
     padding-bottom: 20px;
