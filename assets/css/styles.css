@@ -188,4 +188,8 @@ p {
     left: 3%;
     padding-top: 2%;
 }
+.moneybar-item{
+    background-color: green;
+    border: 1px solid red;
+}
 
