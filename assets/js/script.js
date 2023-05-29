@@ -84,14 +84,16 @@ function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"><div class="align-horizontal"><h2>Lifelines :</h2></div></div>`;
     playSound(0);
+    let insertFront = `<div class="outer-round align-center-center"><div>`
+    let insertBack = `</div></div>`
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>Time</div></div>`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Time${insertBack}`;
     }, 500);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>Change</div></div>`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Chnage${insertBack}`;
     }, 1900);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>50:50</div></div>`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}50:50${insertBack}`;
     }, 3600);
 }
 
@@ -100,6 +102,7 @@ function createLifelines(){
  */
 function createMoneyBar(){
     console.log('Creating Money Bar ...');
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `plop plop plop`;
 }
 
 /**
