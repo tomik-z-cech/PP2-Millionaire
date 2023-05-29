@@ -40,14 +40,10 @@ function alertMessage(message){
  * Function for playing audio effects
  */
 function playSound(track){
-    var sound0 = new Audio ('/assets/audio/three-ding.mp3');
-    switch (track){
-        case 'sound0' : {
-            sound0.play();
-            break;
-        }
-    }
-    console.log('Playing sound ...');
+    let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3'];
+    let soundToPlay = new Audio (effects[track]);
+    soundToPlay.play();
+    console.log(`Playing sound ${track}`);
 }
 
 /**
@@ -83,7 +79,7 @@ function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
     </div>`;
-    playSound('sound0');
+    playSound(0);
     setTimeout(() => {
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `prvni`;
     }, 500);
