@@ -178,3 +178,14 @@ p {
     border: 10px solid yellow;    
 }
 
+/** MONEYBAR **/
+
+#moneybar-container{
+    width: 12%;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    padding-top: 2%;
+}
+
