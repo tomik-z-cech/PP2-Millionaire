@@ -82,8 +82,7 @@ function clearDisplayArea(){
  */
 function createLifelines(){
     console.log('Creating lifelines ...');
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background">
-    </div>`;
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"><div class="align-horizontal"><h2>Lifelines :</h2></div></div>`;
     playSound(0);
     setTimeout(() => {
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>Time</div></div>`;

@@ -19,6 +19,9 @@ h1 {/** properties of h1 elements **/
     position: absolute;
     top: 40px;
 }
+h2{
+    color: #f5eed8;
+}
 label {/** properties of label elements **/
     font-size: 140%;
     font-weight: 600;
@@ -31,7 +34,7 @@ p {
     justify-content: center;
     align-items: center;
 }
-.align-center-horizonatal{
+.align-horizontal{
     display: flex;
     justify-content: center;   
 }
@@ -157,12 +160,11 @@ p {
 
 #life-lines-container{
     width: 12%;
-    height: 62%;
+    height: auto;
     position: absolute;
-    bottom: 25%;
+    bottom: 5%;
     right: 3%;
-
-
+    padding-top: 2%;
 }.outer-round {
     width: 100px;
     height: 100px;
@@ -171,7 +173,6 @@ p {
     margin: 22%;
     background-color: white;
     color: black;
-
 }
 .outer-round:hover {
     border: 10px solid yellow;    
