@@ -39,10 +39,13 @@ function alertMessage(message){
 /**
  * Function for playing audio effects - function take number of track as parameter
  *  #0 - 3 dings
- *  #1 - 
+ *  #1 - easy question background track
+ *  #2 - medium question background track
+ *  #3 - hard question background track
+ *  #4 - final question background track
  */
 function playSound(track){
-    let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3'];
+    let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level1-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level2-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level3-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level4-back.mp3'];
     let soundToPlay = new Audio (effects[track]);
     soundToPlay.play();
     console.log(`Playing sound ${track}`);
