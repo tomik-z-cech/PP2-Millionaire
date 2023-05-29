@@ -86,13 +86,13 @@ function createLifelines(){
     </div>`;
     playSound(0);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `prvni`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>Prvni</div></div>`;
     }, 500);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `druhy`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>Druhy</div></div>`;
     }, 1900);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `treti`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `<div class="outer-round align-center-center"><div>Treti</div></div>`;
     }, 3600);
 }
 

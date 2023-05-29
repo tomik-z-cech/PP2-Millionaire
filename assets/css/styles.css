@@ -31,6 +31,10 @@ p {
     justify-content: center;
     align-items: center;
 }
+.align-center-horizonatal{
+    display: flex;
+    justify-content: center;   
+}
 .blue-border {/** blue border for elements **/
     border: 2px solid #77aaf7;
 }
@@ -152,10 +156,19 @@ p {
 /** LIFE-LINES **/
 
 #life-lines-container{
-    width: 10%;
+    width: 12%;
     height: 55%;
     position: absolute;
     bottom: 25%;
-    right: 6%;
+    right: 3%;
+
+
+}.outer-round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid green;
+    margin: 13%;
+    background-color: white;
 
 }
