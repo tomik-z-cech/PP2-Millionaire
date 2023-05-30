@@ -46,7 +46,12 @@ function alertMessage(message){
  *  #4 - final question background track
  */
 function playSound(track){
-    let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level1-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level2-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level3-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level4-back.mp3','https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/moneybar.mp3'];
+    let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3',
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level1-back.mp3',
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level2-back.mp3',
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level3-back.mp3',
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level4-back.mp3',
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/moneybar.mp3'];
     let soundToPlay = new Audio (effects[track]);
     soundToPlay.play();
     console.log(`Playing sound ${track}`);
@@ -104,39 +109,39 @@ function createLifelines(){
  */
 function createMoneyBar(){
     console.log('Creating Money Bar ...');
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"><div class="align-horizontal"></div></div>`;
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
     let insertFront = `<div class="moneybar-item align-center-center"><div>`
     let insertBack = `</div></div>`
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}20000€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5 €${insertBack}`;
         playSound(5);
     }, 4300);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}10000€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}10 €${insertBack}`;
     }, 4670);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5000€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}50 €${insertBack}`;
     }, 5040);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}2000€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}200 €${insertBack}`;
     }, 5410);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}1000€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}500 €${insertBack}`;
     }, 5780);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}500€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}1.000 €${insertBack}`;
     }, 6150);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}100€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}2.000 €${insertBack}`;
     }, 6520);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}50€€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5.000 €${insertBack}`;
     }, 6890);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}10€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}10.000 €${insertBack}`;
     }, 7260);
     setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5€${insertBack}`;
+        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}20.000 €${insertBack}`;
     }, 7600);
 }
 
