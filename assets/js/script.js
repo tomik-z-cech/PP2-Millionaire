@@ -145,7 +145,7 @@ function createMoneyBar(){
     }, 7600);
 }
 
- /**
+/**
  * Function welcomes player in the game
 */
 function welcomePlayer(){
@@ -154,14 +154,25 @@ function welcomePlayer(){
 }
 
 /**
+ * Function displays score area
+*/
+function createScoreArea(){
+    console.log('Creating Score Area ...');
+    setTimeout(() => {
+        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
+        playSound();
+    }, 8200);
+}
+
+/**
  * Function prepares the user view for game
  */
 function prepareGameView(){
     clearDisplayArea();
     document.getElementById('display-container').style.backgroundImage = "url('assets/images/game-background.jpg')";
-    welcomePlayer();
     createLifelines();
     createMoneyBar();
+    createScoreArea();
 }
 
 /**

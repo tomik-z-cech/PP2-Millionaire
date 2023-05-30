@@ -194,3 +194,20 @@ p {
     border: 1px solid #77aaf7;
 }
 
+/** SCORE **/
+
+#score-container{/** size and position of score container **/
+    width: 12%;
+    height: 17%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#score{
+    margin-top:10%;
+    font-size: 200%;
+}
