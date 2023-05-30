@@ -33,7 +33,6 @@ function alertMessage(message){
         let alertWindow = document.getElementById('alert-window');
         alertWindow.remove();
         console.log('Closing alert window ...');
-        return true;
     });
 }
 
@@ -74,7 +73,7 @@ function checkName(){
         playerName = document.getElementById('player-name-input').value;
         console.log(`Name OK ... ${playerName}`)
         console.log('Starting game ...')
-        startGame();
+        prepareGameView();
     }
 }
 
@@ -213,16 +212,34 @@ function prepareGameView(){
     createScoreArea();
     createTimerArea();
     createQuestionArea();
+    setTimeout(() => {
+        startGame();
+     }, 10300);
+}
+
+function countdownTimer(){
+    let timeLeft = 3;
+    let timeDisplay = document.getElementById('timer');
+    let timerId = setInterval(countdown, 1000);
+    function countdown() {
+      if (timeLeft == -1) {
+        clearTimeout(timerId);
+        timeIsUp();
+        } else {
+        timeDisplay.innerHTML = timeLeft;
+        timeLeft--;
+        }
+    }
+}
+
+function timeIsUp(){
+    alert('Time is up');
 }
 
 /**
  * Main function that starts the game
  */
 function startGame(){
-    read = false;
-    prepareGameView();
-    setTimeout(() => {
-       let read = alertMessage(`Welcome ${playerName}, get ready and good luck !`);
-    }, 10300);
-    console.log(read);
+    playSound(1);
+    countdownTimer();
 }
