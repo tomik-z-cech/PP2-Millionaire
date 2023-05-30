@@ -190,8 +190,9 @@ p {
     left: 3%;
 }
 .moneybar-item{
+    position: relative;
+    height: 9.67%;
     background-color: transparent;
     border: 1px solid #77aaf7;
-    height: 9.67%;
 }
 
