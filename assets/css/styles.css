@@ -161,13 +161,15 @@ p {
     top: 25%;
     bottom: 5%;
     right: 3%;
-    padding-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }.outer-round {/** size, position and colors of each lifeline **/
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 10px solid green;
-    margin: 22%;
     background-color: white;
     color: black;
 }

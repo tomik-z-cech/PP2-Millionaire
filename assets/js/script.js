@@ -88,7 +88,7 @@ function clearDisplayArea(){
  */
 function createLifelines(){
     console.log('Creating lifelines ...');
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"><div class="align-horizontal"></div></div>`;
+    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
     let insertFront = `<div class="outer-round align-center-center"><div>`
     let insertBack = `</div></div>`
@@ -96,7 +96,7 @@ function createLifelines(){
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Time${insertBack}`;
     }, 500);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Chnage${insertBack}`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Change${insertBack}`;
     }, 1900);
     setTimeout(() => {
         document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}50:50${insertBack}`;
