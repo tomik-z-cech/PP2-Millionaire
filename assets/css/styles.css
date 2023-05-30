@@ -162,9 +162,10 @@ p {
     width: 12%;
     height: auto;
     position: absolute;
+    top: 25%;
     bottom: 5%;
     right: 3%;
-    padding-top: 2%;
+    padding-top: 0%;
 }.outer-round {
     width: 100px;
     height: 100px;
@@ -184,12 +185,13 @@ p {
     width: 12%;
     height: auto;
     position: absolute;
+    top: 25%;
     bottom: 5%;
     left: 3%;
-    padding-top: 2%;
 }
 .moneybar-item{
     background-color: green;
-    border: 1px solid red;
+    border: 1px solid #77aaf7;
+    height: 9.67%;
 }
 
