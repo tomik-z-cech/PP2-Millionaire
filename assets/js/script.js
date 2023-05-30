@@ -1,5 +1,4 @@
 let playerName = '';
-let nextStep = false;
 document.addEventListener('DOMContentLoaded', startingPoint);
 console.log('Script loaded ...');
 
@@ -34,6 +33,7 @@ function alertMessage(message){
         let alertWindow = document.getElementById('alert-window');
         alertWindow.remove();
         console.log('Closing alert window ...');
+        return true;
     });
 }
 
@@ -149,22 +149,57 @@ function createMoneyBar(){
 }
 
 /**
- * Function welcomes player in the game
-*/
-function welcomePlayer(){
-    console.log('Displaying welcome message ...');
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `Hello ${playerName} !`;
-}
-
-/**
  * Function displays score area
 */
 function createScoreArea(){
-    console.log('Creating Score Area ...');
     setTimeout(() => {
+        console.log('Creating Score Area ...');
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
         playSound(6);
     }, 8200);
+}
+
+/**
+ * Function displays timer area
+*/
+function createTimerArea(){
+    setTimeout(() => {
+        console.log('Creating Timer Area ...');
+        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
+        playSound(6);
+    }, 9100);
+}
+
+/**
+ * Function displays timer area
+*/
+function createQuestionArea(){
+    setTimeout(() => {
+        console.log('Creating Question Area ...');
+        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="question-container" class="blue-border grey-background">
+        <div id="question" class="blue-border grey-background">
+        </div>
+        <div id="options" class="blue-border grey-background">
+            <div class="options-row">
+                <div class="blue-border grey-background answer-class">
+                    <span class="letter">A</span><span id="answer"></span>
+                </div>
+                <div class="blue-border grey-background answer-class">
+                    <span class="letter">B</span><span id="answer"></span>
+                </div>
+            </div>
+            <div class="options-row">
+                <div class="blue-border grey-background answer-class">
+                    <span class="letter">C</span><span id="answer"></span>
+                </div>
+                <div class="blue-border grey-background answer-class">
+                    <span class="letter">D</span><span id="answer"></span>
+                </div>
+            </div>
+        </div>
+    </div>`;
+        playSound(6);
+    }, 10000);
 }
 
 /**
@@ -176,11 +211,18 @@ function prepareGameView(){
     createLifelines();
     createMoneyBar();
     createScoreArea();
+    createTimerArea();
+    createQuestionArea();
 }
 
 /**
  * Main function that starts the game
  */
 function startGame(){
+    read = false;
     prepareGameView();
+    setTimeout(() => {
+       let read = alertMessage(`Welcome ${playerName}, get ready and good luck !`);
+    }, 10300);
+    console.log(read);
 }

@@ -179,7 +179,7 @@ p {
 
 /** MONEYBAR **/
 
-#moneybar-container{/** size and position of moneybar outer container **/
+#moneybar-container {/** size and position of moneybar outer container **/
     width: 12%;
     height: auto;
     position: absolute;
@@ -189,14 +189,14 @@ p {
     display: flex;
     flex-direction: column-reverse;
 }
-.moneybar-item{/** size, position and colors of each moneybar item **/
+.moneybar-item {/** size, position and colors of each moneybar item **/
     height: 9.67%;
     border: 1px solid #77aaf7;
 }
 
 /** SCORE **/
 
-#score-container{/** size and position of score container **/
+#score-container {/** size and position of score container **/
     width: 12%;
     height: 17%;
     position: absolute;
@@ -210,4 +210,69 @@ p {
 #score{
     margin-top:10%;
     font-size: 200%;
+}
+
+/** SCORE **/
+
+#timer-container {/** size and position of score container **/
+    width: 12%;
+    height: 17%;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#timer{
+    margin-top:10%;
+    font-size: 200%;
+}
+
+/** QUESTIONS **/
+
+#question-container {/** size and position of score container **/
+    height: 25%;
+    position: absolute;
+    bottom: 5%;
+    right: 18%;
+    left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#question{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50%;
+}
+#options {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.options-row {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+.answer-class {
+    width: 50%;
+}
+.letter {
+    font-family: 'Monofett', sans-serif;
+    font-size: 200%;
+    margin-left: 2%;
 }
