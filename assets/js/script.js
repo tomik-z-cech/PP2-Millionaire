@@ -44,6 +44,8 @@ function alertMessage(message){
  *  #2 - medium question background track
  *  #3 - hard question background track
  *  #4 - final question background track
+ *  #5 - moneybar count
+ *  #6 - finger snap
  */
 function playSound(track){
     let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3',
@@ -51,7 +53,8 @@ function playSound(track){
                     'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level2-back.mp3',
                     'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level3-back.mp3',
                     'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level4-back.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/moneybar.mp3'];
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/moneybar.mp3',
+                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/finger-snap.mp3'];
     let soundToPlay = new Audio (effects[track]);
     soundToPlay.play();
     console.log(`Playing sound ${track}`);
@@ -160,7 +163,7 @@ function createScoreArea(){
     console.log('Creating Score Area ...');
     setTimeout(() => {
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
-        playSound();
+        playSound(6);
     }, 8200);
 }
 
