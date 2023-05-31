@@ -176,6 +176,9 @@ p {
 .outer-round:hover {/** lifeline event:hover **/
     border: 10px solid yellow;    
 }
+.lifeline-image{
+    width: 70%;
+}
 
 /** MONEYBAR **/
 

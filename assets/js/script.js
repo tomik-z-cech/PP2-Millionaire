@@ -92,16 +92,16 @@ function createLifelines(){
     console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
-    let insertFront = `<div class="outer-round align-center-center"><div>`
-    let insertBack = `</div></div>`
+    let insertFront = `<div class="outer-round align-center-center">`
+    let insertBack = `</div>`
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Time${insertBack}`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}<img src="assets/images/time.png" class="lifeline-image" alt="Addition time">${insertBack}`;
     }, 500);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}Change${insertBack}`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}<img src="assets/images/change.png" class="lifeline-image" alt="Change question">${insertBack}`;
     }, 1900);
     setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}50:50${insertBack}`;
+        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">${insertBack}`;
         nextStep = true;
     }, 3600);
 }
