@@ -47,13 +47,13 @@ function alertMessage(message){
  *  #6 - finger snap
  */
 function playSound(track){
-    let effects = ['https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/three-ding.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level1-back.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level2-back.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level3-back.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/level4-back.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/moneybar.mp3',
-                    'https://tomik-z-cech.github.io/PP2-Millionaire/assets/audio/finger-snap.mp3'];
+    let effects = ['assets/audio/three-ding.mp3',
+                    'assets/audio/level1-back.mp3',
+                    'assets/audio/level2-back.mp3',
+                    'assets/audio/level3-back.mp3',
+                    'assets/audio/level4-back.mp3',
+                    'assets/audio/moneybar.mp3',
+                    'assets/audio/finger-snap.mp3'];
     let soundToPlay = new Audio (effects[track]);
     soundToPlay.play();
     console.log(`Playing sound ${track}`);
@@ -228,7 +228,7 @@ function countdownTimer(){
       if (timeLeft == -1) {
         clearTimeout(timerId);
         timeIsUp();
-        } else {
+        }else{
         timeDisplay.innerHTML = timeLeft;
         timeLeft--;
         }
