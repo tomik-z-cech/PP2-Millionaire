@@ -110,11 +110,11 @@ function createLifelines(){
  * Function creates the moneybar section with animated effects
  */
 function createMoneyBar(){
-    console.log('Creating Money Bar ...');
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
     let insertFront = `<div class="moneybar-item align-center-center"><div>`
     let insertBack = `</div></div>`
     setTimeout(() => {
+        console.log('Creating Money Bar ...');
+        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
         document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5 €${insertBack}`;
         playSound(5);
     }, 4300);
@@ -213,12 +213,15 @@ function prepareGameView(){
     createTimerArea();
     createQuestionArea();
     setTimeout(() => {
-        startGame();
+        alertMessage(`Welcome to the hot seat ${playerName}. Good luck ;)`);
+        document.getElementById('ok-button').addEventListener('click',function(){
+            startGame();
+        })
      }, 10300);
 }
 
 function countdownTimer(){
-    let timeLeft = 3;
+    let timeLeft = 30;
     let timeDisplay = document.getElementById('timer');
     let timerId = setInterval(countdown, 1000);
     function countdown() {
