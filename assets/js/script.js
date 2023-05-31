@@ -1,6 +1,5 @@
 let playerName = '';
 document.addEventListener('DOMContentLoaded', startingPoint);
-console.log('Script loaded ...');
 
 /**
  * Function is called after first click on the play button
@@ -13,7 +12,6 @@ document.getElementById('play-button').addEventListener('click', checkName);
  * Function creates an alert window and take "display message" as parameter
  */
 function alertMessage(message){
-    console.log(`Displaying alert window : ${message}`);
     document.body.innerHTML = document.body.innerHTML + `
     <aside>
     <div id="alert-window" class="blue-border">
@@ -32,7 +30,6 @@ function alertMessage(message){
     document.getElementById('ok-button').addEventListener('click', function(){
         let alertWindow = document.getElementById('alert-window');
         alertWindow.remove();
-        console.log('Closing alert window ...');
     });
 }
 
@@ -56,7 +53,6 @@ function playSound(track){
                     'assets/audio/finger-snap.mp3'];
     let soundToPlay = new Audio (effects[track]);
     soundToPlay.play();
-    console.log(`Playing sound ${track}`);
 }
 
 /**
@@ -66,13 +62,10 @@ function playSound(track){
  */
 function checkName(){
     if (document.getElementById('player-name-input').value === '') {
-        console.log('Name empty !')
         alertMessage('Please enter your name !');
         startingPoint();
     }else{
         playerName = document.getElementById('player-name-input').value;
-        console.log(`Name OK ... ${playerName}`)
-        console.log('Starting game ...')
         prepareGameView();
     }
 }
@@ -81,7 +74,6 @@ function checkName(){
  * Function clears the display area
  */
 function clearDisplayArea(){
-    console.log('Clearing display area ...');
     document.getElementById('display-container').innerHTML = '';
 }
 
@@ -89,7 +81,6 @@ function clearDisplayArea(){
  * Function creates the life lines section with animated effects
  */
 function createLifelines(){
-    console.log('Creating lifelines ...');
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
     let insertFront = `<div class="outer-round align-center-center">`
@@ -113,7 +104,6 @@ function createMoneyBar(){
     let insertFront = `<div class="moneybar-item align-center-center"><div>`
     let insertBack = `</div></div>`
     setTimeout(() => {
-        console.log('Creating Money Bar ...');
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
         document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5 €${insertBack}`;
         playSound(5);
@@ -152,7 +142,6 @@ function createMoneyBar(){
 */
 function createScoreArea(){
     setTimeout(() => {
-        console.log('Creating Score Area ...');
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
         playSound(6);
     }, 8200);
@@ -163,7 +152,6 @@ function createScoreArea(){
 */
 function createTimerArea(){
     setTimeout(() => {
-        console.log('Creating Timer Area ...');
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
         playSound(6);
     }, 9100);
@@ -174,7 +162,6 @@ function createTimerArea(){
 */
 function createQuestionArea(){
     setTimeout(() => {
-        console.log('Creating Question Area ...');
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="question-container" class="blue-border grey-background">
         <div id="question" class="blue-border grey-background">
         </div>
