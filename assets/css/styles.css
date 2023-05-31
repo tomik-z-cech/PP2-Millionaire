@@ -1,16 +1,26 @@
 /** Imports **/
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Rubik&display=swap');
 
+/** VARIABLES **/
+:root{
+/** Color pallete **/
+--light-blue: #77aaf7;
+/** Fonts **/
+--main-font: 'Rubik', sans-serif;
+--question-font: 'Monofett', arial;
+/** Other **/
+--box: 2px solid #77aaf7;
+}
 /** GENERAL RULES **/
 
 * {/** general elements rule**/
     margin : 0;
     padding : 0;
     border: none;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--main-font);
 }
 body {/** set background color **/
-    background-color: #77aaf7;
+    background-color: var(--light-blue);
     color: #f5eed8;
 }
 h1 {/** properties of h1 elements **/
@@ -35,13 +45,13 @@ p {
     align-items: center;
 }
 .blue-border {/** blue border for elements **/
-    border: 2px solid #77aaf7;
+    border: var(--box);
 }
 .button {/** size and properties of buttons **/
     height: 40px;
     width: 150px;
-    color: #77aaf7;
-    border: 2px solid #77aaf7;
+    color: var(--light-blue);
+    border: var(--box);
     font-family: 'Rubik', sans-serif;
     font-size: 150%;
     font-weight: 600;
@@ -53,13 +63,13 @@ p {
     background-color: rgba(49, 54, 57, 0.95);
 }
 ::placeholder {/** Color of placeholder text **/
-    color: #77aaf7;
+    color: var(--light-blue);
 }
 :-ms-input-placeholder {/** Color of placeholder text **/
-    color: #77aaf7;
+    color: var(--light-blue);
 }
 ::-ms-input-placeholder {/** Color of placeholder text **/
-    color: #77aaf7;
+    color: var(--light-blue);
 }
 ::-webkit-scrollbar {/** Scrollbars styling **/
     width: 10px;
@@ -68,7 +78,7 @@ p {
     background: rgba(49, 54, 57, 0.95);
 }
 ::-webkit-scrollbar-thumb {/** Scrollbars styling **/
-    background: #77aaf7;
+    background: var(--light-blue);
 }
 ::-webkit-scrollbar-thumb:hover {/** Scrollbars styling **/
     background: #3a1f64;
@@ -118,7 +128,7 @@ p {
     color: #f5eed8;
     height: 40px;
     background: transparent;
-    border: 2px solid #77aaf7;
+    border: var(--box);
     margin-left: 20px;
     padding-left: 10px;
 }
@@ -194,7 +204,7 @@ p {
 }
 .moneybar-item {/** size, position and colors of each moneybar item **/
     height: 9.67%;
-    border: 1px solid #77aaf7;
+    border: var(--box);
 }
 
 /** SCORE **/
@@ -275,7 +285,7 @@ p {
     width: 50%;
 }
 .letter {
-    font-family: 'Monofett', sans-serif;
+    font-family: var(--question-font);
     font-size: 200%;
     margin-left: 2%;
 }
