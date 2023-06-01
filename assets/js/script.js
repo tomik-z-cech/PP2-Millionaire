@@ -100,38 +100,17 @@ function createLifelines(){
 function createMoneyBar(){
     let insertFront = `<div class="moneybar-item align-center-center"><div>`
     let insertBack = `</div></div>`
+    let timeOut = [4300,4670,5040,5410,5780,6150,6520,6890,7260,7600]
+    let innerTag = ['5 €','10 €','50 €','200 €','500 €','1.000 €','2.000 €','5.000 €','10.000 €','20.000 €']
     setTimeout(() => {
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5 €${insertBack}`;
         playSound(5);
     }, 4300);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}10 €${insertBack}`;
-    }, 4670);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}50 €${insertBack}`;
-    }, 5040);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}200 €${insertBack}`;
-    }, 5410);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}500 €${insertBack}`;
-    }, 5780);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}1.000 €${insertBack}`;
-    }, 6150);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}2.000 €${insertBack}`;
-    }, 6520);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}5.000 €${insertBack}`;
-    }, 6890);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}10.000 €${insertBack}`;
-    }, 7260);
-    setTimeout(() => {
-        document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}20.000 €${insertBack}`;
-    }, 7600);
+    for (let i = 0; i < timeOut.length; i++){
+        setTimeout(() => {
+            document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}${innerTag[i]}${insertBack}`;
+        }, timeOut[i]);
+    };
 }
 
 /**
