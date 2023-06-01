@@ -2,15 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Rubik&display=swap');
 
 /** VARIABLES **/
+
 :root{
-/** Color pallete **/
+
+    /** Color pallete **/
 --light-blue: #77aaf7;
+--gey-transparent: rgba(49, 54, 57, 0.95);
+--purple: #3a1f64;
+--dark-blue-bg: #053278;
+--off-white-text: #f5eed8;
+--hover-color: #ecf01a;
+--unused-lifeline: green;
+--white: white;
+--black: black;
+ 
 /** Fonts **/
 --main-font: 'Rubik', sans-serif;
 --question-font: 'Monofett', arial;
+
 /** Other **/
 --box: 2px solid #77aaf7;
+
 }
+
 /** GENERAL RULES **/
 
 * {/** general elements rule**/
@@ -21,7 +35,7 @@
 }
 body {/** set background color **/
     background-color: var(--light-blue);
-    color: #f5eed8;
+    color: var(--off-white-text);
 }
 h1 {/** properties of h1 elements **/
     padding-bottom: 20px;
@@ -30,7 +44,7 @@ h1 {/** properties of h1 elements **/
     top: 40px;
 }
 h2{
-    color: #f5eed8;
+    color: var(--off-white-text);
 }
 label {/** properties of label elements **/
     font-size: 140%;
@@ -57,10 +71,10 @@ p {
     font-weight: 600;
 }
 .button:hover {/** buttons - event:hover **/
-    background-color: #ecf01a;
+    background-color: var(--hover-color);
 }
 .grey-background {/** grey background class for elements **/
-    background-color: rgba(49, 54, 57, 0.95);
+    background-color: var(--gey-transparent);
 }
 ::placeholder {/** Color of placeholder text **/
     color: var(--light-blue);
@@ -75,13 +89,13 @@ p {
     width: 10px;
 }
 ::-webkit-scrollbar-track {/** Scrollbars styling **/
-    background: rgba(49, 54, 57, 0.95);
+    background: var(--gey-transparent);
 }
 ::-webkit-scrollbar-thumb {/** Scrollbars styling **/
     background: var(--light-blue);
 }
 ::-webkit-scrollbar-thumb:hover {/** Scrollbars styling **/
-    background: #3a1f64;
+    background: var(--purple);
 }
 
 /** RULES PAGE **/
@@ -93,7 +107,7 @@ p {
 #display-container {/** position and size of outer rules container **/
     width: 95%;
     height: 95%;
-    background-color: #053278;
+    background-color: var(--dark-blue-bg);
     background-image: url(../images/rules-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,7 +139,7 @@ p {
     left: 5%;
 }
 #player-name-input {/** size and properties of input field **/
-    color: #f5eed8;
+    color: var(--off-white-text);
     height: 40px;
     background: transparent;
     border: var(--box);
@@ -143,7 +157,7 @@ p {
     bottom: 15px;
 }
 #alert-window {/** size and properties of alert message window **/
-    background-color: rgb(86, 43, 165);
+    background-color: var(--purple);
     background-image: url(../images/alert-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,12 +193,12 @@ p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 10px solid green;
-    background-color: white;
-    color: black;
+    border: 10px solid var(--unused-lifeline);
+    background-color: var(--white);
+    color: var(--black);
 }
 .outer-round:hover {/** lifeline event:hover **/
-    border: 10px solid yellow;    
+    border: 10px solid var(--hover-color);    
 }
 .lifeline-image{
     width: 70%;
