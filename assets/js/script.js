@@ -85,16 +85,13 @@ function createLifelines(){
     playSound(0);
     let insertFront = `<div class="outer-round align-center-center">`
     let insertBack = `</div>`
-    setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}<img src="assets/images/time.png" class="lifeline-image" alt="Addition time">${insertBack}`;
-    }, 500);
-    setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}<img src="assets/images/change.png" class="lifeline-image" alt="Change question">${insertBack}`;
-    }, 1900);
-    setTimeout(() => {
-        document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront}<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">${insertBack}`;
-        nextStep = true;
-    }, 3600);
+    let timeOut = [500,1900,3600];
+    let innerTag = ['<img src="assets/images/time.png" class="lifeline-image" alt="Addition time"></img>','<img src="assets/images/change.png" class="lifeline-image" alt="Change question">','<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
+    for (let i = 0; i < timeOut.length; i++){
+        setTimeout(() => {
+            document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront} ${innerTag[i]} ${insertBack}`;
+        }, timeOut[i]);
+    };    
 }
 
 /**
