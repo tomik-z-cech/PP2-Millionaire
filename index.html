@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Local stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css"> 
+    <!-- FavIcon-->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Title -->
     <title>Who want's to be a millinaire  | Rules</title>
 </head>
 <body>
-   <main id="display-container">
+   <!-- Main display container -->
+    <main id="display-container">
+        <!-- Rules to load first-->
         <div id="rules-inner-container" class="blue-border grey-background">
             <img src="assets/images/logo.png" alt="Logo" id="logo">
             <h1>How to play ?</h1>
@@ -86,9 +94,16 @@
                 This is how to play !This is how to play !This is how to play !This is how to play !
             </p>
         </div>
-        <div id="rules-navbar" class="blue-border grey-background">
-
+        <!-- Settings container-->
+        <div id="settings" class="blue-border grey-background">
+            <span>Settings :</span>
+            <div class="form-check form-switch align-center-center">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault"> Music</label>
+            </div>
+            <span><input type="checkbox"> SFX</span>
         </div>
+        <!-- Player details container -->
         <div id="rules-user-details" class="align-center-center blue-border grey-background">
             <div>
                 <label for="player-name-input">Enter your name : </label>
@@ -97,6 +112,9 @@
             <div><button class="button grey-background" id="play-button">Let's play !</button></div>
         </div>
     </main>
-    <script src="assets/js/script.js"></script> 
+    <!-- Local JS script -->
+    <script src="assets/js/script.js"></script>
+    <!-- Bootstrap JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

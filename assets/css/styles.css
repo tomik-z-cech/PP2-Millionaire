@@ -124,12 +124,16 @@ p {
     padding: 10px;
     overflow-y: scroll;
 }
-#rules-navbar {/** position and size of rules navbar **/
+#settings {/** position and size of rules navbar **/
     width: 40%;
     height: 5%;
     position: absolute;
     bottom: 14%;
     left: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 150%;
 }
 #rules-user-details {/** position and size of user detials and play button form **/
     position: absolute;
