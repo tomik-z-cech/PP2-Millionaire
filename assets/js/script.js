@@ -75,8 +75,6 @@ function playMusic(track){
     }
 }
 
-
-
 /**
  * Function checks if name input is empty string.
  * If true alert message is displayed
@@ -105,7 +103,7 @@ function clearDisplayArea(){
 function createLifelines(){
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
-    let insertFront = `<div class="outer-round align-center-center">`
+    let insertFront = `<div class="outer-round align-center-center lifelines">`
     let insertBack = `</div>`
     let timeOut = [500,1900,3600];
     let innerTag = ['<img src="assets/images/time.png" class="lifeline-image" alt="Addition time"></img>','<img src="assets/images/change.png" class="lifeline-image" alt="Change question">','<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
@@ -201,13 +199,19 @@ function prepareGameView(){
     setTimeout(() => {
         alertMessage(`Welcome to the hot seat ${playerName}. Good luck ;)`);
         document.getElementById('ok-button').addEventListener('click',function(){
+            let lifelines = document.getElementsByClassName('lifelines');
+            console.log(lifelines);
+            for (i = 0; i < lifelines.length; i++){
+                console.log(lifelines[i]);
+                lifelines[i].addEventListener('click',function(){console.log(lifelines[i])});
+            }
             startGame();
         })
      }, 10300);
 }
 
 function countdownTimer(){
-    let timeLeft = 3;
+    let timeLeft = 30;
     let timeDisplay = document.getElementById('timer');
     let timerId = setInterval(countdown, 1000);
     function countdown() {
@@ -222,8 +226,10 @@ function countdownTimer(){
 }
 
 function timeIsUp(){
-    alert('Time is up');
-    currentlyPlaying.pause();
+    if (isMusicOn == true){
+        currentlyPlaying.pause();
+    };
+    alertMessage('You have runned out of time ...');
 }
 
 /**

@@ -198,8 +198,8 @@ p {
     justify-content: space-evenly;
     flex-direction: column;
 }.outer-round {/** size, position and colors of each lifeline **/
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 10px solid var(--unused-lifeline);
     background-color: var(--white);
@@ -225,7 +225,7 @@ p {
     flex-direction: column-reverse;
 }
 .moneybar-item {/** size, position and colors of each moneybar item **/
-    height: 9.67%;
+    height: 10%;
     border: var(--box);
 }
 
