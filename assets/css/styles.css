@@ -46,10 +46,6 @@ h1 {/** properties of h1 elements **/
 h2{
     color: var(--off-white-text);
 }
-label {/** properties of label elements **/
-    font-size: 140%;
-    font-weight: 600;
-}
 p {
     margin-top: 10px;
 }
@@ -125,11 +121,11 @@ p {
     overflow-y: scroll;
 }
 #settings {/** position and size of rules navbar **/
-    width: 40%;
+    width: 25%;
     height: 5%;
     position: absolute;
     bottom: 14%;
-    left: 30%;
+    left: 37.5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -152,6 +148,14 @@ p {
 }
 #play-button {/** position of play button **/
     margin-left: 60px;
+}
+#settings-label {/** properties of player name label element **/
+    font-size: 110%;
+    font-weight: 600;
+}
+#player-name-label {/** properties of player name label element **/
+    font-size: 140%;
+    font-weight: 600;
 }
 
 /** ALERT MESSAGE **/

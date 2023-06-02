@@ -96,17 +96,24 @@
         </div>
         <!-- Settings container-->
         <div id="settings" class="blue-border grey-background">
-            <span>Settings :</span>
-            <div class="form-check form-switch align-center-center">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault"> Music</label>
+            <span id="settings-label">Settings :</span>
+            <div class="align-center-center">
+                <label for="music-switch">Music</label>
             </div>
-            <span><input type="checkbox"> SFX</span>
+            <div class="form-check form-switch align-center-center">
+                <input class="form-check-input" type="checkbox" id="music-switch">
+            </div>
+            <div class="align-center-center">
+                <label for="sfx-switch">SFX</label>
+            </div>
+            <div class="form-check form-switch align-center-center">
+                <input class="form-check-input" type="checkbox" id="sfx-switch">
+            </div>
         </div>
         <!-- Player details container -->
         <div id="rules-user-details" class="align-center-center blue-border grey-background">
             <div>
-                <label for="player-name-input">Enter your name : </label>
+                <label for="player-name-input" id="player-name-label">Enter your name : </label>
                 <input type="text-field" id="player-name-input" placeholder="Your name" required>
             </div>
             <div><button class="button grey-background" id="play-button">Let's play !</button></div>
