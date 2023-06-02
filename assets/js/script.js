@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', startingPoint);
 let playerName = '';
 let isMusicOn = '';
 let isSfxOn = '';
+let currentlyPlaying = '';
 
 /**
  * Function is called after first click on the play button
@@ -41,7 +42,7 @@ function checkAudioSettings(){
 }
 
 /**
- * Function for playing audio effects - function take number of track as parameter
+ *  Function for playing audio effects - function take number of track as parameter
  *  #0 - 3 dings
  *  #1 - moneybar count
  *  #2 - finger snap
@@ -56,10 +57,11 @@ function playSound(track){
     }
 }
 /** 
-*  #1 - easy question background track
-*  #2 - medium question background track
-*  #3 - hard question background track
-*  #4 - final question background track
+*  Function for playing musical background - function take number of track as parameter
+*  #0 - easy question background track
+*  #1 - medium question background track
+*  #2 - hard question background track
+*  #3 - final question background track
 */
 function playMusic(track){
     if (isMusicOn == true){
@@ -69,6 +71,7 @@ function playMusic(track){
                         'assets/audio/level4-back.mp3',];
         let soundToPlay = new Audio (songs[track]);
         soundToPlay.play();
+        return soundToPlay;
     }
 }
 
@@ -204,7 +207,7 @@ function prepareGameView(){
 }
 
 function countdownTimer(){
-    let timeLeft = 30;
+    let timeLeft = 3;
     let timeDisplay = document.getElementById('timer');
     let timerId = setInterval(countdown, 1000);
     function countdown() {
@@ -220,6 +223,7 @@ function countdownTimer(){
 
 function timeIsUp(){
     alert('Time is up');
+    currentlyPlaying.pause();
 }
 
 /**
@@ -227,5 +231,5 @@ function timeIsUp(){
  */
 function startGame(){
     countdownTimer();
-    playMusic(0);
+    currentlyPlaying = playMusic(0);
 }
