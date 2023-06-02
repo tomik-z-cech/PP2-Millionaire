@@ -1,11 +1,13 @@
-let playerName = '';
 document.addEventListener('DOMContentLoaded', startingPoint);
+let playerName = '';
+let isMusicOn = '';
+let isSfxOn = '';
 
 /**
  * Function is called after first click on the play button
  */
 function startingPoint(){
-document.getElementById('play-button').addEventListener('click', checkName);
+    document.getElementById('play-button').addEventListener('click', checkName);
 };
 
 /**
@@ -33,27 +35,44 @@ function alertMessage(message){
     });
 }
 
+function checkAudioSettings(){
+    isMusicOn = document.getElementById('music-switch').checked;
+    isSfxOn = document.getElementById('sfx-switch').checked;
+}
+
 /**
  * Function for playing audio effects - function take number of track as parameter
  *  #0 - 3 dings
- *  #1 - easy question background track
- *  #2 - medium question background track
- *  #3 - hard question background track
- *  #4 - final question background track
- *  #5 - moneybar count
- *  #6 - finger snap
+ *  #1 - moneybar count
+ *  #2 - finger snap
  */
 function playSound(track){
-    let effects = ['assets/audio/three-ding.mp3',
-                    'assets/audio/level1-back.mp3',
-                    'assets/audio/level2-back.mp3',
-                    'assets/audio/level3-back.mp3',
-                    'assets/audio/level4-back.mp3',
-                    'assets/audio/moneybar.mp3',
-                    'assets/audio/finger-snap.mp3'];
-    let soundToPlay = new Audio (effects[track]);
-    soundToPlay.play();
+    if (isSfxOn == true){
+        let effects = [ 'assets/audio/three-ding.mp3',
+                        'assets/audio/moneybar.mp3',
+                        'assets/audio/finger-snap.mp3'];
+        let soundToPlay = new Audio (effects[track]);
+        soundToPlay.play();
+    }
 }
+/** 
+*  #1 - easy question background track
+*  #2 - medium question background track
+*  #3 - hard question background track
+*  #4 - final question background track
+*/
+function playMusic(track){
+    if (isMusicOn == true){
+        let songs = [   'assets/audio/level1-back.mp3',
+                        'assets/audio/level2-back.mp3',
+                        'assets/audio/level3-back.mp3',
+                        'assets/audio/level4-back.mp3',];
+        let soundToPlay = new Audio (songs[track]);
+        soundToPlay.play();
+    }
+}
+
+
 
 /**
  * Function checks if name input is empty string.
@@ -104,7 +123,7 @@ function createMoneyBar(){
     let innerTag = ['5 €','10 €','50 €','200 €','500 €','1.000 €','2.000 €','5.000 €','10.000 €','20.000 €']
     setTimeout(() => {
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
-        playSound(5);
+        playSound(1);
     }, 4300);
     for (let i = 0; i < timeOut.length; i++){
         setTimeout(() => {
@@ -119,7 +138,7 @@ function createMoneyBar(){
 function createScoreArea(){
     setTimeout(() => {
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
-        playSound(6);
+        playSound(2);
     }, 8200);
 }
 
@@ -129,7 +148,7 @@ function createScoreArea(){
 function createTimerArea(){
     setTimeout(() => {
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
-        playSound(6);
+        playSound(2);
     }, 9100);
 }
 
@@ -160,7 +179,7 @@ function createQuestionArea(){
             </div>
         </div>
     </div>`;
-        playSound(6);
+        playSound(2);
     }, 10000);
 }
 
@@ -168,6 +187,7 @@ function createQuestionArea(){
  * Function prepares the user view for game
  */
 function prepareGameView(){
+    checkAudioSettings();
     clearDisplayArea();
     document.getElementById('display-container').style.backgroundImage = "url('assets/images/game-background.jpg')";
     createLifelines();
@@ -206,6 +226,6 @@ function timeIsUp(){
  * Main function that starts the game
  */
 function startGame(){
-    playSound(1);
     countdownTimer();
+    playMusic(0);
 }
