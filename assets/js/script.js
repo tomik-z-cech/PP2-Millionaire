@@ -199,15 +199,24 @@ function prepareGameView(){
     setTimeout(() => {
         alertMessage(`Welcome to the hot seat ${playerName}. Good luck ;)`);
         document.getElementById('ok-button').addEventListener('click',function(){
-            let lifelines = document.getElementsByClassName('lifelines');
-            console.log(lifelines);
-            for (i = 0; i < lifelines.length; i++){
-                console.log(lifelines[i]);
-                lifelines[i].addEventListener('click',function(){console.log(lifelines[i])});
-            }
+            document.getElementsByClassName('lifelines')[0].addEventListener('click', extraTime);
+            document.getElementsByClassName('lifelines')[1].addEventListener('click', differentQuestion);
+            document.getElementsByClassName('lifelines')[2].addEventListener('click', fifthyFifthy);
             startGame();
         })
      }, 10300);
+}
+
+function extraTime(){
+    console.log('extra time used');
+}
+
+function differentQuestion(){
+    console.log('different question used');
+}
+
+function fifthyFifthy(){
+    console.log('fifthy fifthy used');
 }
 
 function countdownTimer(){
