@@ -103,7 +103,7 @@ function clearDisplayArea(){
 function createLifelines(){
     document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
-    let insertFront = `<div class="outer-round align-center-center lifelines">`
+    let insertFront = `<div class="outer-round align-center-center">`
     let insertBack = `</div>`
     let timeOut = [500,1900,3600];
     let innerTag = ['<img src="assets/images/time.png" class="lifeline-image" alt="Addition time"></img>','<img src="assets/images/change.png" class="lifeline-image" alt="Change question">','<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
@@ -199,9 +199,9 @@ function prepareGameView(){
     setTimeout(() => {
         alertMessage(`Welcome to the hot seat ${playerName}. Good luck ;)`);
         document.getElementById('ok-button').addEventListener('click',function(){
-            document.getElementsByClassName('lifelines')[0].addEventListener('click', extraTime);
-            document.getElementsByClassName('lifelines')[1].addEventListener('click', differentQuestion);
-            document.getElementsByClassName('lifelines')[2].addEventListener('click', fifthyFifthy);
+            document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
+            document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
+            document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
             startGame();
         })
      }, 10300);
@@ -209,14 +209,20 @@ function prepareGameView(){
 
 function extraTime(){
     console.log('extra time used');
+    document.getElementsByClassName('outer-round')[0].style.border = "10px solid var(--used-lifeline)";
+    document.getElementsByClassName('outer-round')[0].removeEventListener('click', extraTime);
 }
 
 function differentQuestion(){
     console.log('different question used');
+    document.getElementsByClassName('outer-round')[1].style.border = "10px solid var(--used-lifeline)";
+    document.getElementsByClassName('outer-round')[1].removeEventListener('click', differentQuestion);
 }
 
 function fifthyFifthy(){
     console.log('fifthy fifthy used');
+    document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
+    document.getElementsByClassName('outer-round')[2].removeEventListener('click', fifthyFifthy);
 }
 
 function countdownTimer(){
