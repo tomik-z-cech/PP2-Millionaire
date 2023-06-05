@@ -244,7 +244,7 @@ function timeIsUp(){
     if (isMusicOn == true){
         currentlyPlaying.pause();
     };
-    alertMessage(`${playerName}, You have runned out of time ...`);
+    alertMessage(`${playerName}, time's up ...`);
 }
 
 /**
