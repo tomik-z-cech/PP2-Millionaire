@@ -166,6 +166,7 @@ p {
     bottom: 15px;
 }
 #alert-window {/** size and properties of alert message window **/
+    display: none;
     background-color: var(--purple);
     background-image: url(../images/alert-background.png);
     background-repeat: no-repeat;

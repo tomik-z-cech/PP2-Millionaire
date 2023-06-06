@@ -9,6 +9,7 @@ let addTime = false;
  * Function is called after first click on the play button
  */
 function startingPoint(){
+    document.getElementById('player-name-input').value = '';
     document.getElementById('play-button').addEventListener('click', checkName);
 };
 
@@ -16,24 +17,11 @@ function startingPoint(){
  * Function creates an alert window and take "display message" as parameter
  */
 function alertMessage(message){
-    document.body.innerHTML = document.body.innerHTML + `
-    <aside>
-    <div id="alert-window" class="blue-border">
-        <div class="align-center-center">
-            <img src="assets/images/info-icon.png" alt="Info icon" id="info-icon">
-            <h2>Information ...</h2>
-        </div>
-        <div class="align-center-center">
-            <h3 id="alert-message">${message}</h3>
-        </div>
-        <div class="align-center-center">
-            <button class="button" id="ok-button">OK</button>
-        </div>
-    </div>
-    </aside>`;
+    document.getElementById('alert-window').style.display = 'block';
+    document.getElementById('alert-message').innerHTML = ``;
+    document.getElementById('alert-message').innerHTML = `${message}`;    
     document.getElementById('ok-button').addEventListener('click', function(){
-        let alertWindow = document.getElementById('alert-window');
-        alertWindow.remove();
+        document.getElementById('alert-window').style.display = 'none';
     });
 }
 
@@ -82,11 +70,14 @@ function playMusic(track){
  * If flase game starts
  */
 function checkName(){
-    if (document.getElementById('player-name-input').value === '') {
+    playerName = document.getElementById('player-name-input').value; 
+    if (playerName === ''){
         alertMessage('Please enter your name !');
         startingPoint();
-    }else{
-        playerName = document.getElementById('player-name-input').value;
+    }else if (playerName.includes(' ')){
+        alertMessage('Please name without spaces !');
+        startingPoint();
+    }else{ 
         prepareGameView();
     }
 }
