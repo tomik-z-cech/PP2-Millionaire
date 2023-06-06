@@ -256,28 +256,62 @@ function timeIsUp(){
 }
 
 /**
- * Function that starts the game
+ * Function randomly selects question and checks answer
  */
-function startGame(){
-    countdownTimer();
-    currentlyPlaying = playMusic(0);
-    askQuestion();
-}
-
 function askQuestion(){
     fetch('/assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
-        let randomNumber = Math.floor(Math.random() * 14);
-        let questionRef = 'q' + randomNumber;
+        let questionRef = 'q' + (Math.floor(Math.random() * 14));
         document.getElementById('question').innerHTML = questions.easy[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
             document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
         };
-        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){console.log('answer A')});
-        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){console.log('answer B')});
-        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){console.log('answer C')});
-        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){console.log('answer D')});
+        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){
+            if (questions.easy[questionRef].answer == '0'){
+                checkAnswer('right');
+            }else{
+                checkAnswer('wrong');
+            }
+        });
+        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){
+            if (questions.easy[questionRef].answer == '1'){
+                checkAnswer('right');
+            }else{
+                checkAnswer('wrong');
+            }
+        });
+        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){
+            if (questions.easy[questionRef].answer == '2'){
+                checkAnswer('right');
+            }else{
+                checkAnswer('wrong');
+            }
+        });
+        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){
+            if (questions.easy[questionRef].answer == '3'){
+                checkAnswer('right');
+            }else{
+                checkAnswer('wrong');
+            }
+        });
     });
+}
+
+function checkAnswer(playerAnswer){
+    if (playerAnswer == 'right'){
+        console.log('right');
+    }else if(playerAnswer == 'wrong'){
+        console.log('wrong');
+    };
+}
+
+/**
+ * Function that starts the game
+ */
+ function startGame(){
+    countdownTimer();
+    currentlyPlaying = playMusic(0);
+    askQuestion();
 }
