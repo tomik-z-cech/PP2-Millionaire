@@ -64,101 +64,101 @@
             "question": "In which country was Adolf Hitler born ?",
             "options": [
                         "Poland",
-                        "Germany",
+                        "Austria",
                         "Czech republic",
                         "Russia"
                         ],
             "answer": "1"
             },
         "q7": {
-            "question": "Kogo kocham ? Q7",
+            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Sally",
+                        "Mickey Mouse",
+                        "Frozen",
+                        "Spiderman"
                         ],
             "answer": "0"
             },
         "q8": {
-            "question": "Kogo kocham ? Q8",
+            "question": "My mother’s mother is my … what ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Sister",
+                        "Sibling",
+                        "Grandmother",
+                        "Mother"
                         ],
-            "answer": "0"
+            "answer": "2"
             },
         "q9": {
-            "question": "Kogo kocham ? Q9",
+            "question": "How many zeros are in ten thousand ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Four Zeros",
+                        "No Zeros",
+                        "Eight Zeros",
+                        "Twenty Zeros"
                         ],
             "answer": "0"
             },
         "q10": {
-            "question": "Kogo kocham ? Q10",
+            "question": "What is the name of a shape with 5 sides?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Square",
+                        "Pentagon",
+                        "Hexagon",
+                        "Triangle"
                         ],
-            "answer": "0"
+            "answer": "1"
             },
         "q11": {
-            "question": "Kogo kocham ? Q11",
+            "question": "How many Continents are there ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "None",
+                        "3",
+                        "5",
+                        "7"
                         ],
-            "answer": "0"
+            "answer": "3"
             },
         "q12": {
-            "question": "Kogo kocham ? Q12",
+            "question": "What is the name of the tallest mountain on earth ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Mount Everest (Nepal & China)",
+                        "The hill around the corner",
+                        "Snezka (Czech republic)",
+                        "Mount Elbrus (Russia)"
                         ],
             "answer": "0"
             },
         "q13": {
-            "question": "Kogo kocham ? Q13",
+            "question": "In which country would you find the Sydney Opera House ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Ireland",
+                        "Australia",
+                        "USA",
+                        "Mexico"
                         ],
-            "answer": "0"
+            "answer": "1"
             },
         "q14": {
-            "question": "Kogo kocham ? Q14",
+            "question": "What software company is headquartered in Redmond, Washington ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Android",
+                        "MicroSoft",
+                        "Linux",
+                        "iOS"
                         ],
-            "answer": "0"
+            "answer": "1"
             },
         "q15": {
-            "question": "Kogo kocham ? Q15",
+            "question": "In what country is the Chernobyl nuclear plant located ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "USA",
+                        "Spain",
+                        "Ireland",
+                        "Ukraine"
                         ],
-            "answer": "0"
+            "answer": "3"
             }
         }
         
