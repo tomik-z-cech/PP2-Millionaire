@@ -253,12 +253,17 @@ function timeIsUp(){
         currentlyPlaying.pause();
     };
     alertMessage(`${playerName}, time's up ...`);
+    displayResult();
 }
 
 /**
- * Main function that starts the game
+ * Function that starts the game
  */
 function startGame(){
     countdownTimer();
     currentlyPlaying = playMusic(0);
 }
+
+function displayResult(){
+    clearDisplayArea();
+};
