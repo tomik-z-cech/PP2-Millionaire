@@ -275,5 +275,9 @@ function askQuestion(){
         for (i = 0; i < answerGrid.length; i++){
             document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
         };
+        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){console.log('answer A')});
+        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){console.log('answer B')});
+        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){console.log('answer C')});
+        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){console.log('answer D')});
     });
 }
