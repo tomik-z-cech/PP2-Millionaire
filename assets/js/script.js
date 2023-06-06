@@ -35,12 +35,14 @@ function checkAudioSettings(){
  *  #0 - 3 dings
  *  #1 - moneybar count
  *  #2 - finger snap
+ *  #3 - timer effect
  */
 function playSound(track){
     if (isSfxOn == true){
         let effects = [ 'assets/audio/three-ding.mp3',
                         'assets/audio/moneybar.mp3',
-                        'assets/audio/finger-snap.mp3'];
+                        'assets/audio/finger-snap.mp3',
+                        'assets/audio/timer.mp3'];
         let soundToPlay = new Audio (effects[track]);
         soundToPlay.play();
     }
@@ -75,7 +77,7 @@ function checkName(){
         alertMessage('Please enter your name !');
         startingPoint();
     }else if (playerName.includes(' ')){
-        alertMessage('Please name without spaces !');
+        alertMessage('Please enter name without spaces !');
         startingPoint();
     }else{ 
         prepareGameView();
@@ -203,8 +205,8 @@ function prepareGameView(){
  * Function adds extra 30 seconds to timer for answer
  */
 function extraTime(){
-    console.log('extra time used');
     addTime = true;
+    playSound(3);
     document.getElementsByClassName('outer-round')[0].style.border = "10px solid var(--used-lifeline)";
     document.getElementsByClassName('outer-round')[0].removeEventListener('click', extraTime);
 }
