@@ -158,18 +158,18 @@ function createQuestionArea(){
         <div id="options" class="blue-border grey-background">
             <div class="options-row">
                 <div class="blue-border grey-background answer-class">
-                    <span class="letter">A</span><span id="answer"></span>
+                    <span class="letter">A</span><span id="answer-a"></span>
                 </div>
                 <div class="blue-border grey-background answer-class">
-                    <span class="letter">B</span><span id="answer"></span>
+                    <span class="letter">B</span><span id="answer-b"></span>
                 </div>
             </div>
             <div class="options-row">
                 <div class="blue-border grey-background answer-class">
-                    <span class="letter">C</span><span id="answer"></span>
+                    <span class="letter">C</span><span id="answer-c"></span>
                 </div>
                 <div class="blue-border grey-background answer-class">
-                    <span class="letter">D</span><span id="answer"></span>
+                    <span class="letter">D</span><span id="answer-d"></span>
                 </div>
             </div>
         </div>
@@ -253,7 +253,6 @@ function timeIsUp(){
         currentlyPlaying.pause();
     };
     alertMessage(`${playerName}, time's up ...`);
-    displayResult();
 }
 
 /**
@@ -262,6 +261,20 @@ function timeIsUp(){
 function startGame(){
     countdownTimer();
     currentlyPlaying = playMusic(0);
+    askQuestion();
+}
+
+function askQuestion(){
+    fetch('/assets/questions/questions.json')
+    .then((response) => response.json())
+    .then((questions) => {
+        console.log(questions.easy.q0.question)
+        document.getElementById('question').innerHTML = questions.easy.q0.question;
+        document.getElementById('answer-a').innerHTML = questions.easy.q0.options[0];
+        document.getElementById('answer-b').innerHTML = questions.easy.q0.options[1];
+        document.getElementById('answer-c').innerHTML = questions.easy.q0.options[2];
+        document.getElementById('answer-d').innerHTML = questions.easy.q0.options[3];        
+    });
 }
 
 function displayResult(){
