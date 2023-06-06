@@ -267,7 +267,7 @@ function timeIsUp(){
  * Function randomly selects question and checks answer
  */
 function askQuestion(){
-    fetch('/assets/questions/questions.json')
+    fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
         let questionRef = 'q' + (Math.floor(Math.random() * 14));
