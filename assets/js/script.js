@@ -253,7 +253,6 @@ function timeIsUp(){
         currentlyPlaying.pause();
     };
     alertMessage(`${playerName}, time's up ...`);
-    return;
 }
 
 /**
@@ -278,7 +277,3 @@ function askQuestion(){
         };
     });
 }
-
-function displayResult(){
-    clearDisplayArea();
-};

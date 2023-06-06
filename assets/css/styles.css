@@ -307,9 +307,16 @@ p {
 }
 .answer-class {
     width: 50%;
+    display: flex;
+    align-items: center;
+}
+.answer-class:hover {/** answer event:hover **/
+    color: var(--black);
+    background-color: var(--hover-color); 
 }
 .letter {
     font-family: var(--question-font);
     font-size: 200%;
     margin-left: 2%;
+    margin-right: 3%;
 }
