@@ -276,21 +276,26 @@ function askQuestion(){
         for (i = 0; i < answerGrid.length; i++){
             document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
         };
-        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){checkAnswer('0',questions.easy[questionRef].answer);});
-        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){checkAnswer('1',questions.easy[questionRef].answer);});
-        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){checkAnswer('2',questions.easy[questionRef].answer);});
-        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){checkAnswer('3',questions.easy[questionRef].answer);});        
-        return;
+        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){
+            document.getElementsByClassName('answer-class')[0].style.background = 'var(--selected-answer)';
+            checkAnswer('0',questions.easy[questionRef].answer);});
+        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){
+            document.getElementsByClassName('answer-class')[1].style.background = 'var(--selected-answer)';
+            checkAnswer('1',questions.easy[questionRef].answer);});
+        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){
+            document.getElementsByClassName('answer-class')[2].style.background = 'var(--selected-answer)';
+            checkAnswer('2',questions.easy[questionRef].answer);});
+        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){
+            document.getElementsByClassName('answer-class')[3].style.background = 'var(--selected-answer)';
+            checkAnswer('3',questions.easy[questionRef].answer);});        
     });
 }
 
 function checkAnswer(playerAnswer,correctAnswer){
         let isWinner;
-        for(i = 0; i < 4; i++){
-            console.log(document.getElementsByClassName('answer-class')[i]);
-            document.getElementsByClassName('answer-class')[i].removeEventListener('click',function(){});    
-        }
-        currentlyPlaying.pause();
+        if (isMusicOn == true){
+            currentlyPlaying.pause();
+        };
         playSound(4);
         if (playerAnswer == correctAnswer){
             isWinner = true;
@@ -298,6 +303,7 @@ function checkAnswer(playerAnswer,correctAnswer){
             isWinner = false;
         };
         setTimeout(() => {
+            document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
                 playSound(5);
             }else{

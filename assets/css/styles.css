@@ -16,6 +16,8 @@
 --white: white;
 --black: black;
 --used-lifeline: red;
+--selected-answer: orange;
+--correct-answer: green;
  
 /** Fonts **/
 --main-font: 'Rubik', sans-serif;
