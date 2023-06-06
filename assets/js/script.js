@@ -3,6 +3,7 @@ let playerName = '';
 let isMusicOn = '';
 let isSfxOn = '';
 let currentlyPlaying = '';
+let addTime = false;
 
 /**
  * Function is called after first click on the play button
@@ -207,8 +208,12 @@ function prepareGameView(){
      }, 10300);
 }
 
+/**
+ * Function adds extra 30 seconds to timer for answer
+ */
 function extraTime(){
     console.log('extra time used');
+    addTime = true;
     document.getElementsByClassName('outer-round')[0].style.border = "10px solid var(--used-lifeline)";
     document.getElementsByClassName('outer-round')[0].removeEventListener('click', extraTime);
 }
@@ -225,6 +230,9 @@ function fifthyFifthy(){
     document.getElementsByClassName('outer-round')[2].removeEventListener('click', fifthyFifthy);
 }
 
+/**
+ * Function sets and starts 30 seconds countsoen timer
+ */
 function countdownTimer(){
     let timeLeft = 30;
     let timeDisplay = document.getElementById('timer');
@@ -236,10 +244,17 @@ function countdownTimer(){
         }else{
         timeDisplay.innerHTML = timeLeft;
         timeLeft--;
+        if (addTime == true){
+            timeLeft += 30;
+            addTime = false;
+            }
         }
     }
 }
 
+/**
+ * Function called after timer is up
+ */
 function timeIsUp(){
     if (isMusicOn == true){
         currentlyPlaying.pause();
