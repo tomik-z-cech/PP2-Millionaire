@@ -36,13 +36,20 @@ function checkAudioSettings(){
  *  #1 - moneybar count
  *  #2 - finger snap
  *  #3 - timer effect
+ *  #4 - answer sound
+ *  #5 - win sound
+ *  #6 - loose sound
  */
 function playSound(track){
     if (isSfxOn == true){
-        let effects = [ 'assets/audio/three-ding.mp3',
-                        'assets/audio/moneybar.mp3',
-                        'assets/audio/finger-snap.mp3',
-                        'assets/audio/timer.mp3'];
+        let effects = [     'assets/audio/three-ding.mp3',
+                            'assets/audio/moneybar.mp3',
+                            'assets/audio/finger-snap.mp3',
+                            'assets/audio/timer.mp3',
+                            'assets/audio/answer.mp3',
+                            'assets/audio/win.mp3',
+                            'assets/audio/loose.mp3',
+                      ];
         let soundToPlay = new Audio (effects[track]);
         soundToPlay.play();
     }
@@ -59,7 +66,8 @@ function playMusic(track){
         let songs = [   'assets/audio/level1-back.mp3',
                         'assets/audio/level2-back.mp3',
                         'assets/audio/level3-back.mp3',
-                        'assets/audio/level4-back.mp3',];
+                        'assets/audio/level4-back.mp3',
+                    ];
         let soundToPlay = new Audio (songs[track]);
         soundToPlay.play();
         return soundToPlay;
@@ -268,43 +276,34 @@ function askQuestion(){
         for (i = 0; i < answerGrid.length; i++){
             document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
         };
-        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){
-            if (questions.easy[questionRef].answer == '0'){
-                checkAnswer('right');
-            }else{
-                checkAnswer('wrong');
-            }
-        });
-        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){
-            if (questions.easy[questionRef].answer == '1'){
-                checkAnswer('right');
-            }else{
-                checkAnswer('wrong');
-            }
-        });
-        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){
-            if (questions.easy[questionRef].answer == '2'){
-                checkAnswer('right');
-            }else{
-                checkAnswer('wrong');
-            }
-        });
-        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){
-            if (questions.easy[questionRef].answer == '3'){
-                checkAnswer('right');
-            }else{
-                checkAnswer('wrong');
-            }
-        });
+        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){checkAnswer('0',questions.easy[questionRef].answer);});
+        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){checkAnswer('1',questions.easy[questionRef].answer);});
+        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){checkAnswer('2',questions.easy[questionRef].answer);});
+        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){checkAnswer('3',questions.easy[questionRef].answer);});        
+        return;
     });
 }
 
-function checkAnswer(playerAnswer){
-    if (playerAnswer == 'right'){
-        console.log('right');
-    }else if(playerAnswer == 'wrong'){
-        console.log('wrong');
-    };
+function checkAnswer(playerAnswer,correctAnswer){
+        let isWinner;
+        for(i = 0; i < 4; i++){
+            console.log(document.getElementsByClassName('answer-class')[i]);
+            document.getElementsByClassName('answer-class')[i].removeEventListener('click',function(){});    
+        }
+        currentlyPlaying.pause();
+        playSound(4);
+        if (playerAnswer == correctAnswer){
+            isWinner = true;
+        }else{
+            isWinner = false;
+        };
+        setTimeout(() => {
+            if (isWinner == true){
+                playSound(5);
+            }else{
+                playSound(6);
+            };
+        },3300);
 }
 
 /**
