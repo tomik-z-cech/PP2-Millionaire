@@ -1,54 +1,54 @@
 {
 "easy": {
         "q0": {
-            "question": "Kogo kocham ? Q0",
+            "question": "Who lives in a pineapple under the sea?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Mickey Mouse",
+                        "Harry Potter",
+                        "Spongebob Squarepants",
+                        "Santa Claus"
                         ],
-            "answer": "0"
+            "answer": "2"
             },
         "q1": {
-            "question": "Kogo kocham ? Q1",
+            "question": "Who is the best cohort at Code Institute",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Donald Trump",
+                        "Alan Bushell",
+                        "Eminem",
+                        "Tom Cruise"
                         ],
-            "answer": "0"
+            "answer": "1"
             },
         "q2": {
-            "question": "Kogo kocham ? Q2",
+            "question": "Who is the best cohort at Code Institute",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Angelina Jolie",
+                        "Brad Pitt",
+                        "Daisy McGirr",
+                        "Tom Hanks"
                         ],
-            "answer": "0"
+            "answer": "2"
             },
         "q3": {
-            "question": "Kogo kocham ? Q3",
+            "question": "What is an endoscope used to examine ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "The head",
+                        "The leg",
+                        "The inside of the body",
+                        "The eye"
                         ],
-            "answer": "0"
+            "answer": "2"
             },
         "q4": {
-            "question": "Kogo kocham ? Q4",
+            "question": "H2O is the chemical formula for what ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Air",
+                        "Water",
+                        "Lasagna",
+                        "Fuel"
                         ],
-            "answer": "0"
+            "answer": "1"
             },
         "q5": {
             "question": "Kogo kocham ? Q5",
