@@ -153,7 +153,7 @@ function createTimerArea(){
 function createQuestionArea(){
     setTimeout(() => {
         document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="question-container" class="blue-border grey-background">
-        <div id="question" class="blue-border grey-background">
+        <div id="question" class="blue-border grey-background align-center-center">
         </div>
         <div id="options" class="blue-border grey-background">
             <div class="options-row">
@@ -253,6 +253,7 @@ function timeIsUp(){
         currentlyPlaying.pause();
     };
     alertMessage(`${playerName}, time's up ...`);
+    return;
 }
 
 /**
@@ -268,12 +269,13 @@ function askQuestion(){
     fetch('/assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
-        console.log(questions.easy.q0.question)
-        document.getElementById('question').innerHTML = questions.easy.q0.question;
-        document.getElementById('answer-a').innerHTML = questions.easy.q0.options[0];
-        document.getElementById('answer-b').innerHTML = questions.easy.q0.options[1];
-        document.getElementById('answer-c').innerHTML = questions.easy.q0.options[2];
-        document.getElementById('answer-d').innerHTML = questions.easy.q0.options[3];        
+        let randomNumber = Math.floor(Math.random() * 14);
+        let questionRef = 'q' + randomNumber;
+        document.getElementById('question').innerHTML = questions.easy[questionRef].question;
+        let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
+        for (i = 0; i < answerGrid.length; i++){
+            document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
+        };
     });
 }
 
