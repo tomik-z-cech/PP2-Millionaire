@@ -51,24 +51,24 @@
             "answer": "1"
             },
         "q5": {
-            "question": "Kogo kocham ? Q5",
+            "question": "Brie and Camembert are types of which food ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Cheese",
+                        "Soup",
+                        "Meat",
+                        "Fast food"
                         ],
             "answer": "0"
             },
         "q6": {
-            "question": "Kogo kocham ? Q6",
+            "question": "In which country was Adolf Hitler born ?",
             "options": [
-                        "Anetke i Honizka",
-                        "Supermacs",
-                        "Nikogo",
-                        "Gowno"
+                        "Poland",
+                        "Germany",
+                        "Czech republic",
+                        "Russia"
                         ],
-            "answer": "0"
+            "answer": "1"
             },
         "q7": {
             "question": "Kogo kocham ? Q7",
