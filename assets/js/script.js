@@ -1,4 +1,7 @@
+// Start function startingPoint once DOM loaded
 document.addEventListener('DOMContentLoaded', startingPoint);
+
+// Variables
 let playerName = '';
 let isMusicOn = '';
 let isSfxOn = '';
@@ -319,7 +322,7 @@ function checkAnswer(playerAnswer,correctAnswer){
 }
 
 /**
- * Function displays or hides transparent mask so player can't click on any other questions while waiting for correct answer
+ * Function displays or hides transparent mask so player can't click on any other answers or lifelines while waiting for correct answer
  * Function takes words 'on'/'off' as parameter
  */
 function addMask(maskRequired){
