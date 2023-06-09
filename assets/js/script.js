@@ -4,6 +4,7 @@ let isMusicOn = '';
 let isSfxOn = '';
 let currentlyPlaying = '';
 let addTime = false;
+let timeLeft = 0;
 
 /**
  * Function is called after first click on the play button
@@ -235,13 +236,13 @@ function fifthyFifthy(){
  * Function sets and starts 30 seconds countsoen timer
  */
 function countdownTimer(seconds){
-    let timeLeft = seconds;
+    timeLeft = seconds;
     let timeDisplay = document.getElementById('timer');
     let timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
-        //timeIsUp();//
+        endGame();
         }else{
         timeDisplay.innerHTML = timeLeft;
         timeLeft--;
@@ -251,16 +252,6 @@ function countdownTimer(seconds){
             }
         }
     }
-}
-
-/**
- * Function called after timer is up
- */
-function timeIsUp(){
-    if (isMusicOn == true){
-        currentlyPlaying.pause();
-    };
-    alertMessage(`${playerName}, time's up ...`);
 }
 
 /**
@@ -291,8 +282,12 @@ function askQuestion(){
             document.getElementsByClassName('answer-class')[3].style.background = 'var(--selected-answer)';
             checkAnswer('3',questions.easy[questionRef].answer);});        
     });
-    return;
 }
+
+/**
+ * Function checks player's answer against the correct answer
+ * Function takes playerAnswer and correctAnswer as parameters 
+ */
 
 function checkAnswer(playerAnswer,correctAnswer){
         addMask('on');
@@ -310,8 +305,9 @@ function checkAnswer(playerAnswer,correctAnswer){
             document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
                 playSound(5);
-                addMask('off');
-                return;
+                setTimeout(() => {
+                    addMask('off');
+                },5000);
             }else{
                 playSound(6);
                 setTimeout(() => {endGame();},5000);
@@ -319,6 +315,10 @@ function checkAnswer(playerAnswer,correctAnswer){
         },3300);
 }
 
+/**
+ * Function displays or hides transparent mask so player can't click on any other questions while waiting for correct answer
+ * Function takes words 'on'/'off' as parameter
+ */
 function addMask(maskRequired){
     if (maskRequired == 'on'){
         document.getElementById('mask').style.display = 'block';
@@ -328,11 +328,19 @@ function addMask(maskRequired){
 }
 
 function startGame(){
-    countdownTimer(30);
-    currentlyPlaying = playMusic(0);
-    askQuestion();
+        console.log('1');
+        countdownTimer(30);
+        console.log('2');
+        currentlyPlaying = playMusic(0);
+        console.log('3');
+        askQuestion();
+        console.log('4');
+
 }
 
+/**
+ * Function is called after the game is over
+ */
 function endGame(){
     clearDisplayArea();
 }
