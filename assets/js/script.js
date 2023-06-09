@@ -242,7 +242,10 @@ function countdownTimer(seconds){
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
-        endGame();
+        if (isMusicOn == true){
+            currentlyPlaying.pause();
+        };
+        endGame('outOfTime');
         }else{
         timeDisplay.innerHTML = timeLeft;
         timeLeft--;
@@ -310,7 +313,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                 },5000);
             }else{
                 playSound(6);
-                setTimeout(() => {endGame();},5000);
+                setTimeout(() => {endGame('incorrectAnswer');},5000);
             };
         },3300);
 }
@@ -335,12 +338,19 @@ function startGame(){
         console.log('3');
         askQuestion();
         console.log('4');
-
 }
 
 /**
  * Function is called after the game is over
  */
-function endGame(){
+function endGame(reason){
     clearDisplayArea();
+    switch (reason){
+        case 'outOfTime' :
+            console.log('out of time');
+            break;
+        case 'incorrectAnswer' :
+            console.log('wrong answer');
+            break;        
+    }
 }
