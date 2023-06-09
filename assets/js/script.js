@@ -204,7 +204,7 @@ function prepareGameView(){
             document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
             document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
             document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
-            askQuestion();
+            startGame();
         })
      }, 10300);
 }
@@ -234,14 +234,14 @@ function fifthyFifthy(){
 /**
  * Function sets and starts 30 seconds countsoen timer
  */
-function countdownTimer(){
-    let timeLeft = 30;
+function countdownTimer(seconds){
+    let timeLeft = seconds;
     let timeDisplay = document.getElementById('timer');
     let timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
-        timeIsUp();
+        //timeIsUp();//
         }else{
         timeDisplay.innerHTML = timeLeft;
         timeLeft--;
@@ -270,12 +270,12 @@ function askQuestion(){
     fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
-        countdownTimer();
-        currentlyPlaying = playMusic(0);
         let questionRef = 'q' + (Math.floor(Math.random() * 14));
         document.getElementById('question').innerHTML = questions.easy[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
+            document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
+            document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
             document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
         };
         document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){
@@ -291,6 +291,7 @@ function askQuestion(){
             document.getElementsByClassName('answer-class')[3].style.background = 'var(--selected-answer)';
             checkAnswer('3',questions.easy[questionRef].answer);});        
     });
+    return;
 }
 
 function checkAnswer(playerAnswer,correctAnswer){
@@ -309,10 +310,12 @@ function checkAnswer(playerAnswer,correctAnswer){
             document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
                 playSound(5);
+                addMask('off');
+                return;
             }else{
                 playSound(6);
+                setTimeout(() => {endGame();},5000);
             };
-            addMask('off');
         },3300);
 }
 
@@ -322,4 +325,14 @@ function addMask(maskRequired){
     }else if(maskRequired == 'off'){
         document.getElementById('mask').style.display = 'none';
     }
+}
+
+function startGame(){
+    countdownTimer(30);
+    currentlyPlaying = playMusic(0);
+    askQuestion();
+}
+
+function endGame(){
+    clearDisplayArea();
 }
