@@ -204,7 +204,7 @@ function prepareGameView(){
             document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
             document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
             document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
-            startGame();
+            askQuestion();
         })
      }, 10300);
 }
@@ -270,6 +270,8 @@ function askQuestion(){
     fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
+        countdownTimer();
+        currentlyPlaying = playMusic(0);
         let questionRef = 'q' + (Math.floor(Math.random() * 14));
         document.getElementById('question').innerHTML = questions.easy[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
@@ -292,6 +294,7 @@ function askQuestion(){
 }
 
 function checkAnswer(playerAnswer,correctAnswer){
+        addMask('on');
         let isWinner;
         if (isMusicOn == true){
             currentlyPlaying.pause();
@@ -309,14 +312,14 @@ function checkAnswer(playerAnswer,correctAnswer){
             }else{
                 playSound(6);
             };
+            addMask('off');
         },3300);
 }
 
-/**
- * Function that starts the game
- */
- function startGame(){
-    countdownTimer();
-    currentlyPlaying = playMusic(0);
-    askQuestion();
+function addMask(maskRequired){
+    if (maskRequired == 'on'){
+        document.getElementById('mask').style.display = 'block';
+    }else if(maskRequired == 'off'){
+        document.getElementById('mask').style.display = 'none';
+    }
 }
