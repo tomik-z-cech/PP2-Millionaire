@@ -46,7 +46,7 @@ h1 {/** properties of h1 elements **/
     position: absolute;
     top: 40px;
 }
-h2{
+h2 {
     color: var(--off-white-text);
 }
 p {
@@ -142,7 +142,6 @@ p {
     font-family: var(--main-font);
     letter-spacing: 2px;
 }
-
 footer {/** Footer - size and position **/
     bottom: 0px;
     line-height: 100px;
@@ -163,13 +162,11 @@ footer {/** Footer - size and position **/
     display: inline;
     padding-left: 15%;
 }
-#footer-details {/** Foooter - Contact details - position **/
-    float: left;
-    width: 60%;
-}
-
 #socials a:hover {/** Foooter - Contact details + Socials - event:hover **/
     border-bottom: 1px solid var(--off-white-text);
+}
+ul{/** Set top margin to socails **/
+    margin-top: 1%;
 }
 
 /** RULES PAGE **/
