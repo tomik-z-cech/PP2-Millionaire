@@ -5,7 +5,7 @@
 
 :root{
 
-    /** Color pallete **/
+/** Color pallete **/
 --light-blue: #77aaf7;
 --gey-transparent: rgba(49, 54, 57, 0.95);
 --purple: #3a1f64;
@@ -65,7 +65,7 @@ p {
     width: 150px;
     color: var(--light-blue);
     border: var(--box);
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--main-font);
     font-size: 150%;
     font-weight: 600;
 }
@@ -97,6 +97,92 @@ p {
     background: var(--purple);
 }
 
+/** HEADER & FOOTER **/
+
+.header-footer {/** Set height, width, position and background color to header and foorter **/
+    background-color: rgba(65, 15, 60, 0.85);
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    display: flex;	
+    align-items: center;	
+    justify-content: space-between;
+}
+
+#logo-header {/** Logo **/
+    float: left;
+    font-size: 280%;
+    left: 2.5%;
+    top: 30%;
+}
+.active-page {/** Menu **/
+    border-bottom: 1px solid var(--off-white-text);
+}	
+#hamburger, #hamburger-menu label {/** Hamburger menu display **/
+    display: none;	
+}	
+#menu {/** Menu - box**/
+    font-size: 120%;
+    display: flex;	
+    flex-grow: 1;	
+    flex-basis: 0;
+    text-transform: uppercase;
+}
+#menu a {/** Menu - links **/
+    color: inherit;
+    text-decoration: none;
+    margin-right: 40px;
+}
+#menu a:hover {/** Menu - links - event:hover **/
+    border-bottom: 1px solid var(--off-white-text);
+}
+#logo-header, #menu {/** Set logo and menu in line **/
+    line-height: 25px;
+    color: var(--off-white-text);
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+}
+
+footer {/** Footer - size and position **/
+    bottom: 0px;
+    line-height: 100px;
+    color: #58483a;
+    font-family: "Vina Sans", Helvetica, sans-serif;
+    font-size: 130%;
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+}
+#socials{/** Footer - Socials - position **/
+    float: right;
+    width: 30%;
+    text-align: center;
+    padding-right: 5%;
+    font-size: 160%;
+}
+#socials a{/** Footer - Socials - links **/
+    color: inherit;
+    text-decoration: none;
+}
+#socials > li {/** Footer - Socials - links **/
+    display: inline;
+    padding-left: 15%;
+}
+#footer-details {/** Foooter - Contact details - position **/
+    float: left;
+    width: 60%;
+}
+#footer-details > li {/** Foooter - Contact details - links **/
+    display: inline;
+    padding-left: 3%;
+}
+#footer-details a {/** Foooter - Contact details - links **/
+    color: inherit;
+    text-decoration: none;
+}
+#footer-details a:hover, #socials a:hover {/** Foooter - Contact details + Socials - event:hover **/
+    border-bottom: 1px solid #58483a;
+}
+
 /** RULES PAGE **/
 
 #logo {/** properties of logo elements **/
@@ -105,13 +191,13 @@ p {
 }
 #display-container {/** position and size of outer rules container **/
     width: 95%;
-    height: 95%;
+    height: 85%;
     background-color: var(--dark-blue-bg);
     background-image: url(../images/rules-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 2.5%;
+    top: 7.5%;
     left: 2.5%;
 }
 #rules-inner-container {/** position and size if inner rules container **/
