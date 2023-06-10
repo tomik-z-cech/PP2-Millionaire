@@ -113,7 +113,7 @@ p {
     float: left;
     font-size: 280%;
     left: 2.5%;
-    top: 30%;
+    top: 15%;
 }
 .active-page {/** Menu **/
     border-bottom: 1px solid var(--off-white-text);
@@ -146,17 +146,13 @@ p {
 footer {/** Footer - size and position **/
     bottom: 0px;
     line-height: 100px;
-    color: #58483a;
-    font-family: "Vina Sans", Helvetica, sans-serif;
+    color: var(--off-white-text);
+    font-family: var(--main-font);
     font-size: 130%;
-    letter-spacing: 2px;
-    text-transform: uppercase;    
 }
 #socials{/** Footer - Socials - position **/
-    float: right;
     width: 30%;
     text-align: center;
-    padding-right: 5%;
     font-size: 160%;
 }
 #socials a{/** Footer - Socials - links **/
@@ -171,16 +167,9 @@ footer {/** Footer - size and position **/
     float: left;
     width: 60%;
 }
-#footer-details > li {/** Foooter - Contact details - links **/
-    display: inline;
-    padding-left: 3%;
-}
-#footer-details a {/** Foooter - Contact details - links **/
-    color: inherit;
-    text-decoration: none;
-}
-#footer-details a:hover, #socials a:hover {/** Foooter - Contact details + Socials - event:hover **/
-    border-bottom: 1px solid #58483a;
+
+#socials a:hover {/** Foooter - Contact details + Socials - event:hover **/
+    border-bottom: 1px solid var(--off-white-text);
 }
 
 /** RULES PAGE **/
