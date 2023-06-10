@@ -46,10 +46,10 @@ h1 {/** properties of h1 elements **/
     position: absolute;
     top: 40px;
 }
-h2 {
+h2 {/** properties of h2 elements **/
     color: var(--off-white-text);
 }
-p {
+p {/** properties of p elements **/
     margin-top: 10px;
 }
 .align-center-center {/** alignment of elements center vertiaclly and horizontally **/
@@ -108,14 +108,13 @@ p {
     align-items: center;	
     justify-content: space-between;
 }
-
-#logo-header {/** Logo **/
+#logo-header {/** Logo in header **/
     float: left;
     font-size: 280%;
     left: 2.5%;
     top: 15%;
 }
-.active-page {/** Menu **/
+.active-page {/** Underline of active page of menu **/
     border-bottom: 1px solid var(--off-white-text);
 }	
 #hamburger, #hamburger-menu label {/** Hamburger menu display **/
