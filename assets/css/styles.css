@@ -75,31 +75,31 @@ p {/** properties of p elements **/
 .grey-background {/** grey background class for elements **/
     background-color: var(--gey-transparent);
 }
-::placeholder {/** Color of placeholder text **/
+::placeholder {/** color of placeholder text **/
     color: var(--light-blue);
 }
-:-ms-input-placeholder {/** Color of placeholder text **/
+:-ms-input-placeholder {/** color of placeholder text **/
     color: var(--light-blue);
 }
-::-ms-input-placeholder {/** Color of placeholder text **/
+::-ms-input-placeholder {/** color of placeholder text **/
     color: var(--light-blue);
 }
-::-webkit-scrollbar {/** Scrollbars styling **/
+::-webkit-scrollbar {/** scrollbars styling **/
     width: 10px;
 }
-::-webkit-scrollbar-track {/** Scrollbars styling **/
+::-webkit-scrollbar-track {/** scrollbars styling **/
     background: var(--gey-transparent);
 }
-::-webkit-scrollbar-thumb {/** Scrollbars styling **/
+::-webkit-scrollbar-thumb {/** scrollbars styling **/
     background: var(--light-blue);
 }
-::-webkit-scrollbar-thumb:hover {/** Scrollbars styling **/
+::-webkit-scrollbar-thumb:hover {/** scrollbars styling **/
     background: var(--purple);
 }
 
 /** HEADER & FOOTER **/
 
-.header-footer {/** Set height, width, position and background color to header and foorter **/
+.header-footer {/** set height, width, position and background color to header and foorter **/
     background-color: rgba(65, 15, 60, 0.85);
     width: 100%;
     height: 7%;
@@ -108,63 +108,63 @@ p {/** properties of p elements **/
     align-items: center;	
     justify-content: space-between;
 }
-#logo-header {/** Logo in header **/
+#logo-header {/** logo in header **/
     float: left;
     font-size: 280%;
     left: 2.5%;
     top: 15%;
 }
-.active-page {/** Underline of active page of menu **/
+.active-page {/** underline of active page of menu **/
     border-bottom: 1px solid var(--off-white-text);
 }	
-#hamburger, #hamburger-menu label {/** Hamburger menu display **/
+#hamburger, #hamburger-menu label {/** hamburger menu display **/
     display: none;	
 }	
-#menu {/** Menu - box**/
+#menu {/** menu - box**/
     font-size: 120%;
     display: flex;	
     flex-grow: 1;	
     flex-basis: 0;
     text-transform: uppercase;
 }
-#menu a {/** Menu - links **/
+#menu a {/** menu - links **/
     color: inherit;
     text-decoration: none;
     margin-right: 40px;
 }
-#menu a:hover {/** Menu - links - event:hover **/
+#menu a:hover {/** menu - links - event:hover **/
     border-bottom: 1px solid var(--off-white-text);
 }
-#logo-header, #menu {/** Set logo and menu in line **/
+#logo-header, #menu {/** set logo and menu in line **/
     line-height: 25px;
     color: var(--off-white-text);
     font-family: var(--main-font);
     letter-spacing: 2px;
 }
-footer {/** Footer - size and position **/
+footer {/** footer - size and position **/
     bottom: 0px;
     line-height: 100px;
     color: var(--off-white-text);
     font-family: var(--main-font);
     font-size: 130%;
 }
-#socials{/** Footer - Socials - position **/
+#socials{/** footer - socials - position **/
     width: 85%;
     text-align: center;
     font-size: 160%;
 }
-#socials a{/** Footer - Socials - links **/
+#socials a{/** footer - socials - links **/
     color: inherit;
     text-decoration: none;
 }
-#socials > li {/** Footer - Socials - links **/
+#socials > li {/** footer - socials - links **/
     display: inline;
     padding-left: 15%;
 }
-#socials a:hover {/** Foooter - Contact details + Socials - event:hover **/
+#socials a:hover {/** foooter - socials - event:hover **/
     border-bottom: 1px solid var(--off-white-text);
 }
-ul{/** Set top margin to socails **/
+ul{/** set top margin to socails **/
     margin-top: 1%;
 }
 
@@ -255,7 +255,7 @@ ul{/** Set top margin to socails **/
     width: 7%;
     margin-right: 20px;
 }
-#alert-message {/** margin of actuall message text **/
+#alert-message {/** margin of actual message text **/
     margin-top: 10%;
 }
 
@@ -272,7 +272,8 @@ ul{/** Set top margin to socails **/
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-}.outer-round {/** size, position and colors of each lifeline **/
+}
+.outer-round {/** size, position and colors of each lifeline **/
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -283,7 +284,7 @@ ul{/** Set top margin to socails **/
 .outer-round:hover {/** lifeline event:hover **/
     border: 10px solid var(--hover-color);    
 }
-.lifeline-image{
+.lifeline-image{/** size of lifeline image **/
     width: 70%;
 }
 
@@ -335,7 +336,7 @@ ul{/** Set top margin to socails **/
     align-items: center;
     flex-direction: column;
 }
-#timer{
+#timer{/** size and position of timer text **/
     margin-top:10%;
     font-size: 200%;
 }
@@ -353,14 +354,14 @@ ul{/** Set top margin to socails **/
     align-items: center;
     flex-direction: column;
 }
-#question{
+#question{/** position of container for question **/
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     height: 50%;
 }
-#options {
+#options {/** position of containers for answers **/
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -370,7 +371,7 @@ ul{/** Set top margin to socails **/
     flex-direction: column;
     align-items: stretch;
 }
-.options-row {
+.options-row {/** position of row of 2 questions **/
     position: relative;
     left: 0px;
     right: 0px;
@@ -378,7 +379,7 @@ ul{/** Set top margin to socails **/
     flex-direction: row;
     height: 50%;
 }
-.answer-class {
+.answer-class {/** size of each answer **/
     width: 50%;
     display: flex;
     align-items: center;
@@ -387,7 +388,7 @@ ul{/** Set top margin to socails **/
     color: var(--black);
     background-color: var(--hover-color); 
 }
-.letter {
+.letter {/** style of heading letter of each answer **/
     font-family: var(--question-font);
     font-size: 200%;
     margin-left: 2%;
@@ -395,13 +396,14 @@ ul{/** Set top margin to socails **/
 }
 
 /** MASKING DIV **/
-#mask {
+
+#mask {/** style and position of masking div **/
     position: absolute;
-    top: 0px;
+    top: 7%;
     left: 0px;
     background-color: transparent;
     width: 100%;
-    height: 100%;
+    height: 86%;
     display: none;
     z-index: 1;
 }
