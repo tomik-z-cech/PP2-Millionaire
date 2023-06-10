@@ -208,10 +208,10 @@ ul{/** Set top margin to socails **/
 }
 #rules-user-details {/** position and size of user detials and play button form **/
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: 60px;
     bottom: 3%;
-    left: 5%;
+    left: 10%;
 }
 #player-name-input {/** size and properties of input field **/
     color: var(--off-white-text);
