@@ -114,7 +114,7 @@ function clearDisplayArea(){
  * Function creates the life lines section with animated effects
  */
 function createLifelines(){
-    document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
+    displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
     let insertFront = `<div class="outer-round align-center-center">`
     let insertBack = `</div>`
@@ -136,7 +136,7 @@ function createMoneyBar(){
     let timeOut = [4300,4670,5040,5410,5780,6150,6520,6890,7260,7600]
     let innerTag = ['5 €','10 €','50 €','200 €','500 €','1.000 €','2.000 €','5.000 €','10.000 €','20.000 €']
     setTimeout(() => {
-        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
         playSound(1);
     }, 4300);
     for (let i = 0; i < timeOut.length; i++){
@@ -151,7 +151,7 @@ function createMoneyBar(){
 */
 function createScoreArea(){
     setTimeout(() => {
-        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
         playSound(2);
     }, 8200);
 }
@@ -161,7 +161,7 @@ function createScoreArea(){
 */
 function createTimerArea(){
     setTimeout(() => {
-        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
         playSound(2);
     }, 9100);
 }
@@ -171,7 +171,7 @@ function createTimerArea(){
 */
 function createQuestionArea(){
     setTimeout(() => {
-        document.getElementById('display-container').innerHTML = document.getElementById('display-container').innerHTML + `<div id="question-container" class="blue-border grey-background">
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="question-container" class="blue-border grey-background">
         <div id="question" class="blue-border grey-background align-center-center">
         </div>
         <div id="options" class="blue-border grey-background">
@@ -203,7 +203,7 @@ function createQuestionArea(){
 function prepareGameView(){
     checkAudioSettings();
     clearDisplayArea();
-    document.getElementById('display-container').style.backgroundImage = "url('assets/images/game-background.jpg')";
+    displayConatiner.style.backgroundImage = "url('assets/images/game-background.jpg')";
     createLifelines();
     createMoneyBar();
     createScoreArea();
