@@ -9,23 +9,30 @@ let currentlyPlaying = '';
 let addTime = false;
 let timeLeft = 0;
 
+// Names
+const playerNameInput = document.getElementById('player-name-input');
+const playButton = document.getElementById('play-button');
+const alertMessageContainer = document.getElementById('alert-message');
+const alertWindow = document.getElementById('alert-window');
+const displayConatiner = document.getElementById('display-container');
+
 /**
  * Function is called after first click on the play button
  */
 function startingPoint(){
-    document.getElementById('player-name-input').value = '';
-    document.getElementById('play-button').addEventListener('click', checkName);
+    playerNameInput.value = '';
+    playButton.addEventListener('click', checkName);
 };
 
 /**
  * Function creates an alert window and take "display message" as parameter
  */
 function alertMessage(message){
-    document.getElementById('alert-window').style.display = 'block';
-    document.getElementById('alert-message').innerHTML = ``;
-    document.getElementById('alert-message').innerHTML = `${message}`;    
+    alertWindow.style.display = 'block';
+    alertMessageContainer.innerHTML = ``;
+    alertMessageContainer.innerHTML = `${message}`;    
     document.getElementById('ok-button').addEventListener('click', function(){
-        document.getElementById('alert-window').style.display = 'none';
+        alertWindow.style.display = 'none';
     });
 }
 
@@ -84,7 +91,7 @@ function playMusic(track){
  * If flase game starts
  */
 function checkName(){
-    playerName = document.getElementById('player-name-input').value; 
+    playerName = playerNameInput.value; 
     if (playerName === ''){
         alertMessage('Please enter your name !');
         startingPoint();
@@ -100,7 +107,7 @@ function checkName(){
  * Function clears the display area
  */
 function clearDisplayArea(){
-    document.getElementById('display-container').innerHTML = '';
+    displayConatiner.innerHTML = '';
 }
 
 /**
