@@ -394,6 +394,8 @@ function endGame(reason){
             alertMessage(`You are a winner! Your score is ${score} points.`);
             break;     
     }
+    localStorage.setItem("player", playerName);
+    localStorage.setItem("score", score);
     okButton.addEventListener('click', function(){
         alertWindow.style.display = 'none';
         window.location.replace('leaderboard.html');
