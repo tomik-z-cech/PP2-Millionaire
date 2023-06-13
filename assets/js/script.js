@@ -19,6 +19,7 @@ const playButton = document.getElementById('play-button');
 const alertMessageContainer = document.getElementById('alert-message');
 const alertWindow = document.getElementById('alert-window');
 const displayConatiner = document.getElementById('display-container');
+const okButton = document.getElementById('ok-button');
 const questionAreaHTML = `
 <div id="question-container" class="blue-border grey-background">
     <div id="question" class="blue-border grey-background align-center-center">
@@ -58,7 +59,7 @@ function alertMessage(message){
     alertWindow.style.display = 'block';
     alertMessageContainer.innerHTML = ``;
     alertMessageContainer.innerHTML = `${message}`;    
-    document.getElementById('ok-button').addEventListener('click', function(){
+    okButton.addEventListener('click', function(){
         alertWindow.style.display = 'none';
     });
 }
@@ -393,4 +394,8 @@ function endGame(reason){
             alertMessage(`You are a winner! Your score is ${score} points.`);
             break;     
     }
+    okButton.addEventListener('click', function(){
+        alertWindow.style.display = 'none';
+        window.location.replace('leaderboard.html');
+    });
 }
