@@ -75,9 +75,10 @@ function checkAudioSettings(){
  *  #1 - moneybar count
  *  #2 - finger snap
  *  #3 - timer effect
- *  #4 - answer sound
- *  #5 - win sound
- *  #6 - loose sound
+ *  #4 - answer
+ *  #5 - win
+ *  #6 - loose
+ *  #7 - big win
  */
 function playSound(track){
     if (isSfxOn == true){
@@ -88,6 +89,7 @@ function playSound(track){
                             'assets/audio/answer.mp3',
                             'assets/audio/win.mp3',
                             'assets/audio/loose.mp3',
+                            'assets/audio/big-win.mp3'
                       ];
         let soundToPlay = new Audio (effects[track]);
         soundToPlay.play();
@@ -372,15 +374,15 @@ function endGame(reason){
     switch (reason){
         case 'outOfTime' :
             addMask('on')
-            alertMessage('You have runned out of time');
+            alertMessage('You have runned out of time !');
             break;
         case 'incorrectAnswer' :
             addMask('on')
-            alertMessage('The answer was not correct');
+            alertMessage('The answer was not correct !');
             break;
         case 'winner' :
             addMask('on')
-            alertMessage('out of time');
+            alertMessage('You are a winner !');
             break;     
     }
 }
