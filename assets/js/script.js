@@ -7,10 +7,11 @@ let isMusicOn = '';
 let isSfxOn = '';
 let currentlyPlaying = '';
 let addTime = false;
-let timeLeft = 300;
+let timeLeft = 30;
 let questionIndex = 0;
 let score = 0;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
+let timerStopped = false;
 
 // Names
 const playerNameInput = document.getElementById('player-name-input');
@@ -131,6 +132,7 @@ function checkName(){
     }else{ 
         prepareGameView();
     }
+    return;
 }
 
 /**
@@ -191,7 +193,7 @@ function createScoreArea(){
 */
 function createTimerArea(){
     setTimeout(() => {
-        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">300</div></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
         playSound(2);
     }, 9100);
 }
@@ -225,6 +227,7 @@ function prepareGameView(){
         document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
         countdownTimer();
         askQuestion();
+        return;
      }, 10300);
 }
 
@@ -262,7 +265,7 @@ function countdownTimer(){
         endGame('outOfTime');
         }else{
         document.getElementById('timer').innerHTML = timeLeft;
-        timeLeft--;
+        if (timerStopped == false) timeLeft--;
         if (addTime == true){
             timeLeft += 30;
             addTime = false;
@@ -275,6 +278,8 @@ function countdownTimer(){
  * Function randomly selects question and checks answer
  */
 function askQuestion(){
+    timeLeft = 30;
+    timerStopped = false;
     if (questionIndex < 3){
         currentlyPlaying = playMusic(0);
     }else if (questionIndex < 6){
@@ -313,6 +318,7 @@ function askQuestion(){
  */
 
 function checkAnswer(playerAnswer,correctAnswer){
+        timerStopped = true;
         addMask('on');
         let isWinner;
         if (isMusicOn == true){
@@ -329,8 +335,8 @@ function checkAnswer(playerAnswer,correctAnswer){
             document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
                 if (questionIndex == 10){
-                    addMask('off');
                     endGame('winner');
+                    return;
                 }else{
                     playSound(5);
                 };
@@ -371,18 +377,20 @@ function endGame(reason){
     if (isMusicOn == true){
         currentlyPlaying.pause();
     };
+    timerStopped = true;
+    addMask('on');
     switch (reason){
         case 'outOfTime' :
-            addMask('on')
-            alertMessage('You have runned out of time !');
+            alertMessage(`Out of time! Your score of ${score} points is not eligible for leaderbord.`);
             break;
         case 'incorrectAnswer' :
-            addMask('on')
-            alertMessage('The answer was not correct !');
+            alertMessage(`That's wrong! Your score of ${score} points is not eligible for leaderbord.`);
             break;
         case 'winner' :
-            addMask('on')
-            alertMessage('You are a winner !');
+            document.getElementById('score').innerHTML = score;
+            document.getElementsByClassName('moneybar-item')[9].style.background = 'var(--correct-answer)';
+            playSound(7);
+            alertMessage(`You are a winner! Your score is ${score} points.`);
             break;     
     }
 }
