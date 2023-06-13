@@ -7,7 +7,7 @@ let isMusicOn = '';
 let isSfxOn = '';
 let currentlyPlaying = '';
 let addTime = false;
-let timeLeft = 5;
+let timeLeft = 300;
 let questionIndex = 0;
 let score = 0;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
@@ -336,7 +336,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                     addMask('off');
                     document.getElementById('score').innerHTML = score;
                     document.getElementsByClassName('moneybar-item')[questionIndex-1].style.background = 'var(--correct-answer)';
-                },2000);
+                },500);
                 askQuestion();
             }else{
                 playSound(6);
