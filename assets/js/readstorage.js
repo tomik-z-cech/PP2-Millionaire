@@ -1,9 +1,9 @@
 // Start function readStorage once DOM loaded
 document.addEventListener('DOMContentLoaded', readStorage);
-let storage;
+
 function readStorage(){
-    const playerName = localStorage.getItem("player");
-    console.log(playerName);
-    const score = localStorage.getItem("score");
-    console.log(score);
+    let sizeOfStorage = localStorage.length;
+    for (i = 0; i < sizeOfStorage; i++){
+    console.log(localStorage.getItem(localStorage.key(i)));
+    };
 }
