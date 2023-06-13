@@ -15,6 +15,28 @@ const playButton = document.getElementById('play-button');
 const alertMessageContainer = document.getElementById('alert-message');
 const alertWindow = document.getElementById('alert-window');
 const displayConatiner = document.getElementById('display-container');
+const questionAreaHTML = `<div id="question-container" class="blue-border grey-background">
+    <div id="question" class="blue-border grey-background align-center-center">
+    </div>
+    <div id="options" class="blue-border grey-background">
+    <div class="options-row">
+        <div class="blue-border grey-background answer-class">
+            <span class="letter">A</span><span id="answer-a"></span>
+        </div>
+        <div class="blue-border grey-background answer-class">
+            <span class="letter">B</span><span id="answer-b"></span>
+        </div>
+    </div>
+    <div class="options-row">
+        <div class="blue-border grey-background answer-class">
+            <span class="letter">C</span><span id="answer-c"></span>
+        </div>
+        <div class="blue-border grey-background answer-class">
+            <span class="letter">D</span><span id="answer-d"></span>
+        </div>
+    </div>
+</div>
+</div>`;
 
 /**
  * Function is called after first click on the play button
@@ -35,7 +57,9 @@ function alertMessage(message){
         alertWindow.style.display = 'none';
     });
 }
-
+/**
+ * Function checks for audio setting checkboxes (swithces)
+ */
 function checkAudioSettings(){
     isMusicOn = document.getElementById('music-switch').checked;
     isSfxOn = document.getElementById('sfx-switch').checked;
@@ -167,33 +191,12 @@ function createTimerArea(){
 }
 
 /**
- * Function displays timer area
+ * Function displays question area
 */
 function createQuestionArea(){
     setTimeout(() => {
-        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="question-container" class="blue-border grey-background">
-        <div id="question" class="blue-border grey-background align-center-center">
-        </div>
-        <div id="options" class="blue-border grey-background">
-            <div class="options-row">
-                <div class="blue-border grey-background answer-class">
-                    <span class="letter">A</span><span id="answer-a"></span>
-                </div>
-                <div class="blue-border grey-background answer-class">
-                    <span class="letter">B</span><span id="answer-b"></span>
-                </div>
-            </div>
-            <div class="options-row">
-                <div class="blue-border grey-background answer-class">
-                    <span class="letter">C</span><span id="answer-c"></span>
-                </div>
-                <div class="blue-border grey-background answer-class">
-                    <span class="letter">D</span><span id="answer-d"></span>
-                </div>
-            </div>
-        </div>
-    </div>`;
-        playSound(2);
+         displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
+         playSound(2);
     }, 10000);
 }
 
@@ -243,11 +246,11 @@ function fifthyFifthy(){
 }
 
 /**
- * Function sets and starts 30 seconds countsoen timer
+ * Function sets and starts x seconds countdown timer
+ * Function takes amount of seconds as parameter
  */
 function countdownTimer(seconds){
     timeLeft = seconds;
-    let timeDisplay = document.getElementById('timer');
     let timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
@@ -257,7 +260,8 @@ function countdownTimer(seconds){
         };
         endGame('outOfTime');
         }else{
-        timeDisplay.innerHTML = timeLeft;
+        console.log(timeLeft);
+        document.getElementById('timer').innerHTML = timeLeft;
         timeLeft--;
         if (addTime == true){
             timeLeft += 30;
@@ -274,26 +278,23 @@ function askQuestion(){
     fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
+        document.getElementById('question-container').remove();
+        displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
         let questionRef = 'q' + (Math.floor(Math.random() * 14));
         document.getElementById('question').innerHTML = questions.easy[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
             document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
-            document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
+            document.getElementsByClassName('answer-class')[i].removeEventListener('click', function(){});
             document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
         };
-        document.getElementsByClassName('answer-class')[0].addEventListener('click',function(){
-            document.getElementsByClassName('answer-class')[0].style.background = 'var(--selected-answer)';
-            checkAnswer('0',questions.easy[questionRef].answer);});
-        document.getElementsByClassName('answer-class')[1].addEventListener('click',function(){
-            document.getElementsByClassName('answer-class')[1].style.background = 'var(--selected-answer)';
-            checkAnswer('1',questions.easy[questionRef].answer);});
-        document.getElementsByClassName('answer-class')[2].addEventListener('click',function(){
-            document.getElementsByClassName('answer-class')[2].style.background = 'var(--selected-answer)';
-            checkAnswer('2',questions.easy[questionRef].answer);});
-        document.getElementsByClassName('answer-class')[3].addEventListener('click',function(){
-            document.getElementsByClassName('answer-class')[3].style.background = 'var(--selected-answer)';
-            checkAnswer('3',questions.easy[questionRef].answer);});        
+        const answers = document.querySelectorAll('.answer-class');
+        answers.forEach((answer, index) => {
+            answer.addEventListener('click', function clickHandler(event) {
+                answer.style.background = 'var(--selected-answer)';
+                checkAnswer(String(index), questions.easy[questionRef].answer);
+            });
+        });
     });
 }
 
@@ -320,10 +321,11 @@ function checkAnswer(playerAnswer,correctAnswer){
                 playSound(5);
                 setTimeout(() => {
                     addMask('off');
-                },5000);
+                    alertMessage('That\' correct !');
+                },2000);
             }else{
                 playSound(6);
-                setTimeout(() => {endGame('incorrectAnswer');},5000);
+                setTimeout(() => {endGame('incorrectAnswer');},3500);
             };
         },3300);
 }
