@@ -7,7 +7,7 @@ let isMusicOn = '';
 let isSfxOn = '';
 let currentlyPlaying = '';
 let addTime = false;
-let timeLeft = 0;
+let timeLeft = 5;
 let questionIndex = 0;
 let score = 0;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
@@ -221,7 +221,8 @@ function prepareGameView(){
         document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
         document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
         document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
-        startGame();
+        countdownTimer();
+        askQuestion();
      }, 10300);
 }
 
@@ -252,14 +253,10 @@ function fifthyFifthy(){
  * Function takes amount of seconds as parameter
  */
 function countdownTimer(){
-    timeLeft = 300;
     let timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
-        if (isMusicOn == true){
-            currentlyPlaying.pause();
-        };
         endGame('outOfTime');
         }else{
         document.getElementById('timer').innerHTML = timeLeft;
@@ -329,7 +326,12 @@ function checkAnswer(playerAnswer,correctAnswer){
         setTimeout(() => {
             document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
-                playSound(5);
+                if (questionIndex == 10){
+                    addMask('off');
+                    endGame('winner');
+                }else{
+                    playSound(5);
+                };
                 setTimeout(() => {
                     addMask('off');
                     document.getElementById('score').innerHTML = score;
@@ -360,22 +362,25 @@ function addMask(maskRequired){
     }
 }
 
-function startGame(){
-        countdownTimer();
-        askQuestion();
-}
-
 /**
  * Function is called after the game is over
  */
 function endGame(reason){
-    clearDisplayArea();
+    if (isMusicOn == true){
+        currentlyPlaying.pause();
+    };
     switch (reason){
         case 'outOfTime' :
-            console.log('out of time');
+            addMask('on')
+            alertMessage('You have runned out of time');
             break;
         case 'incorrectAnswer' :
-            console.log('wrong answer');
-            break;        
+            addMask('on')
+            alertMessage('The answer was not correct');
+            break;
+        case 'winner' :
+            addMask('on')
+            alertMessage('out of time');
+            break;     
     }
 }

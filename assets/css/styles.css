@@ -250,6 +250,7 @@ ul{/** set top margin to socails **/
     top: 32%;
     left: 32%;
     padding-top: 1%;
+    z-index: 2;
 }
 #info-icon {/** size and properties of info icon in alert window **/
     width: 7%;
