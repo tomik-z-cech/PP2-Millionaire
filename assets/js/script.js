@@ -8,6 +8,9 @@ let isSfxOn = '';
 let currentlyPlaying = '';
 let addTime = false;
 let timeLeft = 0;
+let questionIndex = 0;
+let score = 0;
+let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
 
 // Names
 const playerNameInput = document.getElementById('player-name-input');
@@ -15,7 +18,8 @@ const playButton = document.getElementById('play-button');
 const alertMessageContainer = document.getElementById('alert-message');
 const alertWindow = document.getElementById('alert-window');
 const displayConatiner = document.getElementById('display-container');
-const questionAreaHTML = `<div id="question-container" class="blue-border grey-background">
+const questionAreaHTML = `
+<div id="question-container" class="blue-border grey-background">
     <div id="question" class="blue-border grey-background align-center-center">
     </div>
     <div id="options" class="blue-border grey-background">
@@ -35,7 +39,7 @@ const questionAreaHTML = `<div id="question-container" class="blue-border grey-b
             <span class="letter">D</span><span id="answer-d"></span>
         </div>
     </div>
-</div>
+    </div>
 </div>`;
 
 /**
@@ -140,10 +144,10 @@ function clearDisplayArea(){
 function createLifelines(){
     displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="life-lines-container" class="blue-border grey-background"></div>`;
     playSound(0);
-    let insertFront = `<div class="outer-round align-center-center">`
-    let insertBack = `</div>`
+    let insertFront = `<div class="outer-round align-center-center">`;
+    let insertBack = `</div>`;
     let timeOut = [500,1900,3600];
-    let innerTag = ['<img src="assets/images/time.png" class="lifeline-image" alt="Addition time"></img>','<img src="assets/images/change.png" class="lifeline-image" alt="Change question">','<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
+    let innerTag = ['<img src="assets/images/time.png" class="lifeline-image" alt="Addition time" id="extra-time"></img>','<img src="assets/images/change.png" class="lifeline-image" alt="Change question">','<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
     for (let i = 0; i < timeOut.length; i++){
         setTimeout(() => {
             document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront} ${innerTag[i]} ${insertBack}`;
@@ -214,12 +218,10 @@ function prepareGameView(){
     createQuestionArea();
     setTimeout(() => {
         alertMessage(`Welcome to the hot seat ${playerName}. Good luck ;)`);
-        document.getElementById('ok-button').addEventListener('click',function(){
-            document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
-            document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
-            document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
-            startGame();
-        })
+        document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
+        document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
+        document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
+        startGame();
      }, 10300);
 }
 
@@ -249,8 +251,8 @@ function fifthyFifthy(){
  * Function sets and starts x seconds countdown timer
  * Function takes amount of seconds as parameter
  */
-function countdownTimer(seconds){
-    timeLeft = seconds;
+function countdownTimer(){
+    timeLeft = 300;
     let timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
@@ -260,7 +262,6 @@ function countdownTimer(seconds){
         };
         endGame('outOfTime');
         }else{
-        console.log(timeLeft);
         document.getElementById('timer').innerHTML = timeLeft;
         timeLeft--;
         if (addTime == true){
@@ -312,6 +313,7 @@ function checkAnswer(playerAnswer,correctAnswer){
         playSound(4);
         if (playerAnswer == correctAnswer){
             isWinner = true;
+            addScore();
         }else{
             isWinner = false;
         };
@@ -321,8 +323,10 @@ function checkAnswer(playerAnswer,correctAnswer){
                 playSound(5);
                 setTimeout(() => {
                     addMask('off');
-                    alertMessage('That\' correct !');
+                    document.getElementById('score').innerHTML = score;
+                    document.getElementsByClassName('moneybar-item')[questionIndex-1].style.background = 'green';
                 },2000);
+                askQuestion();
             }else{
                 playSound(6);
                 setTimeout(() => {endGame('incorrectAnswer');},3500);
@@ -330,8 +334,13 @@ function checkAnswer(playerAnswer,correctAnswer){
         },3300);
 }
 
+function addScore(){
+    score = timeLeft * scoreGrid[questionIndex] + score;
+    questionIndex++;
+}
+
 /**
- * Function displays or hides transparent mask so player can't click on any other answers or lifelines while waiting for correct answer
+ * Function displays or hides transparent mask - player can't click on any other answers or lifelines while waiting for correct answer
  * Function takes words 'on'/'off' as parameter
  */
 function addMask(maskRequired){
@@ -343,13 +352,9 @@ function addMask(maskRequired){
 }
 
 function startGame(){
-        console.log('1');
-        countdownTimer(30);
-        console.log('2');
+        countdownTimer();
         currentlyPlaying = playMusic(0);
-        console.log('3');
         askQuestion();
-        console.log('4');
 }
 
 /**
