@@ -189,7 +189,7 @@ function createScoreArea(){
 */
 function createTimerArea(){
     setTimeout(() => {
-        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">300</div></div>`;
         playSound(2);
     }, 9100);
 }
@@ -276,6 +276,15 @@ function countdownTimer(){
  * Function randomly selects question and checks answer
  */
 function askQuestion(){
+    if (questionIndex < 3){
+        currentlyPlaying = playMusic(0);
+    }else if (questionIndex < 6){
+        currentlyPlaying = playMusic(1);
+    }else if (questionIndex < 9){
+        currentlyPlaying = playMusic(2);
+    }else{
+        currentlyPlaying = playMusic(3);
+    }
     fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
@@ -324,7 +333,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                 setTimeout(() => {
                     addMask('off');
                     document.getElementById('score').innerHTML = score;
-                    document.getElementsByClassName('moneybar-item')[questionIndex-1].style.background = 'green';
+                    document.getElementsByClassName('moneybar-item')[questionIndex-1].style.background = 'var(--correct-answer)';
                 },2000);
                 askQuestion();
             }else{
@@ -353,7 +362,6 @@ function addMask(maskRequired){
 
 function startGame(){
         countdownTimer();
-        currentlyPlaying = playMusic(0);
         askQuestion();
 }
 
