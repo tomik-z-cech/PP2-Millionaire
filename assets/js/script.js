@@ -383,19 +383,21 @@ function endGame(reason){
         currentlyPlaying.pause();
     };
     timerStopped = true;
+    let front = `<div class="align-center-center">`;
+    let back = `</div>`;
     addMask('on');
     switch (reason){
         case 'outOfTime' :
-            alertMessage(`You've runned out of time ${playerName}! Your score of ${score} points is not eligible for leaderbord.`);
+            alertMessage(`${front}You've runned out of time ${playerName}!${back}${front}Your score of ${score} points is not eligible for leaderbord.${back}`);
             break;
         case 'incorrectAnswer' :
-            alertMessage(`<div class="align-center-center">That's wrong ${playerName}!</div><div class="align-center-center">Your score of ${score} points is not eligible for leaderbord.<div>`);
+            alertMessage(`${front}That's wrong ${playerName}!${back}${front}Your score of ${score} points is not eligible for leaderbord.${back}`);
             break;
         case 'winner' :
             document.getElementById('score').innerHTML = score;
             document.getElementsByClassName('moneybar-item')[9].style.background = 'var(--correct-answer)';
             playSound(7);
-            alertMessage(`You are a winner ${playerName}!<br>Your score is ${score} points.`);
+            alertMessage(`${front}You are a winner ${playerName}!${back}${front}Your score is ${score} points.${back}`);
             break;     
     }
     localStorage.setItem("player", playerName);

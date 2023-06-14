@@ -13,12 +13,12 @@
 --off-white-text: #f5eed8;
 --hover-color: #ecf01a;
 --current-moneybar: #646406;
---unused-lifeline: #1cbb1c;
+--unused-lifeline: #106d10;
 --white: #ffffff;
 --black: #000000;
 --used-lifeline: #c41919;
---selected-answer: #e6641a;
---correct-answer: #0bb60b;
+--selected-answer: #b86a12;
+--correct-answer: #106d10;
  
 /** Fonts **/
 --main-font: 'Rubik', sans-serif;
