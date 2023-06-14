@@ -414,8 +414,7 @@ ul{/** set top margin to socails **/
     align-items: center;
 }
 .answer-class:hover {/** answer event:hover **/
-    color: var(--black);
-    background-color: var(--hover-color); 
+    color: var(--hover-color);
 }
 .letter {/** style of heading letter of each answer **/
     font-family: var(--question-font);

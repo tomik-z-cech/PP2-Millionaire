@@ -354,6 +354,9 @@ function checkAnswer(playerAnswer,correctAnswer){
         },3300);
 }
 
+/**
+ * Function counts score
+ */
 function addScore(){
     score = timeLeft * scoreGrid[questionIndex] + score;
     questionIndex++;
