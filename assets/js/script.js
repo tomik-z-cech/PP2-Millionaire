@@ -382,16 +382,16 @@ function endGame(reason){
     addMask('on');
     switch (reason){
         case 'outOfTime' :
-            alertMessage(`Out of time! Your score of ${score} points is not eligible for leaderbord.`);
+            alertMessage(`You've runned out of time ${playerName}! Your score of ${score} points is not eligible for leaderbord.`);
             break;
         case 'incorrectAnswer' :
-            alertMessage(`That's wrong! Your score of ${score} points is not eligible for leaderbord.`);
+            alertMessage(`<div class="align-center-center">That's wrong ${playerName}!</div><div class="align-center-center">Your score of ${score} points is not eligible for leaderbord.<div>`);
             break;
         case 'winner' :
             document.getElementById('score').innerHTML = score;
             document.getElementsByClassName('moneybar-item')[9].style.background = 'var(--correct-answer)';
             playSound(7);
-            alertMessage(`You are a winner! Your score is ${score} points.`);
+            alertMessage(`You are a winner ${playerName}!<br>Your score is ${score} points.`);
             break;     
     }
     localStorage.setItem("player", playerName);

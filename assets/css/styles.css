@@ -245,10 +245,10 @@ ul{/** set top margin to socails **/
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    width: 36%;
-    height: 28%;
-    top: 32%;
-    left: 32%;
+    width: 46%;
+    height: 32%;
+    top: 34%;
+    left: 27%;
     padding-top: 1%;
     z-index: 2;
 }
@@ -257,7 +257,12 @@ ul{/** set top margin to socails **/
     margin-right: 20px;
 }
 #alert-message {/** margin of actual message text **/
-    margin-top: 10%;
+    margin-top: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /** LIFE-LINES **/
