@@ -268,14 +268,14 @@ function fifthyFifthy(){
     console.log(answerToKeep);
     let remove1;
     let remove2;
-    do {
+    while (remove1 == answerToKeep || remove2 == answerToKeep || remove1 == remove2){
         remove1 = (Math.floor(Math.random() * 4));
         remove2 = (Math.floor(Math.random() * 4));
-    } while (remove1 !== answerToKeep && remove2 !== answerToKeep);
-    console.log(remove1);
-    console.log(remove2);
+    };
+    document.getElementsByClassName('answer-class')[remove1].innerHTML = '';
+    document.getElementsByClassName('answer-class')[remove2].innerHTML = '';
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
-    //document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
+    document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
 }
 
 /**
