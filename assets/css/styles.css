@@ -269,6 +269,25 @@ ul{/** set top margin to socails **/
     align-items: center;
 }
 
+/** 404 PAGE **/
+
+#alert-window-404 {/** size and properties of alert message window on 404.html**/
+    display: block;
+    background-color: var(--purple);
+    background-image: url(../images/alert-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 46%;
+    height: 32%;
+    top: 34%;
+    left: 27%;
+    padding-top: 1%;
+}
+#ok-button-404 {/** position of home button of alert message on 404.html**/
+    margin-top: 30%;
+}
+
 /** LIFE-LINES **/
 
 #life-lines-container{/** size and position of lifelines outer container **/
