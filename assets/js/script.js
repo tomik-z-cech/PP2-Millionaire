@@ -81,6 +81,7 @@ function checkAudioSettings(){
  *  #5 - win
  *  #6 - loose
  *  #7 - big win
+ *  #8 - bell
  */
 function playSound(track){
     if (isSfxOn == true){
@@ -91,7 +92,8 @@ function playSound(track){
                             'assets/audio/answer.mp3',
                             'assets/audio/win.mp3',
                             'assets/audio/loose.mp3',
-                            'assets/audio/big-win.mp3'
+                            'assets/audio/big-win.mp3',
+                            'assets/audio/bell.mp3'
                       ];
         let soundToPlay = new Audio (effects[track]);
         soundToPlay.play();
@@ -152,7 +154,10 @@ function createLifelines(){
     let insertFront = `<div class="outer-round align-center-center">`;
     let insertBack = `</div>`;
     let timeOut = [500,1900,3600];
-    let innerTag = ['<img src="assets/images/time.png" class="lifeline-image" alt="Addition time" id="extra-time"></img>','<img src="assets/images/change.png" class="lifeline-image" alt="Change question">','<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
+    let innerTag = [
+        '<img src="assets/images/time.png" class="lifeline-image" alt="Addition time"></img>',
+        '<img src="assets/images/change.png" class="lifeline-image" alt="Change question">',
+        '<img src="assets/images/50-50.png" class="lifeline-image" alt="Fifthy - fifthy">'];
     for (let i = 0; i < timeOut.length; i++){
         setTimeout(() => {
             document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront} ${innerTag[i]} ${insertBack}`;
@@ -223,9 +228,9 @@ function prepareGameView(){
     createQuestionArea();
     setTimeout(() => {
         alertMessage(`Welcome to the hot seat ${playerName}. Good luck ;)`);
-        document.getElementsByClassName('outer-round')[0].addEventListener('click', extraTime);
-        document.getElementsByClassName('outer-round')[1].addEventListener('click', differentQuestion);
-        document.getElementsByClassName('outer-round')[2].addEventListener('click', fifthyFifthy);
+        document.getElementsByClassName('outer-round')[0].setAttribute("onClick", "extraTime()");
+        document.getElementsByClassName('outer-round')[1].setAttribute("onClick", "differentQuestion()");
+        document.getElementsByClassName('outer-round')[2].setAttribute("onClick", "fifthyFifthy()");
         countdownTimer();
         askQuestion();
         return;
@@ -239,19 +244,26 @@ function extraTime(){
     addTime = true;
     playSound(3);
     document.getElementsByClassName('outer-round')[0].style.border = "10px solid var(--used-lifeline)";
-    document.getElementsByClassName('outer-round')[0].removeEventListener('click', extraTime);
+    document.getElementsByClassName('outer-round')[0].removeAttribute("onClick");
 }
 
+/**
+ * Function changes the question
+ */
 function differentQuestion(){
-    console.log('different question used');
+    playSound(8);
+    if (isMusicOn == true){
+        currentlyPlaying.pause();
+    };
     document.getElementsByClassName('outer-round')[1].style.border = "10px solid var(--used-lifeline)";
-    document.getElementsByClassName('outer-round')[1].removeEventListener('click', differentQuestion);
+    document.getElementsByClassName('outer-round')[1].removeAttribute("onClick");
+    askQuestion();
 }
 
 function fifthyFifthy(){
     console.log('fifthy fifthy used');
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
-    document.getElementsByClassName('outer-round')[2].removeEventListener('click', fifthyFifthy);
+    document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
 }
 
 /**
