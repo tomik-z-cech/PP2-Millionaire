@@ -12,6 +12,7 @@ let questionIndex = 0;
 let score = 0;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
 let timerStopped = false;
+let answerToKeep = '';
 
 // Names
 const playerNameInput = document.getElementById('player-name-input');
@@ -260,10 +261,21 @@ function differentQuestion(){
     askQuestion();
 }
 
+/**
+ * Function removes two incorrect answers
+ */
 function fifthyFifthy(){
-    console.log('fifthy fifthy used');
+    console.log(answerToKeep);
+    let remove1;
+    let remove2;
+    do {
+        remove1 = (Math.floor(Math.random() * 4));
+        remove2 = (Math.floor(Math.random() * 4));
+    } while (remove1 !== answerToKeep && remove2 !== answerToKeep);
+    console.log(remove1);
+    console.log(remove2);
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
-    document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
+    //document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
 }
 
 /**
@@ -288,7 +300,7 @@ function countdownTimer(){
 }
 
 /**
- * Function randomly selects question and checks answer
+ * Function randomly selects question
  */
 function askQuestion(){
     timeLeft = 30;
@@ -314,11 +326,12 @@ function askQuestion(){
         displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
         document.getElementsByClassName('moneybar-item')[questionIndex].style.background = 'var(--current-moneybar)';
         let questionRef = 'q' + (Math.floor(Math.random() * 16));
+        answerToKeep = Number(questions.qlevel[level].pointer[questionRef].answer);
         document.getElementById('question').innerHTML = questions.qlevel[level].pointer[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
             document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
-            document.getElementsByClassName('answer-class')[i].removeEventListener('click', function(){});
+            //document.getElementsByClassName('answer-class')[i].removeEventListener('click', function(){});
             document.getElementById(answerGrid[i]).innerHTML = questions.qlevel[level].pointer[questionRef].options[i];
         };
         const answers = document.querySelectorAll('.answer-class');
@@ -335,7 +348,6 @@ function askQuestion(){
  * Function checks player's answer against the correct answer
  * Function takes playerAnswer and correctAnswer as parameters 
  */
-
 function checkAnswer(playerAnswer,correctAnswer){
         timerStopped = true;
         addMask('on');
@@ -350,6 +362,7 @@ function checkAnswer(playerAnswer,correctAnswer){
         }else{
             isWinner = false;
         };
+        answerToKeep = '';
         setTimeout(() => {
             document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
