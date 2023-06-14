@@ -42,9 +42,9 @@ body {/** set background color **/
 }
 h1 {/** properties of h1 elements **/
     padding-bottom: 20px;
-    left: 130px;
+    left: 11%;
     position: absolute;
-    top: 40px;
+    top: 11%;
 }
 h2 {/** properties of h2 elements **/
     color: var(--off-white-text);
@@ -191,7 +191,7 @@ ul{/** set top margin to socails **/
     left: 10%;
     width: 80%;
     height: 70%; 
-    padding: 10px;
+    padding: 2%;
     overflow-y: scroll;
 }
 #settings {/** position and size of rules navbar **/
@@ -230,6 +230,9 @@ ul{/** set top margin to socails **/
 #player-name-label {/** properties of player name label element **/
     font-size: 140%;
     font-weight: 600;
+}
+.rules-item{
+    margin-top: 2%;
 }
 
 /** ALERT MESSAGE **/
