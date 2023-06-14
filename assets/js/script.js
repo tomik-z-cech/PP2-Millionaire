@@ -281,13 +281,18 @@ function countdownTimer(){
 function askQuestion(){
     timeLeft = 30;
     timerStopped = false;
+    let level = '';
     if (questionIndex < 3){
+        level = 'easy';
         currentlyPlaying = playMusic(0);
     }else if (questionIndex < 6){
+        level = 'medium';
         currentlyPlaying = playMusic(1);
     }else if (questionIndex < 9){
+        level = 'hard';
         currentlyPlaying = playMusic(2);
     }else{
+        level = 'final';
         currentlyPlaying = playMusic(3);
     }
     fetch('assets/questions/questions.json')
@@ -297,18 +302,18 @@ function askQuestion(){
         displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
         document.getElementsByClassName('moneybar-item')[questionIndex].style.background = 'var(--current-moneybar)';
         let questionRef = 'q' + (Math.floor(Math.random() * 16));
-        document.getElementById('question').innerHTML = questions.easy[questionRef].question;
+        document.getElementById('question').innerHTML = questions.qlevel[level].pointer[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
             document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
             document.getElementsByClassName('answer-class')[i].removeEventListener('click', function(){});
-            document.getElementById(answerGrid[i]).innerHTML = questions.easy[questionRef].options[i];
+            document.getElementById(answerGrid[i]).innerHTML = questions.qlevel[level].pointer[questionRef].options[i];
         };
         const answers = document.querySelectorAll('.answer-class');
         answers.forEach((answer, index) => {
             answer.addEventListener('click', function clickHandler(event) {
                 answer.style.background = 'var(--selected-answer)';
-                checkAnswer(String(index), questions.easy[questionRef].answer);
+                checkAnswer(String(index), questions.qlevel[level].pointer[questionRef].answer);
             });
         });
     });

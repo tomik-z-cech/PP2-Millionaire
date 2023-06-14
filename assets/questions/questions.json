@@ -1,167 +1,666 @@
 {
-"easy": {
+"qlevel":
+    {
+    "easy": {
+        "pointer":{
         "q0": {
             "question": "Who lives in a pineapple under the sea?",
             "options": [
-                        "Mickey Mouse",
-                        "Harry Potter",
-                        "Spongebob Squarepants",
-                        "Santa Claus"
-                        ],
+            "Mickey Mouse",
+            "Harry Potter",
+            "Spongebob Squarepants",
+            "Santa Claus"
+            ],
             "answer": "2"
-            },
+        },
         "q1": {
             "question": "Who is the best cohort at Code Institute",
             "options": [
-                        "Donald Trump",
-                        "Alan Bushell",
-                        "Eminem",
-                        "Tom Cruise"
-                        ],
+            "Donald Trump",
+            "Alan Bushell",
+            "Eminem",
+            "Tom Cruise"
+            ],
             "answer": "1"
-            },
+        },
         "q2": {
             "question": "Who is the best mentor at Code Institute",
             "options": [
-                        "Angelina Jolie",
-                        "Brad Pitt",
-                        "Daisy McGirr",
-                        "Tom Hanks"
-                        ],
+            "Angelina Jolie",
+            "Brad Pitt",
+            "Daisy McGirr",
+            "Tom Hanks"
+            ],
             "answer": "2"
-            },
+        },
         "q3": {
             "question": "What is an endoscope used to examine ?",
             "options": [
-                        "The head",
-                        "The leg",
-                        "The inside of the body",
-                        "The eye"
-                        ],
+            "The head",
+            "The leg",
+            "The inside of the body",
+            "The eye"
+            ],
             "answer": "2"
-            },
+        },
         "q4": {
             "question": "H2O is the chemical formula for what ?",
             "options": [
-                        "Air",
-                        "Water",
-                        "Lasagna",
-                        "Fuel"
-                        ],
+            "Air",
+            "Water",
+            "Lasagna",
+            "Fuel"
+            ],
             "answer": "1"
-            },
+        },
         "q5": {
             "question": "Brie and Camembert are types of which food ?",
             "options": [
-                        "Cheese",
-                        "Soup",
-                        "Meat",
-                        "Fast food"
-                        ],
+            "Cheese",
+            "Soup",
+            "Meat",
+            "Fast food"
+            ],
             "answer": "0"
-            },
+        },
         "q6": {
             "question": "In which country was Adolf Hitler born ?",
             "options": [
-                        "Poland",
-                        "Austria",
-                        "Czech republic",
-                        "Russia"
-                        ],
+            "Poland",
+            "Austria",
+            "Czech republic",
+            "Russia"
+            ],
             "answer": "1"
-            },
+        },
         "q7": {
             "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
             "options": [
-                        "Sally",
-                        "Mickey Mouse",
-                        "Frozen",
-                        "Spiderman"
-                        ],
+            "Sally",
+            "Mickey Mouse",
+            "Frozen",
+            "Spiderman"
+            ],
             "answer": "0"
-            },
+        },
         "q8": {
             "question": "My mother’s mother is my … what ?",
             "options": [
-                        "Sister",
-                        "Sibling",
-                        "Grandmother",
-                        "Mother"
-                        ],
+            "Sister",
+            "Sibling",
+            "Grandmother",
+            "Mother"
+            ],
             "answer": "2"
-            },
+        },
         "q9": {
             "question": "How many zeros are in ten thousand ?",
             "options": [
-                        "Four Zeros",
-                        "No Zeros",
-                        "Eight Zeros",
-                        "Twenty Zeros"
-                        ],
+            "Four Zeros",
+            "No Zeros",
+            "Eight Zeros",
+            "Twenty Zeros"
+            ],
             "answer": "0"
-            },
+        },
         "q10": {
             "question": "What is the name of a shape with 5 sides?",
             "options": [
-                        "Square",
-                        "Pentagon",
-                        "Hexagon",
-                        "Triangle"
-                        ],
+            "Square",
+            "Pentagon",
+            "Hexagon",
+            "Triangle"
+            ],
             "answer": "1"
-            },
+        },
         "q11": {
             "question": "How many Continents are there ?",
             "options": [
-                        "None",
-                        "3",
-                        "5",
-                        "7"
-                        ],
+            "None",
+            "3",
+            "5",
+            "7"
+            ],
             "answer": "3"
-            },
+        },
         "q12": {
             "question": "What is the name of the tallest mountain on earth ?",
             "options": [
-                        "Mount Everest (Nepal & China)",
-                        "The hill around the corner",
-                        "Snezka (Czech republic)",
-                        "Mount Elbrus (Russia)"
-                        ],
+            "Mount Everest (Nepal & China)",
+            "The hill around the corner",
+            "Snezka (Czech republic)",
+            "Mount Elbrus (Russia)"
+            ],
             "answer": "0"
-            },
+        },
         "q13": {
             "question": "In which country would you find the Sydney Opera House ?",
             "options": [
-                        "Ireland",
-                        "Australia",
-                        "USA",
-                        "Mexico"
-                        ],
+            "Ireland",
+            "Australia",
+            "USA",
+            "Mexico"
+            ],
             "answer": "1"
-            },
+        },
         "q14": {
             "question": "What software company is headquartered in Redmond, Washington ?",
             "options": [
-                        "Android",
-                        "MicroSoft",
-                        "Linux",
-                        "iOS"
-                        ],
+            "Android",
+            "MicroSoft",
+            "Linux",
+            "iOS"
+            ],
             "answer": "1"
-            },
+        },
         "q15": {
             "question": "In what country is the Chernobyl nuclear plant located ?",
             "options": [
-                        "USA",
-                        "Spain",
-                        "Ireland",
-                        "Ukraine"
-                        ],
-            "answer": "3"
-            }
+            "USA",
+            "Spain",
+            "Ireland",
+            "Ukraine"
+        ],
+        "answer": "3"
         }
-        
-    
+        }
+    },
+    "medium": {
+        "pointer":{
+        "q0": {
+            "question": "Who lives in a pineapple under the sea?",
+            "options": [
+            "Mickey Mouse",
+            "Harry Potter",
+            "Spongebob Squarepants",
+            "Santa Claus"
+            ],
+            "answer": "2"
+        },
+        "q1": {
+            "question": "Who is the best cohort at Code Institute",
+            "options": [
+            "Donald Trump",
+            "Alan Bushell",
+            "Eminem",
+            "Tom Cruise"
+            ],
+            "answer": "1"
+        },
+        "q2": {
+            "question": "Who is the best mentor at Code Institute",
+            "options": [
+            "Angelina Jolie",
+            "Brad Pitt",
+            "Daisy McGirr",
+            "Tom Hanks"
+            ],
+            "answer": "2"
+        },
+        "q3": {
+            "question": "What is an endoscope used to examine ?",
+            "options": [
+            "The head",
+            "The leg",
+            "The inside of the body",
+            "The eye"
+            ],
+            "answer": "2"
+        },
+        "q4": {
+            "question": "H2O is the chemical formula for what ?",
+            "options": [
+            "Air",
+            "Water",
+            "Lasagna",
+            "Fuel"
+            ],
+            "answer": "1"
+        },
+        "q5": {
+            "question": "Brie and Camembert are types of which food ?",
+            "options": [
+            "Cheese",
+            "Soup",
+            "Meat",
+            "Fast food"
+            ],
+            "answer": "0"
+        },
+        "q6": {
+            "question": "In which country was Adolf Hitler born ?",
+            "options": [
+            "Poland",
+            "Austria",
+            "Czech republic",
+            "Russia"
+            ],
+            "answer": "1"
+        },
+        "q7": {
+            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
+            "options": [
+            "Sally",
+            "Mickey Mouse",
+            "Frozen",
+            "Spiderman"
+            ],
+            "answer": "0"
+        },
+        "q8": {
+            "question": "My mother’s mother is my … what ?",
+            "options": [
+            "Sister",
+            "Sibling",
+            "Grandmother",
+            "Mother"
+            ],
+            "answer": "2"
+        },
+        "q9": {
+            "question": "How many zeros are in ten thousand ?",
+            "options": [
+            "Four Zeros",
+            "No Zeros",
+            "Eight Zeros",
+            "Twenty Zeros"
+            ],
+            "answer": "0"
+        },
+        "q10": {
+            "question": "What is the name of a shape with 5 sides?",
+            "options": [
+            "Square",
+            "Pentagon",
+            "Hexagon",
+            "Triangle"
+            ],
+            "answer": "1"
+        },
+        "q11": {
+            "question": "How many Continents are there ?",
+            "options": [
+            "None",
+            "3",
+            "5",
+            "7"
+            ],
+            "answer": "3"
+        },
+        "q12": {
+            "question": "What is the name of the tallest mountain on earth ?",
+            "options": [
+            "Mount Everest (Nepal & China)",
+            "The hill around the corner",
+            "Snezka (Czech republic)",
+            "Mount Elbrus (Russia)"
+            ],
+            "answer": "0"
+        },
+        "q13": {
+            "question": "In which country would you find the Sydney Opera House ?",
+            "options": [
+            "Ireland",
+            "Australia",
+            "USA",
+            "Mexico"
+            ],
+            "answer": "1"
+        },
+        "q14": {
+            "question": "What software company is headquartered in Redmond, Washington ?",
+            "options": [
+            "Android",
+            "MicroSoft",
+            "Linux",
+            "iOS"
+            ],
+            "answer": "1"
+        },
+        "q15": {
+            "question": "In what country is the Chernobyl nuclear plant located ?",
+            "options": [
+            "USA",
+            "Spain",
+            "Ireland",
+            "Ukraine"
+        ],
+        "answer": "3"
+        }
+    }
+    },
+    "hard": {
+        "pointer":{
+        "q0": {
+            "question": "Who lives in a pineapple under the sea?",
+            "options": [
+            "Mickey Mouse",
+            "Harry Potter",
+            "Spongebob Squarepants",
+            "Santa Claus"
+            ],
+            "answer": "2"
+        },
+        "q1": {
+            "question": "Who is the best cohort at Code Institute",
+            "options": [
+            "Donald Trump",
+            "Alan Bushell",
+            "Eminem",
+            "Tom Cruise"
+            ],
+            "answer": "1"
+        },
+        "q2": {
+            "question": "Who is the best mentor at Code Institute",
+            "options": [
+            "Angelina Jolie",
+            "Brad Pitt",
+            "Daisy McGirr",
+            "Tom Hanks"
+            ],
+            "answer": "2"
+        },
+        "q3": {
+            "question": "What is an endoscope used to examine ?",
+            "options": [
+            "The head",
+            "The leg",
+            "The inside of the body",
+            "The eye"
+            ],
+            "answer": "2"
+        },
+        "q4": {
+            "question": "H2O is the chemical formula for what ?",
+            "options": [
+            "Air",
+            "Water",
+            "Lasagna",
+            "Fuel"
+            ],
+            "answer": "1"
+        },
+        "q5": {
+            "question": "Brie and Camembert are types of which food ?",
+            "options": [
+            "Cheese",
+            "Soup",
+            "Meat",
+            "Fast food"
+            ],
+            "answer": "0"
+        },
+        "q6": {
+            "question": "In which country was Adolf Hitler born ?",
+            "options": [
+            "Poland",
+            "Austria",
+            "Czech republic",
+            "Russia"
+            ],
+            "answer": "1"
+        },
+        "q7": {
+            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
+            "options": [
+            "Sally",
+            "Mickey Mouse",
+            "Frozen",
+            "Spiderman"
+            ],
+            "answer": "0"
+        },
+        "q8": {
+            "question": "My mother’s mother is my … what ?",
+            "options": [
+            "Sister",
+            "Sibling",
+            "Grandmother",
+            "Mother"
+            ],
+            "answer": "2"
+        },
+        "q9": {
+            "question": "How many zeros are in ten thousand ?",
+            "options": [
+            "Four Zeros",
+            "No Zeros",
+            "Eight Zeros",
+            "Twenty Zeros"
+            ],
+            "answer": "0"
+        },
+        "q10": {
+            "question": "What is the name of a shape with 5 sides?",
+            "options": [
+            "Square",
+            "Pentagon",
+            "Hexagon",
+            "Triangle"
+            ],
+            "answer": "1"
+        },
+        "q11": {
+            "question": "How many Continents are there ?",
+            "options": [
+            "None",
+            "3",
+            "5",
+            "7"
+            ],
+            "answer": "3"
+        },
+        "q12": {
+            "question": "What is the name of the tallest mountain on earth ?",
+            "options": [
+            "Mount Everest (Nepal & China)",
+            "The hill around the corner",
+            "Snezka (Czech republic)",
+            "Mount Elbrus (Russia)"
+            ],
+            "answer": "0"
+        },
+        "q13": {
+            "question": "In which country would you find the Sydney Opera House ?",
+            "options": [
+            "Ireland",
+            "Australia",
+            "USA",
+            "Mexico"
+            ],
+            "answer": "1"
+        },
+        "q14": {
+            "question": "What software company is headquartered in Redmond, Washington ?",
+            "options": [
+            "Android",
+            "MicroSoft",
+            "Linux",
+            "iOS"
+            ],
+            "answer": "1"
+        },
+        "q15": {
+            "question": "In what country is the Chernobyl nuclear plant located ?",
+            "options": [
+            "USA",
+            "Spain",
+            "Ireland",
+            "Ukraine"
+        ],
+        "answer": "3"
+        }
+    }
+    },
+    "final": {
+        "pointer":{
+        "q0": {
+            "question": "Who lives in a pineapple under the sea?",
+            "options": [
+            "Mickey Mouse",
+            "Harry Potter",
+            "Spongebob Squarepants",
+            "Santa Claus"
+            ],
+            "answer": "2"
+        },
+        "q1": {
+            "question": "Who is the best cohort at Code Institute",
+            "options": [
+            "Donald Trump",
+            "Alan Bushell",
+            "Eminem",
+            "Tom Cruise"
+            ],
+            "answer": "1"
+        },
+        "q2": {
+            "question": "Who is the best mentor at Code Institute",
+            "options": [
+            "Angelina Jolie",
+            "Brad Pitt",
+            "Daisy McGirr",
+            "Tom Hanks"
+            ],
+            "answer": "2"
+        },
+        "q3": {
+            "question": "What is an endoscope used to examine ?",
+            "options": [
+            "The head",
+            "The leg",
+            "The inside of the body",
+            "The eye"
+            ],
+            "answer": "2"
+        },
+        "q4": {
+            "question": "H2O is the chemical formula for what ?",
+            "options": [
+            "Air",
+            "Water",
+            "Lasagna",
+            "Fuel"
+            ],
+            "answer": "1"
+        },
+        "q5": {
+            "question": "Brie and Camembert are types of which food ?",
+            "options": [
+            "Cheese",
+            "Soup",
+            "Meat",
+            "Fast food"
+            ],
+            "answer": "0"
+        },
+        "q6": {
+            "question": "In which country was Adolf Hitler born ?",
+            "options": [
+            "Poland",
+            "Austria",
+            "Czech republic",
+            "Russia"
+            ],
+            "answer": "1"
+        },
+        "q7": {
+            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
+            "options": [
+            "Sally",
+            "Mickey Mouse",
+            "Frozen",
+            "Spiderman"
+            ],
+            "answer": "0"
+        },
+        "q8": {
+            "question": "My mother’s mother is my … what ?",
+            "options": [
+            "Sister",
+            "Sibling",
+            "Grandmother",
+            "Mother"
+            ],
+            "answer": "2"
+        },
+        "q9": {
+            "question": "How many zeros are in ten thousand ?",
+            "options": [
+            "Four Zeros",
+            "No Zeros",
+            "Eight Zeros",
+            "Twenty Zeros"
+            ],
+            "answer": "0"
+        },
+        "q10": {
+            "question": "What is the name of a shape with 5 sides?",
+            "options": [
+            "Square",
+            "Pentagon",
+            "Hexagon",
+            "Triangle"
+            ],
+            "answer": "1"
+        },
+        "q11": {
+            "question": "How many Continents are there ?",
+            "options": [
+            "None",
+            "3",
+            "5",
+            "7"
+            ],
+            "answer": "3"
+        },
+        "q12": {
+            "question": "What is the name of the tallest mountain on earth ?",
+            "options": [
+            "Mount Everest (Nepal & China)",
+            "The hill around the corner",
+            "Snezka (Czech republic)",
+            "Mount Elbrus (Russia)"
+            ],
+            "answer": "0"
+        },
+        "q13": {
+            "question": "In which country would you find the Sydney Opera House ?",
+            "options": [
+            "Ireland",
+            "Australia",
+            "USA",
+            "Mexico"
+            ],
+            "answer": "1"
+        },
+        "q14": {
+            "question": "What software company is headquartered in Redmond, Washington ?",
+            "options": [
+            "Android",
+            "MicroSoft",
+            "Linux",
+            "iOS"
+            ],
+            "answer": "1"
+        },
+        "q15": {
+            "question": "In what country is the Chernobyl nuclear plant located ?",
+            "options": [
+            "USA",
+            "Spain",
+            "Ireland",
+            "Ukraine"
+        ],
+        "answer": "3"
+        }
+        }
+    }
 }
+}
+    
+    
 
+
+   
