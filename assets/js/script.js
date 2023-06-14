@@ -295,6 +295,7 @@ function askQuestion(){
     .then((questions) => {
         document.getElementById('question-container').remove();
         displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
+        document.getElementsByClassName('moneybar-item')[questionIndex].style.background = 'var(--current-moneybar)';
         let questionRef = 'q' + (Math.floor(Math.random() * 14));
         document.getElementById('question').innerHTML = questions.easy[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];

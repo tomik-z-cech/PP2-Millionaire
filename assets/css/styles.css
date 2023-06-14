@@ -12,12 +12,13 @@
 --dark-blue-bg: #053278;
 --off-white-text: #f5eed8;
 --hover-color: #ecf01a;
---unused-lifeline: green;
---white: white;
---black: black;
---used-lifeline: red;
---selected-answer: orange;
---correct-answer: green;
+--current-moneybar: #646406;
+--unused-lifeline: #1cbb1c;
+--white: #ffffff;
+--black: #000000;
+--used-lifeline: #c41919;
+--selected-answer: #e6641a;
+--correct-answer: #0bb60b;
  
 /** Fonts **/
 --main-font: 'Rubik', sans-serif;
