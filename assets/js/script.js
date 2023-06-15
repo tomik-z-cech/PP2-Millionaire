@@ -96,7 +96,7 @@ function playSound(track){
                             'assets/audio/win.mp3',
                             'assets/audio/loose.mp3',
                             'assets/audio/big-win.mp3',
-                            'assets/audio/bell.mp3',
+                            'assets/audio/change-question.mp3',
                             'assets/audio/l50-50.mp3'
                       ];
         let soundToPlay = new Audio (effects[track]);
