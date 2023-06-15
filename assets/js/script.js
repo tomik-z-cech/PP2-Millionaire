@@ -13,6 +13,7 @@ let score = 0;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
 let timerStopped = false;
 let answerToKeep = '';
+let questionsAlreadySelected = [];
 
 // Names
 const playerNameInput = document.getElementById('player-name-input');
@@ -83,6 +84,7 @@ function checkAudioSettings(){
  *  #6 - loose
  *  #7 - big win
  *  #8 - bell
+ *  #9 - fifthy fifthy lifeline
  */
 function playSound(track){
     if (isSfxOn == true){
@@ -94,7 +96,8 @@ function playSound(track){
                             'assets/audio/win.mp3',
                             'assets/audio/loose.mp3',
                             'assets/audio/big-win.mp3',
-                            'assets/audio/bell.mp3'
+                            'assets/audio/bell.mp3',
+                            'assets/audio/l50-50.mp3'
                       ];
         let soundToPlay = new Audio (effects[track]);
         soundToPlay.play();
@@ -265,7 +268,7 @@ function differentQuestion(){
  * Function removes two incorrect answers
  */
 function fifthyFifthy(){
-    console.log(answerToKeep);
+    playSound(9);
     let remove1;
     let remove2;
     while (remove1 == answerToKeep || remove2 == answerToKeep || remove1 == remove2){
@@ -331,7 +334,6 @@ function askQuestion(){
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
             document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
-            //document.getElementsByClassName('answer-class')[i].removeEventListener('click', function(){});
             document.getElementById(answerGrid[i]).innerHTML = questions.qlevel[level].pointer[questionRef].options[i];
         };
         const answers = document.querySelectorAll('.answer-class');
