@@ -104,7 +104,7 @@ p {/** properties of p elements **/
     left: 0px;
     bottom: 7%;
     right: 0px;
-    background-color: var(--black);
+    background-color: var(--light-blue);
 }
 /** HEADER & FOOTER **/
 
@@ -448,6 +448,6 @@ ul{/** set top margin to socails **/
 
 @media only screen and (orientation: portrait){
     #hide-vertical{
-        display: block;
+        display: flex;
     }
 }
