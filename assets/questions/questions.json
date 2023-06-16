@@ -496,164 +496,164 @@
     "final": {
         "pointer":{
         "q0": {
-            "question": "Who lives in a pineapple under the sea?",
+            "question": "How was the European Recovery Progame in the 1940's more commonly known ?",
             "options": [
-            "Mickey Mouse",
-            "Harry Potter",
-            "Spongebob Squarepants",
-            "Santa Claus"
+            "The Marshall Plan",
+            "The Churchill Plan",
+            "The Stalin Plan",
+            "The de Galle Plan"
             ],
-            "answer": "2"
+            "answer": "0"
         },
         "q1": {
-            "question": "Who is the best cohort at Code Institute",
+            "question": "How many languages has Harry Potter been translated into ?",
             "options": [
-            "Donald Trump",
-            "Alan Bushell",
-            "Eminem",
-            "Tom Cruise"
+            "65 languages",
+            "66 languages",
+            "67 languages",
+            "68 languages"
+            ],
+            "answer": "3"
+        },
+        "q2": {
+            "question": "What is St.Kitts and Nevis ?",
+            "options": [
+            "An island country in the west Indies",
+            "An island country in the east Indies",
+            "An island country in the west Phillipines",
+            "An island country in the east Phillipines"
+            ],
+            "answer": "0"
+        },
+        "q3": {
+            "question": "When was the first computer invented ?",
+            "options": [
+            "1936",
+            "1946",
+            "1956",
+            "1966"
             ],
             "answer": "1"
         },
-        "q2": {
-            "question": "Who is the best mentor at Code Institute",
-            "options": [
-            "Angelina Jolie",
-            "Brad Pitt",
-            "Daisy McGirr",
-            "Tom Hanks"
-            ],
-            "answer": "2"
-        },
-        "q3": {
-            "question": "What is an endoscope used to examine ?",
-            "options": [
-            "The head",
-            "The leg",
-            "The inside of the body",
-            "The eye"
-            ],
-            "answer": "2"
-        },
         "q4": {
-            "question": "H2O is the chemical formula for what ?",
+            "question": "How big is the diameter of a basketball hoop ?",
             "options": [
-            "Air",
-            "Water",
-            "Lasagna",
-            "Fuel"
+            "17 inches",
+            "18 inches",
+            "19 inches",
+            "20 inches"
             ],
             "answer": "1"
         },
         "q5": {
-            "question": "Brie and Camembert are types of which food ?",
+            "question": "When was the LEGO bricks invented ?",
             "options": [
-            "Cheese",
-            "Soup",
-            "Meat",
-            "Fast food"
+            "1948",
+            "1958",
+            "1968",
+            "1978"
             ],
-            "answer": "0"
+            "answer": "1"
         },
         "q6": {
-            "question": "In which country was Adolf Hitler born ?",
+            "question": "Where is the oldest tree in the world ?",
             "options": [
             "Poland",
             "Austria",
-            "Czech republic",
+            "USA",
             "Russia"
-            ],
-            "answer": "1"
-        },
-        "q7": {
-            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
-            "options": [
-            "Sally",
-            "Mickey Mouse",
-            "Frozen",
-            "Spiderman"
-            ],
-            "answer": "0"
-        },
-        "q8": {
-            "question": "My mother’s mother is my … what ?",
-            "options": [
-            "Sister",
-            "Sibling",
-            "Grandmother",
-            "Mother"
             ],
             "answer": "2"
         },
-        "q9": {
-            "question": "How many zeros are in ten thousand ?",
+        "q7": {
+            "question": "How many tombs are there in the Valley of the Kings in Egypt ?",
             "options": [
-            "Four Zeros",
-            "No Zeros",
-            "Eight Zeros",
-            "Twenty Zeros"
-            ],
-            "answer": "0"
-        },
-        "q10": {
-            "question": "What is the name of a shape with 5 sides?",
-            "options": [
-            "Square",
-            "Pentagon",
-            "Hexagon",
-            "Triangle"
-            ],
-            "answer": "1"
-        },
-        "q11": {
-            "question": "How many Continents are there ?",
-            "options": [
-            "None",
-            "3",
-            "5",
-            "7"
+            "60",
+            "61",
+            "62",
+            "63"
             ],
             "answer": "3"
         },
-        "q12": {
-            "question": "What is the name of the tallest mountain on earth ?",
+        "q8": {
+            "question": "Which English city was once known as Duroliponte ?",
             "options": [
-            "Mount Everest (Nepal & China)",
-            "The hill around the corner",
-            "Snezka (Czech republic)",
-            "Mount Elbrus (Russia)"
+            "London",
+            "Cambridge",
+            "Manchester",
+            "Liverpool"
+            ],
+            "answer": "1"
+        },
+        "q9": {
+            "question": "In Harry Potter, where does Vernon Dursley work ?",
+            "options": [
+            "Godric's Hollow",
+            "Little Hangleton",
+            "Hogvarts",
+            "Grunnings"
+            ],
+            "answer": "3"
+        },
+        "q10": {
+            "question": "Who designed the Eiffel Tower ?",
+            "options": [
+            "Gustav Eiffel",
+            "Pedro Eiffel",
+            "Jean Eiffel",
+            "Alexandre Eiffel"
             ],
             "answer": "0"
         },
-        "q13": {
-            "question": "In which country would you find the Sydney Opera House ?",
+        "q11": {
+            "question": "Which political figure became barroness of Kesteven ? ",
             "options": [
-            "Ireland",
-            "Australia",
-            "USA",
-            "Mexico"
+            "Queen Elisabeth",
+            "Margaret Thatcher",
+            "Michelle Obama",
+            "Angela Merkel"
             ],
             "answer": "1"
+        },
+        "q12": {
+            "question": "Switzerland is made up of how many cantons ?",
+            "options": [
+            "23 cantons",
+            "24 cantons",
+            "25 cantons",
+            "26 cantons"
+            ],
+            "answer": "3"
+        },
+        "q13": {
+            "question": "What year did Vincent van Gogh die ?",
+            "options": [
+            "1888",
+            "1889",
+            "1890",
+            "1891"
+            ],
+            "answer": "2"
         },
         "q14": {
-            "question": "What software company is headquartered in Redmond, Washington ?",
+            "question": "What is the name of the COCOPOPS mascot",
             "options": [
-            "Android",
-            "MicroSoft",
-            "Linux",
-            "iOS"
+            "Coco the Monkey",
+            "Coco the Elephant",
+            "Coco the Kangaroo",
+            "Coco the Coala"
             ],
-            "answer": "1"
+            "answer": "0"
         },
         "q15": {
-            "question": "In what country is the Chernobyl nuclear plant located ?",
+            "question": "What is prince Willaim's full name ?",
             "options": [
-            "USA",
-            "Spain",
-            "Ireland",
-            "Ukraine"
+            "William Arthur Philip John Windsor",
+            "William Arthur Philip Louise Windsor",
+            "William Peter Philip Louise Windsor",
+            "William Arthur Philip George Windsor"
         ],
-        "answer": "3"
+        "answer": "1"
         }
         }
     }
