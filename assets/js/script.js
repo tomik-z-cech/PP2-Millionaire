@@ -325,10 +325,14 @@ function askQuestion(){
     fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
+        let questionRef;
         document.getElementById('question-container').remove();
         displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
         document.getElementsByClassName('moneybar-item')[questionIndex].style.background = 'var(--current-moneybar)';
-        let questionRef = 'q' + (Math.floor(Math.random() * 16));
+        do {
+            questionRef = 'q' + (Math.floor(Math.random() * 16));
+        } while (questionsAlreadySelected.includes(questionRef) == true);
+        questionsAlreadySelected.push(questionRef);
         answerToKeep = Number(questions.qlevel[level].pointer[questionRef].answer);
         document.getElementById('question').innerHTML = questions.qlevel[level].pointer[questionRef].question;
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
