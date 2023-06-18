@@ -269,6 +269,9 @@ ul{/** set top margin to socails **/
     width: 7%;
     margin-right: 20px;
 }
+#info-icon-mask{/** size and properties of info icon in porttrait mask **/
+    width: 7%;
+}
 #alert-message {/** margin of actual message text **/
     margin-top: 6%;
     padding-left: 5%;
@@ -456,5 +459,66 @@ ul{/** set top margin to socails **/
     }
     .header-footer{
         display: none;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .header-footer {/** set height, width, position and background color to header and foorter **/
+        height: 10%;
+        align-items: center;	
+        justify-content: space-between;
+    }
+    #menu {/** Header - Menu **/
+        line-height: normal;
+        font-size: 120%;
+        margin-left: 3px;
+        margin-top: 15%;
+        margin-right: 0px;
+        z-index: 5;
+    }
+    #menu a {/** Header - Links **/	
+        box-sizing: border-box;	
+        display: block;	
+        width: 95%;
+        height: auto;	
+        padding-left: 3px;
+        background-color: rgba(65, 15, 60, 0.85);
+        font-size: 100%;
+    }	
+    #hamburger-menu label {/** Header - Hamburger menu **/
+        display: inline-block;	
+        color: var(--off-white-text);	
+        font-style: normal;	
+        padding: 0.8%;	
+        background-color: transparent;	
+        position: fixed;
+        right: 0px;
+        top: 0px;
+    }	
+    #hamburger-menu input:checked ~ #menu {/** Header - Hamburger menu - event:click **/	
+        display: block;	
+    }
+    #menu {/** Header - Regular menu - hide **/
+        display: none;
+    }
+    #display-container {/** position and size of outer rules container **/
+        height: 75%;
+        top: 12.5%;
+    }
+    #logo-header {/** logo in header **/
+        font-size: 120%;
+        left: 2.5%;
+        top: 11%;
+    }
+    #socials{/** footer - socials - position **/
+        width: 85%;
+        font-size: 100%;
+    }
+    #socials > li {/** footer - socials - links **/
+        display: inline;
+        padding-left: 15%;
+    }
+    ul{/** set top margin to socails **/
+        margin-top: 3%;
     }
 }
