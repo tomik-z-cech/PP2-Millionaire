@@ -97,14 +97,14 @@ p {/** properties of p elements **/
 ::-webkit-scrollbar-thumb:hover {/** scrollbars styling **/
     background: var(--purple);
 }
-#hide-vertical{
+#unhide-vertical{
     display: none;
     position: absolute;
-    top: 7%;
-    left: 0px;
-    bottom: 7%;
-    right: 0px;
-    background-color: var(--light-blue);
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background-color: var(--purple);
 }
 /** HEADER & FOOTER **/
 
@@ -447,7 +447,14 @@ ul{/** set top margin to socails **/
 
 
 @media only screen and (orientation: portrait){
-    #hide-vertical{
+    #unhide-vertical{
         display: flex;
+        flex-direction: column;
+    }
+    .hide-vertical{
+        display: none;
+    }
+    .header-footer{
+        display: none;
     }
 }
