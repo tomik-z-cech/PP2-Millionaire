@@ -275,8 +275,8 @@ function fifthyFifthy(){
         remove1 = (Math.floor(Math.random() * 4));
         remove2 = (Math.floor(Math.random() * 4));
     };
-    document.getElementsByClassName('answer-class')[remove1].innerHTML = '';
-    document.getElementsByClassName('answer-class')[remove2].innerHTML = '';
+    document.getElementsByClassName('answer-class')[remove1].style.display = 'none';
+    document.getElementsByClassName('answer-class')[remove2].style.display = 'none';
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
     document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
 }
