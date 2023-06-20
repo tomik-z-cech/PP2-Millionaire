@@ -464,6 +464,7 @@ ul{/** set top margin to socails **/
     z-index: 1;
 }
 
+/** ----- MEDIA QUERY PORTRAIT ORIENTATION ------ **/
 
 @media only screen and (orientation: portrait){
     #unhide-vertical{
@@ -478,7 +479,11 @@ ul{/** set top margin to socails **/
     }
 }
 
+/** ----- MEDIA QUERY LESS 1140PX ------ **/
+
 @media screen and (max-width: 1140px) {
+    
+    /** HEADER & FOOTER LESS 1140PX **/
     .header-footer {/** set height, width, position and background color to header and foorter **/
         height: 10%;
         align-items: center;	
@@ -536,5 +541,54 @@ ul{/** set top margin to socails **/
     }
     ul{/** set top margin to socails **/
         margin-top: 3%;
+    }
+
+    /** RULES PAGE LESS 1140 PX **/
+        
+    h1{
+        left: 20%;
+    }
+    #logo {/** properties of logo elements **/
+        height: 60px;
+        width: 60px;
+    }
+    #display-container {/** position and size of outer rules container **/
+        width: 97%;
+        height: 78%;
+        top: 11%;
+        left: 1.5%;
+    }
+    #rules-inner-container {/** position and size if inner rules container **/
+        position: absolute;
+        top: 5%;    
+        left: 2.5%;
+        width: 95%;
+        height: 50%; 
+    }
+    #settings {/** position and size of rules navbar **/
+        display: none;
+    }
+    #rules-user-details {/** position and size of user detials and play button form **/
+        position: absolute;
+        height: 35%;
+        width: 95%;
+        bottom: 3%;
+        left: 2.5%;
+    }
+    #player-name-input {/** size and properties of input field **/
+        height: 40px;
+        margin-left: 20px;
+        padding-left: 10px;
+    }
+    #play-button {/** position of play button **/
+        margin-left: 0%;
+    }
+    #player-name-label {/** properties of player name label element **/
+        font-size: 140%;
+        font-weight: 600;
+    }
+    .rules-item{
+        margin-top: 2%;
+        font-size: x-large;
     }
 }
