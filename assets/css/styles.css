@@ -584,8 +584,8 @@ ul{/** set top margin to socails **/
         margin-left: 0%;
     }
     #player-name-label {/** properties of player name label element **/
-        font-size: 140%;
-        font-weight: 600;
+        font-size: 90%;
+        font-weight: 100;
     }
     .rules-item{
         margin-top: 2%;
