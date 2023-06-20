@@ -27,22 +27,18 @@ const questionAreaHTML = `
     <div id="question" class="blue-border grey-background align-center-center">
     </div>
     <div id="options" class="blue-border grey-background">
-    <div class="options-row">
-        <div class="blue-border grey-background answer-class">
+        <div class="blue-border grey-background answer-class" id="answer-a-container">
             <span class="letter">A</span><span id="answer-a"></span>
         </div>
-        <div class="blue-border grey-background answer-class">
+        <div class="blue-border grey-background answer-class" id="answer-b-container">
             <span class="letter">B</span><span id="answer-b"></span>
         </div>
-    </div>
-    <div class="options-row">
-        <div class="blue-border grey-background answer-class">
+        <div class="blue-border grey-background answer-class" id="answer-c-container">
             <span class="letter">C</span><span id="answer-c"></span>
         </div>
-        <div class="blue-border grey-background answer-class">
+        <div class="blue-border grey-background answer-class" id="answer-d-container">
             <span class="letter">D</span><span id="answer-d"></span>
         </div>
-    </div>
     </div>
 </div>`;
 
@@ -278,7 +274,7 @@ function fifthyFifthy(){
     document.getElementsByClassName('answer-class')[remove1].style.display = 'none';
     document.getElementsByClassName('answer-class')[remove2].style.display = 'none';
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
-    document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
+    //document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
 }
 
 /**
