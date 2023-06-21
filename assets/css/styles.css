@@ -632,12 +632,12 @@ ul{/** set top margin to socails **/
         top: 5%;
     }
     .outer-round {/** size, position and colors of each lifeline **/
-        width: 70px;
-        height: 70px;
-        border: 5px solid var(--unused-lifeline);
+        width: 65px;
+        height: 65px;
+        border: 10px solid var(--unused-lifeline);
     }
     .outer-round:hover {/** lifeline event:hover **/
-        border: 5px solid var(--hover-color);    
+        border: 10px solid var(--hover-color);    
     }
     .lifeline-image{/** size of lifeline image **/
         width: 60%;
