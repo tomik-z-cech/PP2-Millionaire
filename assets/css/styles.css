@@ -646,7 +646,7 @@ ul{/** set top margin to socails **/
 
     #timer-container {/** size and position of score container **/
         width: 20%;
-        height: 40%;
+        height: 30%;
         right: 20%;
     }
     #timer{/** size and position of timer text **/
@@ -657,7 +657,7 @@ ul{/** set top margin to socails **/
 
     #score-container {/** size and position of score container **/
         width: 20%;
-        height: 40%;
+        height: 30%;
         left: 20%;
     }
     #score{/** size of score text **/
@@ -673,5 +673,33 @@ ul{/** set top margin to socails **/
     .moneybar-item {/** size, position and colors of each moneybar item **/
         height: 10%;
         border: var(--box);
+    }
+    
+    /** MASKING DIV **/
+
+    #mask {/** style and position of masking div **/
+        top: 10%;
+        height: 80%;
+        display: none;
+    }
+    
+    /** QUESTIONS **/
+
+    #question-container {/** size and position of score container **/
+        height: 55%;
+        right: 20%;
+        left: 20%;
+    }
+    .letter {/** style of heading letter of each answer **/
+        font-size: 140%;
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+    .answer-class {/** size of each answer **/
+        font-size: small;
+        width: 50.25%;
+    }
+    #question{
+        font-size: small;
     }
 }
