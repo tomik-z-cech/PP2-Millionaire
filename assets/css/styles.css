@@ -359,12 +359,12 @@ ul{/** set top margin to socails **/
     align-items: center;
     flex-direction: column;
 }
-#score{
+#score{/** size of score text **/
     margin-top:10%;
     font-size: 200%;
 }
 
-/** SCORE **/
+/** TIMER **/
 
 #timer-container {/** size and position of score container **/
     width: 12%;
@@ -464,7 +464,9 @@ ul{/** set top margin to socails **/
     z-index: 1;
 }
 
+/** --------------------------------------------- **/
 /** ----- MEDIA QUERY PORTRAIT ORIENTATION ------ **/
+/** --------------------------------------------- **/
 
 @media only screen and (orientation: portrait){
     #unhide-vertical{
@@ -479,7 +481,9 @@ ul{/** set top margin to socails **/
     }
 }
 
+/** ------------------------------------ **/
 /** ----- MEDIA QUERY LESS 1140PX ------ **/
+/** ------------------------------------ **/
 
 @media screen and (max-width: 1140px) {
     
@@ -548,10 +552,13 @@ ul{/** set top margin to socails **/
 
     /** RULES PAGE LESS 1140 PX **/
         
-    h1{
+    h1{/** properties of h1 elements **/
         left: 15%;
     }
-    #logo {/** properties of logo elements **/
+    h2{
+        font-size: large;
+    }
+    #logo {/** properties of logo element **/
         height: 60px;
         width: 60px;
     }
@@ -591,7 +598,7 @@ ul{/** set top margin to socails **/
         font-size: 120%;
         font-weight: 100;
     }
-    .rules-item{
+    .rules-item{/** properties of li elemnts of rules **/
         margin-top: 2%;
         font-size: medium;
     }
@@ -612,16 +619,38 @@ ul{/** set top margin to socails **/
     #info-icon {/** size and properties of info icon in alert window **/
         width: 7%;
         margin-right: 20px;
-    }
-    #info-icon-mask{/** size and properties of info icon in porttrait mask **/
-        width: 7%;
+        margin-top: -2%;
     }
     #alert-message {/** margin of actual message text **/
-        margin-top: 6%;
-        padding-left: 5%;
-        padding-right: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        font-size: large;
+    }
+    
+    /** LIFE-LINES **/
+
+    #life-lines-container{/** size and position of lifelines outer container **/
+        width: 14%;
+        top: 5%;
+    }
+    .outer-round {/** size, position and colors of each lifeline **/
+        width: 70px;
+        height: 70px;
+        border: 5px solid var(--unused-lifeline);
+    }
+    .outer-round:hover {/** lifeline event:hover **/
+        border: 5px solid var(--hover-color);    
+    }
+    .lifeline-image{/** size of lifeline image **/
+        width: 60%;
+    }
+    /** TIMER **/
+
+    #timer-container {/** size and position of score container **/
+        width: 20%;
+        height: 40%;
+        right: 20%;
+    }
+    #timer{/** size and position of timer text **/
+        margin-top:5%;
+        font-size: 140%;
     }
 }
