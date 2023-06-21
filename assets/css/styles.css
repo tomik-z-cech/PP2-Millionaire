@@ -664,4 +664,14 @@ ul{/** set top margin to socails **/
         margin-top: 5%;
         font-size: 140%;
     }
+    /** MONEYBAR **/
+
+    #moneybar-container {/** size and position of moneybar outer container **/
+        width: 14%;
+        top: 5%;
+    }
+    .moneybar-item {/** size, position and colors of each moneybar item **/
+        height: 10%;
+        border: var(--box);
+    }
 }
