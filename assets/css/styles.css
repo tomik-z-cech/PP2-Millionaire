@@ -203,7 +203,7 @@ ul{/** set top margin to socails **/
     padding: 2%;
     overflow-y: scroll;
 }
-#settings {/** position and size of rules navbar **/
+#settings {/** position and size of settings navbar **/
     width: 25%;
     height: 5%;
     position: absolute;
@@ -576,7 +576,7 @@ ul{/** set top margin to socails **/
         width: 95%;
         height: 50%; 
     }
-    #settings {/** position and size of rules navbar **/
+    #settings {/** position and size of settings navbar **/
         display: none;
     }
     #rules-user-details {/** position and size of user detials and play button form **/
@@ -701,5 +701,25 @@ ul{/** set top margin to socails **/
     }
     #question{
         font-size: small;
+    }
+}
+
+/** ------------------------------------------------ **/
+/** ----- MEDIA QUERY MORE 1141PX LESS 1600PX ------ **/
+/** ------------------------------------------------ **/
+
+@media screen and (min-width: 1141px) and (max-width: 1600px) {
+     
+    /** RULES PAGE LESS 1140 PX **/
+        
+     h1{/** properties of h1 elements **/
+        left: 15%;
+    }
+    #settings {/** position and size of settings navbar **/
+        width: 44%;
+        height: 7%;
+        bottom: 16%;
+        left: 28%;
+        font-size: 150%;
     }
 }
