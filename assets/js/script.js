@@ -274,7 +274,7 @@ function fifthyFifthy(){
     document.getElementsByClassName('answer-class')[remove1].style.display = 'none';
     document.getElementsByClassName('answer-class')[remove2].style.display = 'none';
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
-    //document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
+    document.getElementsByClassName('outer-round')[2].removeAttribute("onClick");
 }
 
 /**
@@ -432,8 +432,8 @@ function endGame(reason){
             alertMessage(`${front}You are a winner ${playerName}!${back}${front}Your score is ${score} points.${back}`);
             break;     
     }
-    localStorage.setItem("player", playerName);
-    localStorage.setItem("score", score);
+    localStorage.setItem("players", playerName);
+    localStorage.setItem("scores", score);
     okButton.addEventListener('click', function(){
         alertWindow.style.display = 'none';
         window.location.replace('leaderboard.html');
