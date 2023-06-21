@@ -653,4 +653,15 @@ ul{/** set top margin to socails **/
         margin-top:5%;
         font-size: 140%;
     }
+    /** SCORE **/
+
+    #score-container {/** size and position of score container **/
+        width: 20%;
+        height: 40%;
+        left: 20%;
+    }
+    #score{/** size of score text **/
+        margin-top: 5%;
+        font-size: 140%;
+    }
 }
