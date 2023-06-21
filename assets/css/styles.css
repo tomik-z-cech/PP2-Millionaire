@@ -505,6 +505,8 @@ ul{/** set top margin to socails **/
         padding-left: 3px;
         background-color: rgba(65, 15, 60, 0.85);
         font-size: 100%;
+        position: relative;
+        z-index: 0;
     }	
     #hamburger-menu label {/** Header - Hamburger menu **/
         display: inline-block;	
@@ -517,10 +519,11 @@ ul{/** set top margin to socails **/
         top: 0px;
     }	
     #hamburger-menu input:checked ~ #menu {/** Header - Hamburger menu - event:click **/	
-        display: block;	
+        display: block;
     }
     #menu {/** Header - Regular menu - hide **/
         display: none;
+        margin-top: 40%;
     }
     #display-container {/** position and size of outer rules container **/
         height: 75%;
@@ -546,7 +549,7 @@ ul{/** set top margin to socails **/
     /** RULES PAGE LESS 1140 PX **/
         
     h1{
-        left: 20%;
+        left: 15%;
     }
     #logo {/** properties of logo elements **/
         height: 60px;
@@ -557,6 +560,7 @@ ul{/** set top margin to socails **/
         height: 78%;
         top: 11%;
         left: 1.5%;
+        z-index: -1;
     }
     #rules-inner-container {/** position and size if inner rules container **/
         position: absolute;
@@ -577,18 +581,47 @@ ul{/** set top margin to socails **/
     }
     #player-name-input {/** size and properties of input field **/
         height: 40px;
-        margin-left: 20px;
+        margin-left: 0%;
         padding-left: 10px;
     }
     #play-button {/** position of play button **/
-        margin-left: 0%;
+        margin-left: 15%;
     }
     #player-name-label {/** properties of player name label element **/
-        font-size: 90%;
+        font-size: 120%;
         font-weight: 100;
     }
     .rules-item{
         margin-top: 2%;
-        font-size: x-large;
+        font-size: medium;
+    }
+
+    /** ALERT MESSAGE **/
+
+    #ok-button {/** position of ok button of alert message **/
+        position: absolute;
+        bottom: 15px;
+    }
+    #alert-window {/** size and properties of alert message window **/
+        position: fixed;
+        width: 70%;
+        height: 60%;
+        top: 20%;
+        left: 15%;
+    }
+    #info-icon {/** size and properties of info icon in alert window **/
+        width: 7%;
+        margin-right: 20px;
+    }
+    #info-icon-mask{/** size and properties of info icon in porttrait mask **/
+        width: 7%;
+    }
+    #alert-message {/** margin of actual message text **/
+        margin-top: 6%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
