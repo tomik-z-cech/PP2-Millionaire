@@ -15,7 +15,7 @@ let timerStopped = false;
 let answerToKeep = '';
 let questionsAlreadySelected = [];
 
-// Names
+// Constants
 const playerNameInput = document.getElementById('player-name-input');
 const playButton = document.getElementById('play-button');
 const alertMessageContainer = document.getElementById('alert-message');
@@ -51,7 +51,7 @@ function startingPoint(){
 };
 
 /**
- * Function creates an alert window and take "display message" as parameter
+ * Function creates an alert window and take "message" as parameter to display alert message
  */
 function alertMessage(message){
     alertWindow.style.display = 'block';
@@ -120,19 +120,22 @@ function playMusic(track){
 }
 
 /**
- * Function checks if name input is empty string.
+ * Function checks if players name input is empty string or conatins spaces 
  * If true alert message is displayed
  * If flase game starts
  */
 function checkName(){
     playerName = playerNameInput.value; 
     if (playerName === ''){
+        //players name empty string
         alertMessage('Please enter your name !');
         startingPoint();
     }else if (playerName.includes(' ')){
+        //players name contains spaces
         alertMessage('Please enter name without spaces !');
         startingPoint();
     }else{ 
+        //players name is good to go
         prepareGameView();
     }
     return;
@@ -267,10 +270,12 @@ function fifthyFifthy(){
     playSound(9);
     let remove1;
     let remove2;
+    // condition to keep the right answer & 2 answers to remove aren't the same
     while (remove1 == answerToKeep || remove2 == answerToKeep || remove1 == remove2){
         remove1 = (Math.floor(Math.random() * 4));
         remove2 = (Math.floor(Math.random() * 4));
     };
+    // remove 2 incorrect answers
     document.getElementsByClassName('answer-class')[remove1].style.display = 'none';
     document.getElementsByClassName('answer-class')[remove2].style.display = 'none';
     document.getElementsByClassName('outer-round')[2].style.border = "10px solid var(--used-lifeline)";
@@ -278,18 +283,21 @@ function fifthyFifthy(){
 }
 
 /**
- * Function sets and starts x seconds countdown timer
- * Function takes amount of seconds as parameter
+ * Function starts 30 seconds countdown timer
+ * Timer can be "stopped" or "added to" 
  */
 function countdownTimer(){
     let timerId = setInterval(countdown, 1000);
     function countdown() {
       if (timeLeft == -1) {
         clearTimeout(timerId);
+        // end game as timer is out
         endGame('outOfTime');
         }else{
         document.getElementById('timer').innerHTML = timeLeft;
-        //if (timerStopped == false) timeLeft--;
+        // stop timer once answer is given
+        if (timerStopped == false) timeLeft--;
+        // add time if extraTime() function used
         if (addTime == true){
             timeLeft += 30;
             addTime = false;
@@ -299,11 +307,13 @@ function countdownTimer(){
 }
 
 /**
- * Function randomly selects question
+ * Function randomly selects and displays question and answer options
  */
 function askQuestion(){
+    // reset timer to 30 seconds
     timeLeft = 30;
     timerStopped = false;
+    // determine level of question to ask
     let level = '';
     if (questionIndex < 3){
         level = 'easy';
@@ -318,24 +328,30 @@ function askQuestion(){
         level = 'final';
         currentlyPlaying = playMusic(3);
     }
+    // fetch database of questions & answers
     fetch('assets/questions/questions.json')
     .then((response) => response.json())
     .then((questions) => {
         let questionRef;
+        // reset question conatiner
         document.getElementById('question-container').remove();
         displayConatiner.innerHTML = displayConatiner.innerHTML + questionAreaHTML;
         document.getElementsByClassName('moneybar-item')[questionIndex].style.background = 'var(--current-moneybar)';
+        // randomly select a question and check if the same number was already used
         do {
             questionRef = 'q' + (Math.floor(Math.random() * 16));
         } while (questionsAlreadySelected.includes(questionRef) == true);
         questionsAlreadySelected.push(questionRef);
+        // set correct answer to keep if 50:50 lifeline is used
         answerToKeep = Number(questions.qlevel[level].pointer[questionRef].answer);
         document.getElementById('question').innerHTML = questions.qlevel[level].pointer[questionRef].question;
+        // display answer options in the grid
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
         for (i = 0; i < answerGrid.length; i++){
             document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
             document.getElementById(answerGrid[i]).innerHTML = questions.qlevel[level].pointer[questionRef].options[i];
         };
+        // event listeners for options
         const answers = document.querySelectorAll('.answer-class');
         answers.forEach((answer, index) => {
             answer.addEventListener('click', function clickHandler(event) {
@@ -351,6 +367,7 @@ function askQuestion(){
  * Function takes playerAnswer and correctAnswer as parameters 
  */
 function checkAnswer(playerAnswer,correctAnswer){
+        // stop timer while checking if answer correct
         timerStopped = true;
         addMask('on');
         let isWinner;
@@ -358,13 +375,16 @@ function checkAnswer(playerAnswer,correctAnswer){
             currentlyPlaying.pause();
         };
         playSound(4);
+        // correct answer selected
         if (playerAnswer == correctAnswer){
             isWinner = true;
             addScore();
+        // incorrect answer selected
         }else{
             isWinner = false;
         };
         answerToKeep = '';
+        // reset variables and display another question if answer was correct
         setTimeout(() => {
             document.getElementsByClassName('answer-class')[correctAnswer].style.background = 'var(--correct-answer)';
             if (isWinner == true){
@@ -381,6 +401,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                 },500);
                 askQuestion();
             }else{
+                // end the game as seslected answer wasn't correct
                 playSound(6);
                 setTimeout(() => {endGame('incorrectAnswer');},3500);
             };
@@ -388,7 +409,7 @@ function checkAnswer(playerAnswer,correctAnswer){
 }
 
 /**
- * Function counts score
+ * Function counts players score
  */
 function addScore(){
     score = timeLeft * scoreGrid[questionIndex] + score;
@@ -418,6 +439,7 @@ function endGame(reason){
     let front = `<div class="align-center-center">`;
     let back = `</div>`;
     addMask('on');
+    // switch to end game reason
     switch (reason){
         case 'outOfTime' :
             alertMessage(`${front}You've runned out of time ${playerName}!${back}${front}Your score of ${score} points is not eligible for leaderbord.${back}`);
@@ -443,6 +465,7 @@ function endGame(reason){
  * Function records the score in leaderboard if in the best 10 players
  */
 function recordTheScore(){
+    // read local storage
     let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
     if (!bestPlayers){
         bestPlayers = [];
@@ -452,9 +475,12 @@ function recordTheScore(){
         score: score
       };
     bestPlayers.push(playersRecord);
+    // sort the leaderboard in descending order
     bestPlayers.sort(function(a, b) {
         return b.score - a.score;
       });
+    // have only 10 records
     bestPlayers = bestPlayers.slice(0, 10);
+    // write to local storage
     localStorage.setItem('bestPlayers', JSON.stringify(bestPlayers));
     }
