@@ -426,25 +426,25 @@ ul{/** set top margin to socails **/
     margin-left: 2%;
     margin-right: 3%;
 }
-#answer-a-container{/** Absolute position of A answer **/
+#answer-a-container {/** Absolute position of A answer **/
     position: absolute;
     top: 0%;
     left: 0%;
     height: 50%;
 }
-#answer-b-container{/** Absolute position of B answer **/
+#answer-b-container {/** Absolute position of B answer **/
     position: absolute;
     top: 0%;
     right: 0%;
     height: 50%;
 }
-#answer-c-container{/** Absolute position of C answer **/
+#answer-c-container {/** Absolute position of C answer **/
     position: absolute;
     bottom: 0%;
     left: 0%;
     height: 50%;
 }
-#answer-d-container{/** Absolute position of D answer **/
+#answer-d-container {/** Absolute position of D answer **/
     position: absolute;
     bottom: 0%;
     right: 0%;
@@ -453,7 +453,7 @@ ul{/** set top margin to socails **/
 
 /** MASKING DIV **/
 
-#mask {/** style and position of masking div **/
+#mask {/** Style and position of masking div **/
     position: absolute;
     top: 7%;
     left: 0px;
@@ -462,6 +462,13 @@ ul{/** set top margin to socails **/
     height: 86%;
     display: none;
     z-index: 1;
+}
+
+/** LEADERBOARD **/
+
+#leaderboard {/** position of ok button of leaderboard **/
+    position: absolute;
+    top: 15%;
 }
 
 /** --------------------------------------------- **/

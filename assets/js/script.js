@@ -9,7 +9,7 @@ let currentlyPlaying = '';
 let addTime = false;
 let timeLeft = 30;
 let questionIndex = 0;
-let score = 10;
+let score = 0;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
 let timerStopped = false;
 let answerToKeep = '';
@@ -439,9 +439,11 @@ function endGame(reason){
     });
 }
 
+/**
+ * Function records the score in leaderboard if in the best 10 players
+ */
 function recordTheScore(){
     let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
-    console.log(bestPlayers);
     if (!bestPlayers){
         bestPlayers = [];
         };
@@ -449,12 +451,10 @@ function recordTheScore(){
         name: playerName,
         score: score
       };
-    console.log(playersRecord);
     bestPlayers.push(playersRecord);
     bestPlayers.sort(function(a, b) {
         return b.score - a.score;
       });
     bestPlayers = bestPlayers.slice(0, 10);
-    console.log(bestPlayers);
     localStorage.setItem('bestPlayers', JSON.stringify(bestPlayers));
     }
