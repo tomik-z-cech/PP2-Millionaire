@@ -792,4 +792,8 @@ ul{/** set top margin to socails **/
         left: 28%;
         font-size: 150%;
     }
+    .outer-round {/** size, position and colors of each lifeline **/
+        width: 120px;
+        height: 120px;
+    }
 }
