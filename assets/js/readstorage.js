@@ -1,9 +1,13 @@
 // Start function readStorage once DOM loaded
 document.addEventListener('DOMContentLoaded', readStorage);
 
+/**
+ * Function reads local storage
+ */
 function readStorage(){
     let positionInLeaderboard = 1;
     let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
+    // if local storage does exist and the length is bigger then 0 read it
     if (bestPlayers != null && bestPlayers.length > 0) {
         document.getElementById('leaderboard-content').innerHTML = document.getElementById('leaderboard-content').innerHTML + `<div class="leaderboard-heading"><span id="leaderboard-position">Position</span><span id="leaderboard-name">Name</span><span id="leaderboard-score">Score</span></div>`;
         bestPlayers.forEach(function(player){
@@ -13,6 +17,7 @@ function readStorage(){
             
             positionInLeaderboard++;
         });
+        // color first = gold, second = silver and third = bronze in the leaderboard list
         const ratingColor = document.getElementsByClassName('leaderboard-row');
         console.log(ratingColor);
         for (let i = 0; i < bestPlayers.length; i++){
@@ -26,6 +31,7 @@ function readStorage(){
             default :   break;
             }
         }
+    // if local storage doesn't exist display this message
     }else{
         document.getElementById('leaderboard-content').innerHTML = document.getElementById('leaderboard-content').innerHTML + `<div class="leaderboard-empty">Play the game to enter the leaderboard !</div>`;
     }
