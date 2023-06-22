@@ -769,6 +769,19 @@ ul{/** set top margin to socails **/
         font-size: 70%;
         margin-top: 3.5%;
     }
+
+    /** 404 PAGE **/
+
+    #alert-window-404 {/** size and properties of alert message window on 404.html**/
+        width: 70%;
+        height: 70%;
+        top: 15%;
+        left: 15%;
+        padding-top: 1%;
+    }
+    #ok-button-404 {/** position of home button of alert message on 404.html**/
+        margin-top: 30%;
+    }
 }
 
 /** ------------------------------------------------------------------------------ **/
