@@ -479,6 +479,7 @@ ul{/** set top margin to socails **/
 }
 #leaderboard-content{
     margin-top: 1%;
+    margin-bottom: 7%;
     width: 95%;
     height: auto;
     font-size: 150%;
@@ -500,7 +501,7 @@ ul{/** set top margin to socails **/
 }
 .leaderboard-row{
     position: relative;
-    margin-top: 3.5%;
+    margin-top: 2.5%;
 }
 #leaderboard-position{
     position: absolute;
@@ -753,6 +754,23 @@ ul{/** set top margin to socails **/
     }
     #question{
         font-size: small;
+    }
+    /** LEADERBOARD **/
+    #leaderboard-heading{
+        left: 20%;
+    }
+    .leaderboard-empty{
+        margin-top: 7%;
+        left: 7%;
+    }
+    .leaderboard-heading{
+        margin-top: 0.5%;
+        margin-bottom: 1%;
+        font-size: 80%;
+    }
+    .leaderboard-row{
+        font-size: 70%;
+        margin-top: 3.5%;
     }
 }
 
