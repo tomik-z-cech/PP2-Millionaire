@@ -283,7 +283,7 @@ ul{/** set top margin to socails **/
 
 /** 404 PAGE **/
 
-#alert-window-404 {/** size and properties of alert message window on 404.html**/
+#alert-window-404 {/** size and properties of alert message window on 404.html **/
     display: block;
     background-color: var(--purple);
     background-image: url(../images/alert-background.png);
@@ -296,7 +296,7 @@ ul{/** set top margin to socails **/
     left: 27%;
     padding-top: 1%;
 }
-#ok-button-404 {/** position of home button of alert message on 404.html**/
+#ok-button-404 {/** position of home button of alert message on 404.html **/
     margin-top: 30%;
 }
 
@@ -772,15 +772,12 @@ ul{/** set top margin to socails **/
 
     /** 404 PAGE **/
 
-    #alert-window-404 {/** size and properties of alert message window on 404.html**/
+    #alert-window-404 {/** size and properties of alert message window on 404.html - LESS 1140PX **/
         width: 70%;
         height: 70%;
         top: 15%;
         left: 15%;
         padding-top: 1%;
-    }
-    #ok-button-404 {/** position of home button of alert message on 404.html**/
-        margin-top: 30%;
     }
 }
 
@@ -831,5 +828,15 @@ ul{/** set top margin to socails **/
     }
     .leaderboard-row{/** position of leaderboard row - 1141 - 1600PX **/
         margin-top: 4.5%;
+    }
+
+    /** 404 PAGE **/
+
+    #alert-window-404 {/** size and properties of alert message window on 404.html - 1141 - 1600PX **/
+        width: 70%;
+        height: 56%;
+        top: 15%;
+        left: 15%;
+        padding-top: 1%;
     }
 }
