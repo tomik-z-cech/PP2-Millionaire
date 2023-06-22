@@ -168,178 +168,178 @@
     "medium": {
         "pointer":{
         "q0": {
-            "question": "Who lives in a pineapple under the sea?",
+            "question": "In traditional occupations what did a cooper make ?",
             "options": [
-            "Mickey Mouse",
-            "Harry Potter",
-            "Spongebob Squarepants",
-            "Santa Claus"
+            "Knives",
+            "Forks",
+            "Shoes",
+            "Barrels"
             ],
-            "answer": "2"
+            "answer": "3"
         },
         "q1": {
-            "question": "Who is the best cohort at Code Institute",
+            "question": "When an aircraft exceeds the sound barrier what sort of loud boom can sometimes be heard ?",
             "options": [
-            "Donald Trump",
-            "Alan Bushell",
-            "Eminem",
-            "Tom Cruise"
+            "A ultrasonic boom",
+            "A sonic boom",
+            "A light boom",
+            "A loud boom"
             ],
             "answer": "1"
         },
         "q2": {
-            "question": "Who is the best mentor at Code Institute",
+            "question": "How many wives did Henry VIII Have ?",
             "options": [
-            "Angelina Jolie",
-            "Brad Pitt",
-            "Daisy McGirr",
-            "Tom Hanks"
+            "4 wives",
+            "5 wives",
+            "6 wives",
+            "7 wives"
             ],
             "answer": "2"
         },
         "q3": {
-            "question": "What is an endoscope used to examine ?",
+            "question": "What colour's of Olymipc ring doesn't exist ?",
             "options": [
-            "The head",
-            "The leg",
-            "The inside of the body",
-            "The eye"
+            "Red",
+            "Blue",
+            "Yellow",
+            "Purple"
+            ],
+            "answer": "3"
+        },
+        "q4": {
+            "question": "What ingredient doesn't make margarita cocktail ?",
+            "options": [
+            "Tequilla",
+            "Lime Juice",
+            "Vodka",
+            "Triple Sec"
             ],
             "answer": "2"
         },
-        "q4": {
-            "question": "H2O is the chemical formula for what ?",
-            "options": [
-            "Air",
-            "Water",
-            "Lasagna",
-            "Fuel"
-            ],
-            "answer": "1"
-        },
         "q5": {
-            "question": "Brie and Camembert are types of which food ?",
+            "question": "Haw many people are there on an English jury ?",
             "options": [
-            "Cheese",
-            "Soup",
-            "Meat",
-            "Fast food"
+            "10",
+            "11",
+            "12",
+            "13"
             ],
-            "answer": "0"
+            "answer": "2"
         },
         "q6": {
-            "question": "In which country was Adolf Hitler born ?",
+            "question": "Which English town has teams called United and Wednesday ?",
             "options": [
-            "Poland",
-            "Austria",
-            "Czech republic",
-            "Russia"
+            "Manchester",
+            "Sheffield",
+            "Hull City",
+            "Sunderland"
             ],
             "answer": "1"
         },
         "q7": {
-            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
+            "question": "Who did Orlando Boolm playe in Piarets of Caribbean ?",
             "options": [
-            "Sally",
-            "Mickey Mouse",
-            "Frozen",
-            "Spiderman"
+            "Jack the Monkey",
+            "Hector Barbossa",
+            "Will Turner",
+            "Elizabeth Swann"
             ],
-            "answer": "0"
+            "answer": "2"
         },
         "q8": {
-            "question": "My mother’s mother is my … what ?",
+            "question": "What sense does human not have ?",
             "options": [
-            "Sister",
-            "Sibling",
-            "Grandmother",
-            "Mother"
+            "Smell",
+            "Taste",
+            "Mind reading",
+            "Sight"
             ],
             "answer": "2"
         },
         "q9": {
-            "question": "How many zeros are in ten thousand ?",
+            "question": "What's the name of the Royal family's castle in Scotland ?",
             "options": [
-            "Four Zeros",
-            "No Zeros",
-            "Eight Zeros",
-            "Twenty Zeros"
+            "Tantallon Castle",
+            "Inverness Castle",
+            "Glamis Castle",
+            "Balmoral Castle"
             ],
-            "answer": "0"
+            "answer": "3"
         },
         "q10": {
-            "question": "What is the name of a shape with 5 sides?",
+            "question": "In meters, how long is an Olympic swimming pool ?",
             "options": [
-            "Square",
-            "Pentagon",
-            "Hexagon",
-            "Triangle"
+            "40 meters",
+            "50 meters",
+            "60 meters",
+            "70 meters"
             ],
             "answer": "1"
         },
         "q11": {
-            "question": "How many Continents are there ?",
+            "question": "What's the name of the river that runs through Egypt ?",
             "options": [
-            "None",
-            "3",
-            "5",
-            "7"
+            "The Niger",
+            "The Orange River",
+            "The Nile",
+            "The Congo River"
             ],
-            "answer": "3"
+            "answer": "2"
         },
         "q12": {
-            "question": "What is the name of the tallest mountain on earth ?",
+            "question": "Who was British Prime Minister before Theresa May ?",
             "options": [
-            "Mount Everest (Nepal & China)",
-            "The hill around the corner",
-            "Snezka (Czech republic)",
-            "Mount Elbrus (Russia)"
+            "David Cameron",
+            "Rishi Sunak",
+            "Elizabeth Truss",
+            "Boris Johnson"
             ],
             "answer": "0"
         },
         "q13": {
-            "question": "In which country would you find the Sydney Opera House ?",
+            "question": "What element does O represent on the periodic table ?",
             "options": [
-            "Ireland",
-            "Australia",
-            "USA",
-            "Mexico"
+            "Osmium",
+            "Oxygen",
+            "Oganesson",
+            "Nobelium"
             ],
             "answer": "1"
         },
         "q14": {
-            "question": "What software company is headquartered in Redmond, Washington ?",
+            "question": "What nuts is used to make marzipan ?",
             "options": [
-            "Android",
-            "MicroSoft",
-            "Linux",
-            "iOS"
+            "Peanuts",
+            "Almond",
+            "Coconut",
+            "Cashews"
             ],
             "answer": "1"
         },
         "q15": {
-            "question": "In what country is the Chernobyl nuclear plant located ?",
+            "question": "What does BBC stand for ?",
             "options": [
-            "USA",
-            "Spain",
-            "Ireland",
-            "Ukraine"
+            "British Broadcasting Corporation",
+            "British Broadcasting Creation",
+            "British Broadcasting Company",
+            "British Broadcasting Channels"
         ],
-        "answer": "3"
+        "answer": "0"
         }
     }
     },
     "hard": {
         "pointer":{
         "q0": {
-            "question": "Who lives in a pineapple under the sea?",
+            "question": "What's the surname of the two brothers inventing the world's first airplane??",
             "options": [
-            "Mickey Mouse",
-            "Harry Potter",
-            "Spongebob Squarepants",
-            "Santa Claus"
+            "Wright",
+            "O'Boeing",
+            "Mooney",
+            "O'Leary"
             ],
-            "answer": "2"
+            "answer": "0"
         },
         "q1": {
             "question": "What's the sescond longest river in the UK ?",
