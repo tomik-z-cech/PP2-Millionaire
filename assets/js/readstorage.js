@@ -2,8 +2,6 @@
 document.addEventListener('DOMContentLoaded', readStorage);
 
 function readStorage(){
-    let sizeOfStorage = localStorage.length;
-    for (i = 0; i < sizeOfStorage; i++){
-    console.log(localStorage.getItem(localStorage.key(i)));
-    };
+    let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
+    console.log(bestPlayers);
 }

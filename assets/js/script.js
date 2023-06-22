@@ -9,7 +9,7 @@ let currentlyPlaying = '';
 let addTime = false;
 let timeLeft = 30;
 let questionIndex = 0;
-let score = 0;
+let score = 10;
 let scoreGrid = [5,10,50,200,500,1000,2000,5000,10000,20000];
 let timerStopped = false;
 let answerToKeep = '';
@@ -429,13 +429,32 @@ function endGame(reason){
             document.getElementById('score').innerHTML = score;
             document.getElementsByClassName('moneybar-item')[9].style.background = 'var(--correct-answer)';
             playSound(7);
+            recordTheScore();
             alertMessage(`${front}You are a winner ${playerName}!${back}${front}Your score is ${score} points.${back}`);
             break;     
     }
-    localStorage.setItem("players", playerName);
-    localStorage.setItem("scores", score);
     okButton.addEventListener('click', function(){
         alertWindow.style.display = 'none';
         window.location.replace('leaderboard.html');
     });
 }
+
+function recordTheScore(){
+    let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
+    console.log(bestPlayers);
+    if (!bestPlayers){
+        bestPlayers = [];
+        };
+    let playersRecord = {
+        name: playerName,
+        score: score
+      };
+    console.log(playersRecord);
+    bestPlayers.push(playersRecord);
+    bestPlayers.sort(function(a, b) {
+        return b.score - a.score;
+      });
+    bestPlayers = bestPlayers.slice(0, 10);
+    console.log(bestPlayers);
+    localStorage.setItem('bestPlayers', JSON.stringify(bestPlayers));
+    }
