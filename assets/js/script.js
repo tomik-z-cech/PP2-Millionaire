@@ -289,7 +289,7 @@ function countdownTimer(){
         endGame('outOfTime');
         }else{
         document.getElementById('timer').innerHTML = timeLeft;
-        if (timerStopped == false) timeLeft--;
+        //if (timerStopped == false) timeLeft--;
         if (addTime == true){
             timeLeft += 30;
             addTime = false;

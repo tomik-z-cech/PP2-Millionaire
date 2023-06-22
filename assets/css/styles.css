@@ -5,7 +5,7 @@
 
 :root{
 
-/** Color pallete **/
+/** COLOR PALETTE **/
 --light-blue: #77aaf7;
 --gey-transparent: rgba(49, 54, 57, 0.95);
 --purple: #3a1f64;
@@ -23,11 +23,11 @@
 --silver: #c0c0c0;
 --bronze: #cd7f32;
  
-/** Fonts **/
+/** FONTS **/
 --main-font: 'Rubik', sans-serif;
 --question-font: 'Monofett', arial;
 
-/** Other **/
+/** OTHERS **/
 --box: 2px solid #77aaf7;
 
 }
@@ -85,9 +85,6 @@ p {/** properties of p elements **/
 :-ms-input-placeholder {/** color of placeholder text **/
     color: var(--light-blue);
 }
-::-ms-input-placeholder {/** color of placeholder text **/
-    color: var(--light-blue);
-}
 ::-webkit-scrollbar {/** scrollbars styling **/
     width: 10px;
 }
@@ -100,7 +97,7 @@ p {/** properties of p elements **/
 ::-webkit-scrollbar-thumb:hover {/** scrollbars styling **/
     background: var(--purple);
 }
-#unhide-vertical{
+#unhide-vertical{/** properties of mask when device in portrait orientation **/
     display: none;
     position: absolute;
     top: 0%;
@@ -111,7 +108,7 @@ p {/** properties of p elements **/
 }
 /** HEADER & FOOTER **/
 
-.header-footer {/** set height, width, position and background color to header and foorter **/
+.header-footer {/** set height, width, position and background color to header and footer **/
     background-color: rgba(65, 15, 60, 0.85);
     width: 100%;
     height: 7%;
@@ -120,7 +117,7 @@ p {/** properties of p elements **/
     align-items: center;	
     justify-content: space-between;
 }
-#logo-header {/** logo in header **/
+#logo-header {/** properties of logo in header **/
     float: left;
     font-size: 280%;
     left: 2.5%;
@@ -182,11 +179,11 @@ ul{/** set top margin to socails **/
 
 /** RULES PAGE **/
 
-#logo {/** properties of logo elements **/
+#logo {/** properties of logo element **/
     height: 100px;
     width: 100px;
 }
-#display-container {/** position and size of outer rules container **/
+#display-container {/** position and size of outer rules & leaderboard container **/
     width: 95%;
     height: 85%;
     background-color: var(--dark-blue-bg);
@@ -217,7 +214,7 @@ ul{/** set top margin to socails **/
     align-items: center;
     font-size: 150%;
 }
-#rules-user-details {/** position and size of user detials and play button form **/
+#rules-user-details {/** position and size of user detials form **/
     position: absolute;
     width: 80%;
     height: 60px;
@@ -235,7 +232,7 @@ ul{/** set top margin to socails **/
 #play-button {/** position of play button **/
     margin-left: 60px;
 }
-#settings-label {/** properties of player name label element **/
+#settings-label {/** properties of settings label element **/
     font-size: 110%;
     font-weight: 600;
 }
@@ -243,14 +240,14 @@ ul{/** set top margin to socails **/
     font-size: 140%;
     font-weight: 600;
 }
-.rules-item{
+.rules-item{/** properties of each item in rules section **/
     margin-top: 2%;
     font-size: x-large;
 }
 
 /** ALERT MESSAGE **/
 
-#ok-button {/** position of ok button of alert message **/
+#ok-button {/** position of OK button of alert message **/
     position: absolute;
     bottom: 15px;
 }
@@ -275,7 +272,7 @@ ul{/** set top margin to socails **/
 #info-icon-mask{/** size and properties of info icon in porttrait mask **/
     width: 7%;
 }
-#alert-message {/** margin of actual message text **/
+#alert-message {/** margin of message text **/
     margin-top: 6%;
     padding-left: 5%;
     padding-right: 5%;
@@ -369,7 +366,7 @@ ul{/** set top margin to socails **/
 
 /** TIMER **/
 
-#timer-container {/** size and position of score container **/
+#timer-container {/** size and position of timer container **/
     width: 12%;
     height: 17%;
     position: absolute;
@@ -387,7 +384,7 @@ ul{/** set top margin to socails **/
 
 /** QUESTIONS **/
 
-#question-container {/** size and position of score container **/
+#question-container {/** size and position of question container **/
     height: 25%;
     position: absolute;
     bottom: 5%;
@@ -398,7 +395,7 @@ ul{/** set top margin to socails **/
     align-items: center;
     flex-direction: column;
 }
-#question{/** position of container for question **/
+#question{/** position of container for actual question **/
     position: absolute;
     top: 0px;
     left: 0px;
@@ -429,25 +426,25 @@ ul{/** set top margin to socails **/
     margin-left: 2%;
     margin-right: 3%;
 }
-#answer-a-container {/** Absolute position of A answer **/
+#answer-a-container {/** position of A answer **/
     position: absolute;
     top: 0%;
     left: 0%;
     height: 50%;
 }
-#answer-b-container {/** Absolute position of B answer **/
+#answer-b-container {/** position of B answer **/
     position: absolute;
     top: 0%;
     right: 0%;
     height: 50%;
 }
-#answer-c-container {/** Absolute position of C answer **/
+#answer-c-container {/** position of C answer **/
     position: absolute;
     bottom: 0%;
     left: 0%;
     height: 50%;
 }
-#answer-d-container {/** Absolute position of D answer **/
+#answer-d-container {/** position of D answer **/
     position: absolute;
     bottom: 0%;
     right: 0%;
@@ -456,7 +453,7 @@ ul{/** set top margin to socails **/
 
 /** MASKING DIV **/
 
-#mask {/** Style and position of masking div **/
+#mask {/** style and position of masking div **/
     position: absolute;
     top: 7%;
     left: 0px;
@@ -468,7 +465,8 @@ ul{/** set top margin to socails **/
 }
 
 /** LEADERBOARD **/
-#leaderboard-inner-container {/** position and size if inner leaderboard container **/
+
+#leaderboard-inner-container {/** position and size of inner leaderboard container **/
     position: absolute;
     top: 5%;    
     left: 10%;
@@ -477,7 +475,7 @@ ul{/** set top margin to socails **/
     padding: 2%;
     overflow-y: scroll;
 }
-#leaderboard-content{
+#leaderboard-content{/** position and size of best players **/
     margin-top: 1%;
     margin-bottom: 7%;
     width: 95%;
@@ -486,67 +484,68 @@ ul{/** set top margin to socails **/
     display: flex;
     flex-direction: column;
 }
-.leaderboard-empty{
+.leaderboard-empty{/** position and size of message displayed when no leaderboard exist yet **/
     position: absolute;
     margin-top: 3.5%;
     color: var(--light-blue);
     margin-bottom: 2%;
     left: 35%;
 }
-.leaderboard-heading{
+.leaderboard-heading{/** position and size if leaderboard heading CLASS **/
     position: relative;
     margin-top: 3.5%;
     color: var(--light-blue);
     margin-bottom: 2%;
 }
-.leaderboard-row{
+.leaderboard-row{/** position of leaderboard row **/
     position: relative;
     margin-top: 2.5%;
 }
-#leaderboard-position{
+#leaderboard-position{/** position of ranking in row in leaderboard **/
     position: absolute;
     left: 15%;
 }
-#leaderboard-name{
+#leaderboard-name{/** position of name in row in leaderboard **/
     position: absolute;
     left: 45%;
 }
-#leaderboard-score{
+#leaderboard-score{/** position of score in row in leaderboard **/
     position: absolute;
     left: 75%;
 }
 
 
-/** --------------------------------------------- **/
-/** ----- MEDIA QUERY PORTRAIT ORIENTATION ------ **/
-/** --------------------------------------------- **/
+/** ------------------------------------------------------------------------------ **/
+/** -------------------- MEDIA QUERY PORTRAIT ORIENTATION ------------------------ **/
+/** ------------------------------------------------------------------------------ **/
 
 @media only screen and (orientation: portrait){
-    #unhide-vertical{
+    #unhide-vertical{/** proerties of div to unhide in portrait mode **/
         display: flex;
         flex-direction: column;
     }
-    .hide-vertical{
+    .hide-vertical{/** proerties of items to hide in portrait mode **/
         display: none;
     }
-    .header-footer{
+    .header-footer{/** proerties of header & footer to hide in portrait mode **/
         display: none;
     }
 }
 
-/** ------------------------------------ **/
-/** ----- MEDIA QUERY LESS 1140PX ------ **/
-/** ------------------------------------ **/
+/** ------------------------------------------------------------------------------ **/
+/** -------------------- MEDIA QUERY - LESS 1140PX ------------------------------- **/
+/** ------------------------------------------------------------------------------ **/
 
 @media screen and (max-width: 1140px) {
     
     /** HEADER & FOOTER LESS 1140PX **/
-    .header-footer {/** set height, width, position and background color to header and foorter **/
+
+    .header-footer {/** set height, width, position and background color to header and foorter - LESS 1140PX **/
         height: 10%;
         align-items: center;	
         justify-content: space-between;
     }
-    #menu {/** Header - Menu **/
+    #menu {/** Header - Menu - LESS 1140PX **/
         line-height: normal;
         font-size: 120%;
         margin-left: 3px;
@@ -554,7 +553,7 @@ ul{/** set top margin to socails **/
         margin-right: 0px;
         z-index: 5;
     }
-    #menu a {/** Header - Links **/	
+    #menu a {/** Header - Links - LESS 1140PX **/	
         box-sizing: border-box;	
         display: block;	
         width: 95%;
@@ -565,7 +564,7 @@ ul{/** set top margin to socails **/
         position: relative;
         z-index: 0;
     }	
-    #hamburger-menu label {/** Header - Hamburger menu **/
+    #hamburger-menu label {/** Header - Hamburger menu - LESS 1140PX **/
         display: inline-block;	
         color: var(--off-white-text);	
         font-style: normal;	
@@ -575,162 +574,158 @@ ul{/** set top margin to socails **/
         right: 0px;
         top: 0px;
     }	
-    #hamburger-menu input:checked ~ #menu {/** Header - Hamburger menu - event:click **/	
+    #hamburger-menu input:checked ~ #menu {/** Header - Hamburger menu - event:click - LESS 1140PX **/	
         display: block;
     }
-    #menu {/** Header - Regular menu - hide **/
+    #menu {/** Header - Regular menu - hide - LESS 1140PX **/
         display: none;
         margin-top: 40%;
     }
-    #display-container {/** position and size of outer rules container **/
-        height: 75%;
-        top: 12.5%;
-    }
-    #logo-header {/** logo in header **/
+    #logo-header {/** logo in header - LESS 1140PX **/
         font-size: 120%;
         left: 2.5%;
         top: 11%;
     }
-    #socials{/** footer - socials - position **/
+    #socials{/** footer - socials - position - LESS 1140PX **/
         width: 85%;
         font-size: 100%;
     }
-    #socials > li {/** footer - socials - links **/
+    #socials > li {/** footer - socials - links - LESS 1140PX **/
         display: inline;
         padding-left: 15%;
     }
-    ul{/** set top margin to socails **/
+    ul{/** set top margin to socails - LESS 1140PX **/
         margin-top: 3%;
     }
 
     /** RULES PAGE LESS 1140 PX **/
         
-    h1{/** properties of h1 elements **/
+    h1{/** properties of h1 elements - LESS 1140PX **/
         left: 15%;
     }
-    h2{
+    h2{/** properties of h2 elements - LESS 1140PX **/
         font-size: large;
     }
-    #logo {/** properties of logo element **/
+    #logo {/** properties of logo element - LESS 1140PX **/
         height: 60px;
         width: 60px;
     }
-    #display-container {/** position and size of outer rules container **/
+    #display-container {/** position and size of outer rules & leaderboard container - LESS 1140PX **/
         width: 97%;
         height: 78%;
         top: 11%;
         left: 1.5%;
         z-index: -1;
     }
-    #rules-inner-container {/** position and size if inner rules container **/
+    #rules-inner-container {/** position and size of inner rules container - LESS 1140PX **/
         position: absolute;
         top: 5%;    
         left: 2.5%;
         width: 95%;
         height: 50%; 
     }
-    #settings {/** position and size of settings navbar **/
+    #settings {/** position and size of settings navbar - LESS 1140PX **/
         display: none;
     }
-    #rules-user-details {/** position and size of user detials and play button form **/
+    #rules-user-details {/** position and size of user detials form - LESS 1140PX **/
         position: absolute;
         height: 35%;
         width: 95%;
         bottom: 3%;
         left: 2.5%;
     }
-    #player-name-input {/** size and properties of input field **/
+    #player-name-input {/** size and properties of input field - LESS 1140PX **/
         height: 40px;
         margin-left: 0%;
         padding-left: 10px;
     }
-    #play-button {/** position of play button **/
+    #play-button {/** position of play button - LESS 1140PX **/
         margin-left: 15%;
     }
-    #player-name-label {/** properties of player name label element **/
+    #player-name-label {/** properties of player name label element - LESS 1140PX **/
         font-size: 120%;
         font-weight: 100;
     }
-    .rules-item{/** properties of li elemnts of rules **/
+    .rules-item{/** properties of each item in rules section - LESS 1140PX **/
         margin-top: 2%;
         font-size: medium;
     }
 
     /** ALERT MESSAGE **/
 
-    #ok-button {/** position of ok button of alert message **/
+    #ok-button {/** position of ok button of alert message - LESS 1140PX **/
         position: absolute;
         bottom: 15px;
     }
-    #alert-window {/** size and properties of alert message window **/
+    #alert-window {/** size and properties of alert message window - LESS 1140PX **/
         position: fixed;
         width: 70%;
         height: 60%;
         top: 20%;
         left: 15%;
     }
-    #info-icon {/** size and properties of info icon in alert window **/
+    #info-icon {/** size and properties of info icon in alert window - LESS 1140PX **/
         width: 7%;
         margin-right: 20px;
         margin-top: -2%;
     }
-    #alert-message {/** margin of actual message text **/
+    #alert-message {/** margin of actual message text - LESS 1140PX **/
         font-size: large;
     }
     
     /** LIFE-LINES **/
 
-    #life-lines-container{/** size and position of lifelines outer container **/
+    #life-lines-container{/** size and position of lifelines outer container - LESS 1140PX **/
         width: 14%;
         top: 5%;
     }
-    .outer-round {/** size, position and colors of each lifeline **/
+    .outer-round {/** size, position and colors of each lifeline - LESS 1140PX **/
         width: 65px;
         height: 65px;
         border: 10px solid var(--unused-lifeline);
     }
-    .outer-round:hover {/** lifeline event:hover **/
+    .outer-round:hover {/** lifeline event:hover - LESS 1140PX **/
         border: 10px solid var(--hover-color);    
     }
-    .lifeline-image{/** size of lifeline image **/
+    .lifeline-image{/** size of lifeline image - LESS 1140PX **/
         width: 60%;
     }
     /** TIMER **/
 
-    #timer-container {/** size and position of score container **/
+    #timer-container {/** size and position of timer container - LESS 1140PX **/
         width: 20%;
         height: 30%;
         right: 20%;
     }
-    #timer{/** size and position of timer text **/
+    #timer{/** size and position of timer text - LESS 1140PX **/
         margin-top:5%;
         font-size: 140%;
     }
     /** SCORE **/
 
-    #score-container {/** size and position of score container **/
+    #score-container {/** size and position of score container - LESS 1140PX **/
         width: 20%;
         height: 30%;
         left: 20%;
     }
-    #score{/** size of score text **/
+    #score{/** size of score text - LESS 1140PX **/
         margin-top: 5%;
         font-size: 140%;
     }
     /** MONEYBAR **/
 
-    #moneybar-container {/** size and position of moneybar outer container **/
+    #moneybar-container {/** size and position of moneybar outer container - LESS 1140PX **/
         width: 14%;
         top: 5%;
     }
-    .moneybar-item {/** size, position and colors of each moneybar item **/
+    .moneybar-item {/** size, position and colors of each moneybar item - LESS 1140PX **/
         height: 10%;
         border: var(--box);
     }
     
     /** MASKING DIV **/
 
-    #mask {/** style and position of masking div **/
+    #mask {/** style and position of masking div - LESS 1140PX **/
         top: 10%;
         height: 80%;
         display: none;
@@ -738,62 +733,90 @@ ul{/** set top margin to socails **/
     
     /** QUESTIONS **/
 
-    #question-container {/** size and position of score container **/
+    #question-container {/** size and position of question container - LESS 1140PX **/
         height: 55%;
         right: 20%;
         left: 20%;
     }
-    .letter {/** style of heading letter of each answer **/
+    .letter {/** style of heading letter of each answer - LESS 1140PX **/
         font-size: 140%;
         margin-left: 1%;
         margin-right: 2%;
     }
-    .answer-class {/** size of each answer **/
+    .answer-class {/** size of each answer - LESS 1140PX **/
         font-size: small;
         width: 50.25%;
     }
-    #question{
+    #question{/** font size of actual question - LESS 1140PX **/
         font-size: small;
     }
+
     /** LEADERBOARD **/
-    #leaderboard-heading{
+
+    #leaderboard-heading{/** position and size if leaderboard heading ID - LESS 1140PX **/
         left: 20%;
     }
-    .leaderboard-empty{
+    .leaderboard-empty{/** position and size of message displayed when no leaderboard exist yet - LESS 1140PX **/
         margin-top: 7%;
         left: 7%;
     }
-    .leaderboard-heading{
+    .leaderboard-heading{/** position and size if leaderboard heading CLASS - LESS 1140PX **/
         margin-top: 0.5%;
         margin-bottom: 1%;
         font-size: 80%;
     }
-    .leaderboard-row{
+    .leaderboard-row{/** position of leaderboard row - LESS 1140PX **/
         font-size: 70%;
         margin-top: 3.5%;
     }
 }
 
-/** ------------------------------------------------ **/
-/** ----- MEDIA QUERY MORE 1141PX LESS 1600PX ------ **/
-/** ------------------------------------------------ **/
+/** ------------------------------------------------------------------------------ **/
+/** ------------------- MEDIA QUERY - 1141PX TO 1600PX --------------------------- **/
+/** ------------------------------------------------------------------------------ **/
 
 @media screen and (min-width: 1141px) and (max-width: 1600px) {
      
-    /** RULES PAGE LESS 1140 PX **/
-        
-     h1{/** properties of h1 elements **/
+    /** GENERAL **/
+    
+    h1{/** properties of h1 elements - 1141 - 1600PX **/
         left: 15%;
     }
-    #settings {/** position and size of settings navbar **/
+    h2{/** properties of h1 elements - 1141 - 1600PX **/
+        font-size: 150%;
+    }
+
+    /** RULES **/
+
+    #settings {/** position and size of settings navbar - 1141 - 1600PX **/
         width: 44%;
         height: 7%;
         bottom: 16%;
         left: 28%;
         font-size: 150%;
     }
-    .outer-round {/** size, position and colors of each lifeline **/
-        width: 120px;
-        height: 120px;
+
+    /** LIFELINES **/
+
+    .outer-round {/** size, position and colors of each lifeline - 1141 - 1600PX **/
+        width: 110px;
+        height: 110px;
+    }
+
+    /** ALERT WINDOW **/
+
+    #ok-button {/** position of ok button of alert message - 1141 - 1600PX **/
+        position: absolute;
+        bottom: 15px;
+    }
+    #alert-window {/** size and properties of alert message window - 1141 - 1600PX **/
+        position: fixed;
+        width: 70%;
+        height: 40%;
+        top: 30%;
+        left: 15%;
+    }
+    .leaderboard-row{/** position of leaderboard row - 1141 - 1600PX **/
+        margin-top: 4.5%;
     }
 }
