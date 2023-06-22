@@ -19,6 +19,9 @@
 --used-lifeline: #c41919;
 --selected-answer: #b86a12;
 --correct-answer: #106d10;
+--gold: #ffd700;
+--silver: #c0c0c0;
+--bronze: #cd7f32;
  
 /** Fonts **/
 --main-font: 'Rubik', sans-serif;
@@ -465,11 +468,53 @@ ul{/** set top margin to socails **/
 }
 
 /** LEADERBOARD **/
-
-#leaderboard {/** position of ok button of leaderboard **/
+#leaderboard-inner-container {/** position and size if inner leaderboard container **/
     position: absolute;
-    top: 15%;
+    top: 5%;    
+    left: 10%;
+    width: 80%;
+    height: 90%; 
+    padding: 2%;
+    overflow-y: scroll;
 }
+#leaderboard-content{
+    margin-top: 1%;
+    width: 95%;
+    height: auto;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+}
+.leaderboard-empty{
+    position: absolute;
+    margin-top: 3.5%;
+    color: var(--light-blue);
+    margin-bottom: 2%;
+    left: 35%;
+}
+.leaderboard-heading{
+    position: relative;
+    margin-top: 3.5%;
+    color: var(--light-blue);
+    margin-bottom: 2%;
+}
+.leaderboard-row{
+    position: relative;
+    margin-top: 3.5%;
+}
+#leaderboard-position{
+    position: absolute;
+    left: 15%;
+}
+#leaderboard-name{
+    position: absolute;
+    left: 45%;
+}
+#leaderboard-score{
+    position: absolute;
+    left: 75%;
+}
+
 
 /** --------------------------------------------- **/
 /** ----- MEDIA QUERY PORTRAIT ORIENTATION ------ **/
