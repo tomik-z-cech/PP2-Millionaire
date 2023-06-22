@@ -4,7 +4,7 @@
     "easy": {
         "pointer":{
         "q0": {
-            "question": "Who lives in a pineapple under the sea?",
+            "question": "Who lives in a pineapple under the sea ?",
             "options": [
             "Mickey Mouse",
             "Harry Potter",
@@ -14,7 +14,7 @@
             "answer": "2"
         },
         "q1": {
-            "question": "Who is the best cohort at Code Institute",
+            "question": "Who is the best cohort at Code Institute ?",
             "options": [
             "Donald Trump",
             "Alan Bushell",
@@ -24,7 +24,7 @@
             "answer": "1"
         },
         "q2": {
-            "question": "Who is the best mentor at Code Institute",
+            "question": "Who is the best mentor at Code Institute ?",
             "options": [
             "Angelina Jolie",
             "Brad Pitt",
@@ -104,7 +104,7 @@
             "answer": "0"
         },
         "q10": {
-            "question": "What is the name of a shape with 5 sides?",
+            "question": "What is the name of a shape with 5 sides ?",
             "options": [
             "Square",
             "Pentagon",
@@ -126,7 +126,7 @@
         "q12": {
             "question": "What is the name of the tallest mountain on earth ?",
             "options": [
-            "Mount Everest (Nepal & China)",
+            "Mount Everest (NP & CHN)",
             "The hill around the corner",
             "Snezka (Czech republic)",
             "Mount Elbrus (Russia)"
@@ -342,122 +342,122 @@
             "answer": "2"
         },
         "q1": {
-            "question": "Who is the best cohort at Code Institute",
+            "question": "What's the sescond longest river in the UK ?",
             "options": [
-            "Donald Trump",
-            "Alan Bushell",
-            "Eminem",
-            "Tom Cruise"
+            "River Thames",
+            "River Tweed",
+            "River Nene",
+            "River Trent"
             ],
             "answer": "1"
         },
         "q2": {
-            "question": "Who is the best mentor at Code Institute",
+            "question": "What units is the intensity of sound measured in ?",
             "options": [
-            "Angelina Jolie",
-            "Brad Pitt",
-            "Daisy McGirr",
-            "Tom Hanks"
+            "Volts",
+            "Meters",
+            "Knots",
+            "Decibels"
             ],
-            "answer": "2"
+            "answer": "3"
         },
         "q3": {
-            "question": "What is an endoscope used to examine ?",
+            "question": "Which Ameriacan State is called the Golden State ?",
             "options": [
-            "The head",
-            "The leg",
-            "The inside of the body",
-            "The eye"
+            "Alabama",
+            "Montana",
+            "Mississippi",
+            "California"
             ],
-            "answer": "2"
+            "answer": "3"
         },
         "q4": {
-            "question": "H2O is the chemical formula for what ?",
+            "question": "What's the name of female charater, played by a man in Alladin ?",
             "options": [
-            "Air",
-            "Water",
-            "Lasagna",
-            "Fuel"
+            "Alladin",
+            "Widow Twankey",
+            "Jasmine",
+            "Genie"
             ],
             "answer": "1"
         },
         "q5": {
-            "question": "Brie and Camembert are types of which food ?",
+            "question": "Pure gold is how many carats ?",
             "options": [
-            "Cheese",
-            "Soup",
-            "Meat",
-            "Fast food"
+            "24 carats",
+            "28 carats",
+            "32 carats",
+            "36 carats"
             ],
             "answer": "0"
         },
         "q6": {
-            "question": "In which country was Adolf Hitler born ?",
+            "question": "Goulash originally comes from which country ?",
             "options": [
             "Poland",
-            "Austria",
+            "Hungary",
             "Czech republic",
             "Russia"
             ],
             "answer": "1"
         },
         "q7": {
-            "question": "Complete the title of the hit romantic comedy – ‘When Harry Met … ’?",
+            "question": "Which artist painted people know as matchstick men ?",
             "options": [
-            "Sally",
-            "Mickey Mouse",
-            "Frozen",
-            "Spiderman"
+            "L S Lowry",
+            "Pablo Picasso",
+            "Salvador Dali",
+            "Vincent van Gogh"
             ],
             "answer": "0"
         },
         "q8": {
-            "question": "My mother’s mother is my … what ?",
+            "question": "In which city did Dr.Knox buy corpses ?",
             "options": [
-            "Sister",
-            "Sibling",
-            "Grandmother",
-            "Mother"
-            ],
-            "answer": "2"
-        },
-        "q9": {
-            "question": "How many zeros are in ten thousand ?",
-            "options": [
-            "Four Zeros",
-            "No Zeros",
-            "Eight Zeros",
-            "Twenty Zeros"
-            ],
-            "answer": "0"
-        },
-        "q10": {
-            "question": "What is the name of a shape with 5 sides?",
-            "options": [
-            "Square",
-            "Pentagon",
-            "Hexagon",
-            "Triangle"
-            ],
-            "answer": "1"
-        },
-        "q11": {
-            "question": "How many Continents are there ?",
-            "options": [
-            "None",
-            "3",
-            "5",
-            "7"
+            "London",
+            "Liverpool",
+            "Manchester",
+            "Edinburgh"
             ],
             "answer": "3"
         },
-        "q12": {
-            "question": "What is the name of the tallest mountain on earth ?",
+        "q9": {
+            "question": "How many Bronte sisters were there ?",
             "options": [
-            "Mount Everest (Nepal & China)",
-            "The hill around the corner",
-            "Snezka (Czech republic)",
-            "Mount Elbrus (Russia)"
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+            ],
+            "answer": "1"
+        },
+        "q10": {
+            "question": "What line  of the film Jaws mase the AFI's greates lines ?",
+            "options": [
+            "You're gonna need a bigger hand",
+            "You're gonna need a bigger shark",
+            "You're gonna need a bigger harpune",
+            "You're gonna need a bigger boat"
+            ],
+            "answer": "3"
+        },
+        "q11": {
+            "question": "What date the Victorians celebrate the start of 20th century ?",
+            "options": [
+            "1st January 1899",
+            "1st January 1900",
+            "1st January 1901",
+            "They don't"
+            ],
+            "answer": "2"
+        },
+        "q12": {
+            "question": "Who created the detective Hercule Poirot ?",
+            "options": [
+            "Agatha Christie",
+            "Sir Arthur Conan Doyle",
+            "Ruth Rendell",
+            "Dashiell Hammett"
             ],
             "answer": "0"
         },
@@ -472,24 +472,24 @@
             "answer": "1"
         },
         "q14": {
-            "question": "What software company is headquartered in Redmond, Washington ?",
+            "question": "Which country is the natural habitat of the emu ?",
             "options": [
-            "Android",
-            "MicroSoft",
-            "Linux",
-            "iOS"
+            "New Zealand",
+            "China",
+            "Papua New Guinea",
+            "Australia"
             ],
-            "answer": "1"
+            "answer": "3"
         },
         "q15": {
-            "question": "In what country is the Chernobyl nuclear plant located ?",
+            "question": "What's the name of line given to a side of ship to show legal submersion ?",
             "options": [
-            "USA",
-            "Spain",
-            "Ireland",
-            "Ukraine"
+            "Limit line",
+            "Submersion line",
+            "Plimsoll line",
+            "Cargo line"
         ],
-        "answer": "3"
+        "answer": "2"
         }
     }
     },
@@ -501,7 +501,7 @@
             "The Marshall Plan",
             "The Churchill Plan",
             "The Stalin Plan",
-            "The de Galle Plan"
+            "The de Gaulle Plan"
             ],
             "answer": "0"
         },
@@ -518,10 +518,10 @@
         "q2": {
             "question": "What is St.Kitts and Nevis ?",
             "options": [
-            "An island country in the west Indies",
-            "An island country in the east Indies",
-            "An island country in the west Phillipines",
-            "An island country in the east Phillipines"
+            "An island country in the West Indies",
+            "An island country in the East Indies",
+            "An island country in the West Phillipines",
+            "An island country in the East Phillipines"
             ],
             "answer": "0"
         },
@@ -598,7 +598,7 @@
         "q10": {
             "question": "Who designed the Eiffel Tower ?",
             "options": [
-            "Gustav Eiffel",
+            "Gustave Eiffel",
             "Pedro Eiffel",
             "Jean Eiffel",
             "Alexandre Eiffel"
@@ -649,8 +649,8 @@
             "question": "What is prince Willaim's full name ?",
             "options": [
             "William Arthur Philip John Windsor",
-            "William Arthur Philip Louise Windsor",
-            "William Peter Philip Louise Windsor",
+            "William Arthur Philip Louis Windsor",
+            "William Peter Philip Louis Windsor",
             "William Arthur Philip George Windsor"
         ],
         "answer": "1"
