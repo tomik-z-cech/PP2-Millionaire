@@ -17,7 +17,7 @@ function readStorage(){
             
             positionInLeaderboard++;
         });
-        // color first = gold, second = silver and third = bronze in the leaderboard list
+        // color first = gold, second = silver and third = bronze in the leader board list
         const ratingColor = document.getElementsByClassName('leaderboard-row');
         console.log(ratingColor);
         for (let i = 0; i < bestPlayers.length; i++){
@@ -31,8 +31,8 @@ function readStorage(){
             default :   break;
             }
         }
-    // if local storage doesn't exist display this message
+    // if local storage doesn't exist or no redcords yet display this message
     }else{
-        document.getElementById('leaderboard-content').innerHTML = document.getElementById('leaderboard-content').innerHTML + `<div class="leaderboard-empty">Play the game to enter the leaderboard !</div>`;
+        document.getElementById('leaderboard-content').innerHTML = document.getElementById('leaderboard-content').innerHTML + `<div class="leaderboard-empty">Play the game to enter the Leader Board !</div>`;
     }
 }
