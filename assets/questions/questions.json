@@ -8,7 +8,7 @@
             "options": [
             "Mickey Mouse",
             "Harry Potter",
-            "Spongebob Squarepants",
+            "SpongeBob SquarePants",
             "Santa Claus"
             ],
             "answer": "2"
@@ -147,7 +147,7 @@
             "question": "What software company is headquartered in Redmond, Washington ?",
             "options": [
             "Android",
-            "MicroSoft",
+            "Microsoft",
             "Linux",
             "iOS"
             ],
@@ -188,7 +188,7 @@
             "answer": "1"
         },
         "q2": {
-            "question": "How many wives did Henry VIII Have ?",
+            "question": "How many wives did Henry VIII have ?",
             "options": [
             "4 wives",
             "5 wives",
@@ -198,7 +198,7 @@
             "answer": "2"
         },
         "q3": {
-            "question": "What colour's of Olymipc ring doesn't exist ?",
+            "question": "What colour's of Olympic ring doesn't exist ?",
             "options": [
             "Red",
             "Blue",
@@ -210,7 +210,7 @@
         "q4": {
             "question": "What ingredient doesn't make margarita cocktail ?",
             "options": [
-            "Tequilla",
+            "Tequila",
             "Lime Juice",
             "Vodka",
             "Triple Sec"
@@ -238,7 +238,7 @@
             "answer": "1"
         },
         "q7": {
-            "question": "Who did Orlando Boolm playe in Piarets of Caribbean ?",
+            "question": "Who did Orlando Bloom played in Pirates of the Caribbean ?",
             "options": [
             "Jack the Monkey",
             "Hector Barbossa",
@@ -342,7 +342,7 @@
             "answer": "0"
         },
         "q1": {
-            "question": "What's the sescond longest river in the UK ?",
+            "question": "What's the second the longest river in the UK ?",
             "options": [
             "River Thames",
             "River Tweed",
@@ -362,7 +362,7 @@
             "answer": "3"
         },
         "q3": {
-            "question": "Which Ameriacan State is called the Golden State ?",
+            "question": "Which American State is called the Golden State ?",
             "options": [
             "Alabama",
             "Montana",
@@ -372,7 +372,7 @@
             "answer": "3"
         },
         "q4": {
-            "question": "What's the name of female charater, played by a man in Alladin ?",
+            "question": "What's the name of female character, played by a man in Alladin film ?",
             "options": [
             "Alladin",
             "Widow Twankey",
@@ -432,7 +432,7 @@
             "answer": "1"
         },
         "q10": {
-            "question": "What line  of the film Jaws mase the AFI's greates lines ?",
+            "question": "What line  of the film Jaws made the AFI's greatest lines ?",
             "options": [
             "You're gonna need a bigger hand",
             "You're gonna need a bigger shark",
@@ -496,7 +496,7 @@
     "final": {
         "pointer":{
         "q0": {
-            "question": "How was the European Recovery Progame in the 1940's more commonly known ?",
+            "question": "How was the European Recovery Programe in the 1940s more commonly known ?",
             "options": [
             "The Marshall Plan",
             "The Churchill Plan",
@@ -520,8 +520,8 @@
             "options": [
             "An island country in the West Indies",
             "An island country in the East Indies",
-            "An island country in the West Phillipines",
-            "An island country in the East Phillipines"
+            "An island country in the West Philippines",
+            "An island country in the East Philippines"
             ],
             "answer": "0"
         },
