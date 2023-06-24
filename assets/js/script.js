@@ -62,7 +62,7 @@ function alertMessage(message){
     });
 }
 /**
- * Function checks for audio setting checkboxes (swithces)
+ * Function checks for audio setting checkboxes (switchces)
  */
 function checkAudioSettings(){
     isMusicOn = document.getElementById('music-switch').checked;
@@ -120,9 +120,9 @@ function playMusic(track){
 }
 
 /**
- * Function checks if players name input is empty string or conatins spaces 
+ * Function checks if players name input is empty string or contains spaces 
  * If true alert message is displayed
- * If flase game starts
+ * If false game starts
  */
 function checkName(){
     playerName = playerNameInput.value; 
@@ -401,7 +401,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                 },500);
                 askQuestion();
             }else{
-                // end the game as seslected answer wasn't correct
+                // end the game as selected answer wasn't correct
                 playSound(6);
                 setTimeout(() => {endGame('incorrectAnswer');},3500);
             };
@@ -462,7 +462,7 @@ function endGame(reason){
 }
 
 /**
- * Function records the score in leaderboard if in the best 10 players
+ * Function records the score in leader board if in the best 10 players
  */
 function recordTheScore(){
     // read local storage
@@ -475,7 +475,7 @@ function recordTheScore(){
         score: score
       };
     bestPlayers.push(playersRecord);
-    // sort the leaderboard in descending order
+    // sort the leader board in descending order
     bestPlayers.sort(function(a, b) {
         return b.score - a.score;
       });
