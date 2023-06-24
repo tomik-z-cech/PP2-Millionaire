@@ -270,7 +270,7 @@ ul{/** set top margin to socails **/
     margin-right: 20px;
 }
 #info-icon-mask{/** size and properties of info icon in porttrait mask **/
-    width: 7%;
+    width: 45%;
 }
 #alert-message {/** margin of message text **/
     margin-top: 6%;
