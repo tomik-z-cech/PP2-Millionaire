@@ -244,6 +244,13 @@ ul{/** set top margin to socails **/
     margin-top: 2%;
     font-size: x-large;
 }
+.rules-image{/** properties of rules images **/
+    margin-top: 1%;
+    max-width: 230px;
+    height: 25%;
+    max-height: 300px;
+    border: 1px solid var(--light-blue);
+}
 
 /** ALERT MESSAGE **/
 
@@ -815,9 +822,11 @@ ul{/** set top margin to socails **/
     h1{/** properties of h1 elements - 1141 - 1600PX **/
         left: 15%;
     }
-    h2{/** properties of h1 elements - 1141 - 1600PX **/
-        margin-top: 10%;
+    h2{/** properties of h2 elements - 1141 - 1600PX **/
         font-size: 150%;
+    }
+    .top-margin{
+        margin-top: 0%;
     }
 
     /** HEADER **/

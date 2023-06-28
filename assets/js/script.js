@@ -192,7 +192,7 @@ function createMoneyBar(){
 */
 function createScoreArea(){
     setTimeout(() => {
-        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="score-container" class="blue-border grey-background"><h2>Score :</h2><div id="score">0</div></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="score-container" class="blue-border grey-background"><h2 class="top-margin">Score :</h2><div id="score">0</div></div>`;
         playSound(2);
     }, 8200);
 }
@@ -202,7 +202,7 @@ function createScoreArea(){
 */
 function createTimerArea(){
     setTimeout(() => {
-        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2>Time left :</h2><div id="timer">30</div></div>`;
+        displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="timer-container" class="blue-border grey-background"><h2 class="top-margin">Time left :</h2><div id="timer">30</div></div>`;
         playSound(2);
     }, 9100);
 }
