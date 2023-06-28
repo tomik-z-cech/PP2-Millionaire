@@ -11,7 +11,7 @@
 --purple: #3a1f64;
 --dark-blue-bg: #053278;
 --off-white-text: #f5eed8;
---hover-color: #ecf01a;
+--hover-color: rgba(236, 240, 26);
 --current-moneybar: #646406;
 --unused-lifeline: #106d10;
 --white: #ffffff;
@@ -418,7 +418,8 @@ ul{/** set top margin to socails **/
     align-items: center;
 }
 .answer-class:hover {/** answer event:hover **/
-    color: var(--hover-color);
+    color: var(--white);
+    font-weight: 700;
 }
 .letter {/** style of heading letter of each answer **/
     font-family: var(--question-font);
