@@ -17,7 +17,7 @@
 --white: #ffffff;
 --black: #000000;
 --used-lifeline: #c41919;
---selected-answer: #b86a12;
+--selected-answer: rgba(184, 106, 18, 0.8);
 --correct-answer: #106d10;
 --gold: #ffd700;
 --silver: #c0c0c0;
