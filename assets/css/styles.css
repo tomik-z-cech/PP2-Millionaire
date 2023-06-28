@@ -568,11 +568,12 @@ ul{/** set top margin to socails **/
         display: inline-block;	
         color: var(--off-white-text);	
         font-style: normal;	
-        padding: 0.8%;	
+        padding-right: 1%;	
         background-color: transparent;	
         position: fixed;
         right: 0px;
         top: 0px;
+        font-size: X-large;
     }	
     #hamburger-menu input:checked ~ #menu {/** Header - Hamburger menu - event:click - LESS 1140PX **/	
         display: block;
