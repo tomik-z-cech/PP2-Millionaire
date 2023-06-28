@@ -246,6 +246,7 @@ ul{/** set top margin to socails **/
 }
 .rules-image{/** properties of rules images **/
     margin-top: 1%;
+    width: 25%;
     max-width: 230px;
     height: 25%;
     max-height: 300px;
