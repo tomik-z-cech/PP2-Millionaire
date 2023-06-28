@@ -472,7 +472,7 @@ ul{/** set top margin to socails **/
     top: 5%;    
     left: 10%;
     width: 80%;
-    height: 90%; 
+    height: 80%; 
     padding: 2%;
     overflow-y: scroll;
 }
@@ -516,6 +516,10 @@ ul{/** set top margin to socails **/
 }
 #play-again-button{
     position: absolute;
+    width: 20%;
+    height: 8%;
+    left: 40%;
+    bottom: 3%;
 }
 
 
@@ -778,15 +782,15 @@ ul{/** set top margin to socails **/
         position: absolute;
         top: 5%;    
         left: 5%;
+        height: 75%;
         width: 90%;
-        height: 75%; 
-        padding: 2%;
-        overflow-y: scroll;
     }
     #play-again-button{
         position: absolute;
+        width: 26%;
+        height: 18%;
         bottom: 1%;
-        left: 38%;
+        left: 37%;
     }
 
     /** 404 PAGE **/
