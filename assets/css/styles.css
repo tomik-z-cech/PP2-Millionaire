@@ -851,8 +851,8 @@ ul{/** set top margin to socails **/
     #alert-window {/** size and properties of alert message window - 1141 - 1600PX **/
         position: fixed;
         width: 70%;
-        height: 40%;
-        top: 30%;
+        height: 54%;
+        top: 23%;
         left: 15%;
     }
     .leaderboard-row{/** position of leaderboard row - 1141 - 1600PX **/
