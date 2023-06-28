@@ -514,6 +514,9 @@ ul{/** set top margin to socails **/
     position: absolute;
     left: 75%;
 }
+#play-again-button{
+    position: absolute;
+}
 
 
 /** ------------------------------------------------------------------------------ **/
@@ -759,7 +762,7 @@ ul{/** set top margin to socails **/
         left: 20%;
     }
     .leaderboard-empty{/** position and size of message displayed when no leaderboard exist yet - LESS 1140PX **/
-        margin-top: 7%;
+        margin-top: 0%;
         left: 7%;
     }
     .leaderboard-heading{/** position and size if leaderboard heading CLASS - LESS 1140PX **/
@@ -770,6 +773,20 @@ ul{/** set top margin to socails **/
     .leaderboard-row{/** position of leaderboard row - LESS 1140PX **/
         font-size: 70%;
         margin-top: 3.5%;
+    }
+    #leaderboard-inner-container {/** position and size of inner leaderboard container **/
+        position: absolute;
+        top: 5%;    
+        left: 5%;
+        width: 90%;
+        height: 75%; 
+        padding: 2%;
+        overflow-y: scroll;
+    }
+    #play-again-button{
+        position: absolute;
+        bottom: 1%;
+        left: 38%;
     }
 
     /** 404 PAGE **/

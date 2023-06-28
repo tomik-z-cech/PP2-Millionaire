@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', readStorage);
  * Function reads local storage
  */
 function readStorage(){
+    // Add event listener to 'play-again-button'
+    document.getElementById('play-again-button').addEventListener('click', function(){
+        window.location.replace('index.html');
+    });
     let positionInLeaderboard = 1;
     let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
     // if local storage does exist and the length is bigger then 0 read it
