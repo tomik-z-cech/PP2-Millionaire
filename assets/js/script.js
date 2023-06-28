@@ -48,7 +48,7 @@ const questionAreaHTML = `
 function startingPoint(){
     playerNameInput.value = '';
     playButton.addEventListener('click', checkName);
-};
+}
 
 /**
  * Function creates an alert window and take "message" as parameter to display alert message
@@ -165,17 +165,17 @@ function createLifelines(){
         setTimeout(() => {
             document.getElementById('life-lines-container').innerHTML =  document.getElementById('life-lines-container').innerHTML + `${insertFront} ${innerTag[i]} ${insertBack}`;
         }, timeOut[i]);
-    };    
+    }    
 }
 
 /**
  * Function creates the moneybar section with animated effects
  */
 function createMoneyBar(){
-    let insertFront = `<div class="moneybar-item align-center-center"><div>`
-    let insertBack = `</div></div>`
-    let timeOut = [4300,4670,5040,5410,5780,6150,6520,6890,7260,7600]
-    let innerTag = ['€ 5','€ 10','€ 50','€ 200','€ 500','€ 1.000','€ 2.000','€ 5.000','€ 10.000','€ 20.000']
+    let insertFront = `<div class="moneybar-item align-center-center"><div>`;
+    let insertBack = `</div></div>`;
+    let timeOut = [4300,4670,5040,5410,5780,6150,6520,6890,7260,7600];
+    let innerTag = ['€ 5','€ 10','€ 50','€ 200','€ 500','€ 1.000','€ 2.000','€ 5.000','€ 10.000','€ 20.000'];
     setTimeout(() => {
         displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
         playSound(1);
@@ -184,7 +184,7 @@ function createMoneyBar(){
         setTimeout(() => {
             document.getElementById('moneybar-container').innerHTML =  document.getElementById('moneybar-container').innerHTML + `${insertFront}${innerTag[i]}${insertBack}`;
         }, timeOut[i]);
-    };
+    }
 }
 
 /**
@@ -257,7 +257,7 @@ function differentQuestion(){
     playSound(8);
     if (isMusicOn == true){
         currentlyPlaying.pause();
-    };
+    }
     document.getElementsByClassName('outer-round')[1].style.border = "10px solid var(--used-lifeline)";
     document.getElementsByClassName('outer-round')[1].removeAttribute("onClick");
     askQuestion();
@@ -274,7 +274,7 @@ function fifthyFifthy(){
     while (remove1 == answerToKeep || remove2 == answerToKeep || remove1 == remove2){
         remove1 = (Math.floor(Math.random() * 4));
         remove2 = (Math.floor(Math.random() * 4));
-    };
+    }
     // remove 2 incorrect answers
     document.getElementsByClassName('answer-class')[remove1].style.display = 'none';
     document.getElementsByClassName('answer-class')[remove2].style.display = 'none';
@@ -347,10 +347,10 @@ function askQuestion(){
         document.getElementById('question').innerHTML = questions.qlevel[level].pointer[questionRef].question;
         // display answer options in the grid
         let answerGrid = ['answer-a','answer-b','answer-c','answer-d'];
-        for (i = 0; i < answerGrid.length; i++){
+        for (let i = 0; i < answerGrid.length; i++){
             document.getElementsByClassName('answer-class')[i].style.background = 'var(--grey-transparent)';
             document.getElementById(answerGrid[i]).innerHTML = questions.qlevel[level].pointer[questionRef].options[i];
-        };
+        }
         // event listeners for options
         const answers = document.querySelectorAll('.answer-class');
         answers.forEach((answer, index) => {
@@ -373,7 +373,7 @@ function checkAnswer(playerAnswer,correctAnswer){
         let isWinner;
         if (isMusicOn == true){
             currentlyPlaying.pause();
-        };
+        }
         playSound(4);
         // correct answer selected
         if (playerAnswer == correctAnswer){
@@ -382,7 +382,7 @@ function checkAnswer(playerAnswer,correctAnswer){
         // incorrect answer selected
         }else{
             isWinner = false;
-        };
+        }
         answerToKeep = '';
         // reset variables and display another question if answer was correct
         setTimeout(() => {
@@ -393,7 +393,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                     return;
                 }else{
                     playSound(5);
-                };
+                }
                 setTimeout(() => {
                     addMask('off');
                     document.getElementById('score').innerHTML = score;
@@ -404,7 +404,7 @@ function checkAnswer(playerAnswer,correctAnswer){
                 // end the game as selected answer wasn't correct
                 playSound(6);
                 setTimeout(() => {endGame('incorrectAnswer');},3500);
-            };
+            }
         },3300);
 }
 
@@ -434,7 +434,7 @@ function addMask(maskRequired){
 function endGame(reason){
     if (isMusicOn == true){
         currentlyPlaying.pause();
-    };
+    }
     timerStopped = true;
     let front = `<div class="align-center-center">`;
     let back = `</div>`;
@@ -469,7 +469,7 @@ function recordTheScore(){
     let bestPlayers = JSON.parse(localStorage.getItem('bestPlayers'));
     if (!bestPlayers){
         bestPlayers = [];
-        };
+        }
     let playersRecord = {
         name: playerName,
         score: score
