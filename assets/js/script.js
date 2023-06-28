@@ -442,17 +442,17 @@ function endGame(reason){
     // switch to end game reason
     switch (reason){
         case 'outOfTime' :
-            alertMessage(`${front}You've runned out of time ${playerName}!${back}${front}Your score of ${score} points is not eligible for Leader Board.${back}`);
+            alertMessage(`${front}You've runned out of time ${playerName}!${back}${front}Your score ${score} pts is not eligible for Leader Board.${back}`);
             break;
         case 'incorrectAnswer' :
-            alertMessage(`${front}That's wrong ${playerName}!${back}${front}Your score of ${score} points is not eligible for Leader Board.${back}`);
+            alertMessage(`${front}That's wrong ${playerName}!${back}${front}Your score ${score} pts is not eligible for Leader Board.${back}`);
             break;
         case 'winner' :
             document.getElementById('score').innerHTML = score;
             document.getElementsByClassName('moneybar-item')[9].style.background = 'var(--correct-answer)';
             playSound(7);
             recordTheScore();
-            alertMessage(`${front}You are a winner ${playerName}!${back}${front}Your score is ${score} points.${back}`);
+            alertMessage(`${front}You are a winner ${playerName}!${back}${front}Your score is ${score} pts.${back}`);
             break;     
     }
     okButton.addEventListener('click', function(){

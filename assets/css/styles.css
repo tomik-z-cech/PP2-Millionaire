@@ -660,10 +660,10 @@ ul{/** set top margin to socails **/
     }
     #alert-window {/** size and properties of alert message window - LESS 1140PX **/
         position: fixed;
-        width: 70%;
-        height: 60%;
-        top: 20%;
-        left: 15%;
+        width: 84%;
+        height: 76%;
+        top: 12%;
+        left: 8%;
     }
     #info-icon {/** size and properties of info icon in alert window - LESS 1140PX **/
         width: 7%;
