@@ -580,7 +580,7 @@ ul{/** set top margin to socails **/
         background-color: transparent;	
         position: fixed;
         right: 0px;
-        top: 0px;
+        top: -2px;
         font-size: X-large;
     }	
     #hamburger-menu input:checked ~ #menu {/** Header - Hamburger menu - event:click - LESS 1140PX **/	
@@ -778,7 +778,7 @@ ul{/** set top margin to socails **/
         font-size: 70%;
         margin-top: 3.5%;
     }
-    #leaderboard-inner-container {/** position and size of inner leaderboard container **/
+    #leaderboard-inner-container {/** position and size of inner leaderboard container - LESS 1140PX **/
         position: absolute;
         top: 5%;    
         left: 5%;
@@ -819,6 +819,12 @@ ul{/** set top margin to socails **/
         font-size: 150%;
     }
 
+    /** HEADER **/
+
+    #logo-header {/** properties of logo in header - LESS 1600PX **/
+        top: 3%;
+    }
+
     /** RULES **/
 
     #settings {/** position and size of settings navbar - 1141 - 1600PX **/
@@ -851,6 +857,12 @@ ul{/** set top margin to socails **/
     }
     .leaderboard-row{/** position of leaderboard row - 1141 - 1600PX **/
         margin-top: 4.5%;
+    }
+
+    /** LEADER BOARD **/
+
+    .leaderboard-empty{/** position and size of message displayed when no leaderboard exist yet - LESS 1600PX **/
+        left: 28%;
     }
 
     /** 404 PAGE **/
