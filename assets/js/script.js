@@ -175,7 +175,7 @@ function createMoneyBar(){
     let insertFront = `<div class="moneybar-item align-center-center"><div>`
     let insertBack = `</div></div>`
     let timeOut = [4300,4670,5040,5410,5780,6150,6520,6890,7260,7600]
-    let innerTag = ['5 €','10 €','50 €','200 €','500 €','1.000 €','2.000 €','5.000 €','10.000 €','20.000 €']
+    let innerTag = ['€ 5','€ 10','€ 50','€ 200','€ 500','€ 1.000','€ 2.000','€ 5.000','€ 10.000','€ 20.000']
     setTimeout(() => {
         displayConatiner.innerHTML = displayConatiner.innerHTML + `<div id="moneybar-container" class="blue-border grey-background"></div>`;
         playSound(1);
@@ -442,7 +442,7 @@ function endGame(reason){
     // switch to end game reason
     switch (reason){
         case 'outOfTime' :
-            alertMessage(`${front}You've runned out of time ${playerName}!${back}${front}Your score ${score} pts is not eligible for Leader Board.${back}`);
+            alertMessage(`${front}You've run out of time ${playerName}!${back}${front}Your score ${score} pts is not eligible for Leader Board.${back}`);
             break;
         case 'incorrectAnswer' :
             alertMessage(`${front}That's wrong ${playerName}!${back}${front}Your score ${score} pts is not eligible for Leader Board.${back}`);

@@ -816,6 +816,7 @@ ul{/** set top margin to socails **/
         left: 15%;
     }
     h2{/** properties of h1 elements - 1141 - 1600PX **/
+        margin-top: 10%;
         font-size: 150%;
     }
 
@@ -857,6 +858,18 @@ ul{/** set top margin to socails **/
     }
     .leaderboard-row{/** position of leaderboard row - 1141 - 1600PX **/
         margin-top: 4.5%;
+    }
+
+    /** SCORE **/
+    
+    #score{/** position score - 1141 - 1600PX **/
+        margin-top: 0%;
+    }
+
+    /** TIMER **/
+
+    #timer{/** position time - 1141 - 1600PX **/
+        margin-top: 0%;
     }
 
     /** LEADER BOARD **/
