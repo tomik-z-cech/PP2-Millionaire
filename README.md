@@ -151,3 +151,12 @@
 ![Leader Board page - screenshot](/docs/leaderboard.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+## **6.3. Existing Features summary**
+- Users of this site are able to read the rules of the game, enter their game name, stitch on/off (off by default) the back ground music and/or sound effects on the rules page.
+- Name is validated for incorrect format, users are prompted with set of randomly selected questions.
+- Users are able to use three different lifelines.
+- After answering all questions correctly, score is stored in local storage.
+- Site responses to different view-port sizes.
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
