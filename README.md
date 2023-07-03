@@ -173,3 +173,46 @@
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ---
+
+# **7. Wireframes**
+| Name of page | Wireframe PC | Wireframe Phone
+|--|--|--|
+| **index.html - rules section** | *appendix 12* | *appendix 13*  |
+| **index.html - game section** | *appendix 14* | *appendix 15*  |
+| **leaderboard.html** | *appendix 16* | *appendix 17*  |
+| **vertical mask for mobile devices** | N/A | *appendix 18*  |
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+*Appendix 12 - Wireframe - index.html - rules section - PC*
+
+![Appendix 12 - Wireframe - index.html - rules section - PC](docs/rules-wireframe-pc.png)
+
+*Appendix 13 - Wireframe - index.html - rules section - Phone*
+
+![Appendix 13 - Wireframe - index.html - rules section - Phone](docs/rules-wireframe-mobile.png)
+
+
+*Appendix 14 - Wireframe - index.html - game section - PC*
+
+![Appendix 14 - Wireframe - index.html - game section - PC](docs/game-wireframe-pc.png)
+
+
+*Appendix 15 - Wireframe - index.html - game section - Phone*
+
+![Appendix 15 - Wireframe - index.html - game section - Phone](docs/game-wireframe-mobile.png)
+
+
+*Appendix 16 - Wireframe - leaderboard.html PC*
+
+![Appendix 16 - Wireframe - leaderboard.html PC](docs/leaderboard-wireframe-pc.png)
+
+
+*Appendix 17 - Wireframe - leaderboard.html Phone*
+
+![Appendix 17 - Wireframe - leaderboard.html Phone](docs/leaderboard-wireframe-mobile.png)
+
+
+*Appendix 18 - Wireframe - vertical mask - only applicable on mobile devices*
+
+![Appendix 18 - Wireframe - vertical mask](docs/vertical-mask-wireframe.png)
