@@ -188,7 +188,7 @@
 | **index.html - rules section** | *appendix 12* | *appendix 13*  |
 | **index.html - game section** | *appendix 14* | *appendix 15*  |
 | **leaderboard.html** | *appendix 16* | *appendix 17*  |
-| **vertical mask for mobile devices** | N/A | *appendix 18*  |
+| **vertical mask for screens with width > height** | N/A | *appendix 18*  |
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
@@ -221,7 +221,7 @@
 ![Appendix 17 - Wireframe - leaderboard.html Phone](docs/leaderboard-wireframe-mobile.png)
 
 
-*Appendix 18 - Wireframe - vertical mask - only applicable on mobile devices*
+*Appendix 18 - Wireframe - vertical mask - only applicable on screens with width > height*
 
 ![Appendix 18 - Wireframe - vertical mask](docs/vertical-mask-wireframe.png)
 
@@ -290,9 +290,43 @@
 |User|Eamonn Ryan   |
 |--|--|
 | Feedback given | All looks good and working just fine. Might be no harm to add rotate your phone icon. |
-| Applied changes | Added "Rotate your phone" to the vertical mask to `*.html` |
+| Applied changes | Added "Rotate your phone" to the vertical mask to `*.html`. Commit [e0fa355](https://github.com/tomik-z-cech/PP2-Millionaire/commit/e0fa355180211d558bbd78f96dc548812be6e003) |
 ---
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ---
+
+## **8.5. Validators testing**
+
+### Jigsaw CSS validator
+- **Method :** Project (`styles.css`) was tested by  [W3C CSS Validator](https://jigsaw.w3.org/).
+- **Result :** No errors were found when tested (*appendix 19*).
+
+*Appendix 19 - Jigsaw CSS Validator testing - `styles.css`*
+
+![Appendix 19 - Jigsaw testing - styles.css](docs/css-validator.png)
+
+### W3C HTML validator
+- **Method :** Every HTML document was tested by  [W3C Validator](https://validator.w3.org/).
+- **Result :** Initial validating found 1 error (stray `</img>` tags. Stray tags were removed and there were no future errors found after this fix. Commit [f66c933](https://github.com/tomik-z-cech/PP2-Millionaire/commit/f66c933fb608ccd7affed0a8e73c3ac19ff52ce9).
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+|File|Appendix  |
+|--|--|
+|`index.html`  |*appendix 20*  |
+|`leaderboard.html`  |*appendix 21*  |
+|`404.html`  |*appendix 22*  |
+
+*Appendix 20 - W3C Validator testing - `index.html`*
+
+![Appendix 21 - W3C Validator testing - index.html](docs/index.png)
+
+*Appendix 21 - W3C Validator testing - `leaderboard.html`*
+
+![Appendix 22 - W3C Validator testing - leaderboard.html](docs/html-validator-leaderboard.png)
+
+*Appendix 22 - W3C Validator testing - `404.html`*
+
+![Appendix 23 - W3C Validator testing - 404.html](docs/html-validator-404.png)
