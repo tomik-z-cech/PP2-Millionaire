@@ -332,7 +332,19 @@
 
 ![Appendix 23 - W3C Validator testing - 404.html](docs/html-validator-404.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP1-Cibo-Fresco#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+### JSHint Java Script validator
+- **Method :** `*.js` files were tested using  [JS Hint Validator](https://jshint.com/) using `//jshint esversion: 6` as first line to enable version 6 of Java Script to be taken into consideration
+- **Result :** Initial validating found multiple errors with unnecessary semicolons `;`. This was adjusted and there are no more errors. Three functions are being seen as unused. They are used, but being called from `index.html` as stated in bugs section. This validator also display two warnings stating that loops are calling global variables.
+
+*Appendix 24 - JS Hint Validator testing - `script.js`*
+
+![Appendix 24 - JS Hint Validator testing - script.js](docs/jshint-script.png)
+
+*Appendix 25 - JS Hint Validator testing - `readstorage.js`*
+
+![Appendix 25 - JS Hint Validator testing - readstorage.js](docs/jshint-readstorage.png)
 
 ## **8.6. Accessibility testing (WAVE Web Accessibility Evaluation Tools)**
 
@@ -345,25 +357,25 @@
       - Heading levels are in correct order `<h1> - <h2> - <h3>`
       - Correct contrast ratio - **minimal contrast ratio 4.5:1**
 
- - **Result :** Automated testing found no errors, 3 alerts are still present. The cuase of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*Appendix 24*) for rules section and (*Appendix 25*) for game section, `leaderboard.html` (*Appendix 26*) and `404.html` (*Appendix 27*). Contrast ratio of this project is **8.59:1** (*Appendix 28*).
+ - **Result :** Automated testing found no errors, 3 alerts are still present. The cuase of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*Appendix 26*) for rules section and (*Appendix 27*) for game section, `leaderboard.html` (*Appendix 28*) and `404.html` (*Appendix 29*). Contrast ratio of this project is **8.59:1** (*Appendix 30*).
 
-*Appendix 24 - WAVE Report - index.html - rules*
+*Appendix 26 - WAVE Report - index.html - rules*
 
 ![WAVE Report - index.html](/docs/wave-test-rules.png)
 
-*Appendix 25 - WAVE Report - index.html - game*
+*Appendix 27 - WAVE Report - index.html - game*
 
 ![WAVE Report - index.html](/docs/wave-test-game.png)
 
-*Appendix 26 - WAVE Report - leaderboard.html*
+*Appendix 28 - WAVE Report - leaderboard.html*
 
 ![WAVE Report - leaderboard.html](/docs/wave-test-leaderboard.png)
 
-*Appendix 27 - WAVE Report - 404.html*
+*Appendix 29 - WAVE Report - 404.html*
 
 ![WAVE Report - 404.html](/docs/wave-test-404.png)
 
-*Appendix 28 - WAVE Contrast Report*
+*Appendix 30 - WAVE Contrast Report*
 
 ![WAVE Contrast Report](/docs/wave-contrast.png)
 
