@@ -20,6 +20,10 @@
 - [5. Site map](https://github.com/tomik-z-cech/PP2-Millionaire#5-site-map)
 - [6. Features](https://github.com/tomik-z-cech/PP2-Millionaire#4-features)
     - [6.1. Features used in every HTML document](https://github.com/tomik-z-cech/PP2-Millionaire#41-features-used-in-every-html-document)
+    - [6.2. Main HTML documents](https://github.com/tomik-z-cech/PP2-Millionaire#62-main-html-documents)
+    - [6.3. Existing Features summary](https://github.com/tomik-z-cech/PP2-Millionaire#63-existing-features-summary)
+    - [6.4. Future Features](https://github.com/tomik-z-cech/PP2-Millionaire#64-future-features)
+- [7. Wireframes](https://github.com/tomik-z-cech/PP2-Millionaire#7-wireframes)
 
 ---
 
@@ -160,3 +164,12 @@
 - Site responses to different view-port sizes.
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+## **6.4. Future Features**
+- To use globally run code and global storage to save scores online.
+- To add "question editor", to enable admins to create/edit/delete questions without manually editing `questions.json` file.
+- To add dark/light mode setting toggle.
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+---
