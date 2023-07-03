@@ -177,6 +177,7 @@
 - To use globally run code and global storage to save scores online.
 - To add "question editor", to enable admins to create/edit/delete questions without manually editing `questions.json` file.
 - To add dark/light mode setting toggle.
+- Add keybord event listeners for accesibility reasons.
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
@@ -367,3 +368,22 @@
 ![WAVE Contrast Report](/docs/wave-contrast.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+## **8.7. Bugs**
+### Fixed bugs
+Throughout testing, various bugs were discovered, especially with delayed display of game elements and adding even listeners to them. They were all fixed, committed and documented via GitHub.
+ - Error displayed when currently played background music needed to be stopped, but the user didn't turn music on.
+ - **Fix :** isMusicOn variable and if statement created. `if (isMusicOn == true){currentlyPlaying.pause();}` 
+ - Users were able to select another answer or use a lifeline while waiting for result of correct/incorrect answer selected.`
+ - **Fix :** Created transparent mask that covers the entire game area.
+ - Bug with lifelines not working after click, event listeners can't be added.
+ - **Fix :** Added onClick attribute to lifelines round divs, onClick attributes are being added/removed on different stages of the game.
+ - Answers were changing their position after 50:50 lifeline was used.`
+ - **Fix :** Absolute position given to all answer containers.
+
+### Unfixed bugs
+There are no know unfixed bugs as of 3.7.2023.
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+---
