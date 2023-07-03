@@ -321,7 +321,7 @@
 
 *Appendix 20 - W3C Validator testing - `index.html`*
 
-![Appendix 21 - W3C Validator testing - index.html](docs/index.png)
+![Appendix 21 - W3C Validator testing - index.html](docs/html-validator-index.png)
 
 *Appendix 21 - W3C Validator testing - `leaderboard.html`*
 
@@ -330,3 +330,40 @@
 *Appendix 22 - W3C Validator testing - `404.html`*
 
 ![Appendix 23 - W3C Validator testing - 404.html](docs/html-validator-404.png)
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP1-Cibo-Fresco#2table-of-content)
+
+## **8.6. Accessibility testing (WAVE Web Accessibility Evaluation Tools)**
+
+ - **Method :** Every HTML document was tested by  [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/). This testing had to be done in different stages of game as the background and foreground colors do change in reaction of events.
+ - **Focus :** This test focused on the following. 
+      - Every page has a language declared in header for page readers
+      - WCAG Coding Practices are followed
+      - All forms have correct aria labels `aria-label="..."`
+      - All images have correct alt labels `<alt="...">`
+      - Heading levels are in correct order `<h1> - <h2> - <h3>`
+      - Correct contrast ratio - **minimal contrast ratio 4.5:1**
+
+ - **Result :** Automated testing found no errors, 3 alerts are still present. The cuase of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*Appendix 24*) for rules section and (*Appendix 25*) for game section, `leaderboard.html` (*Appendix 26*) and `404.html` (*Appendix 27*). Contrast ratio of this project is **8.59:1** (*Appendix 28*).
+
+*Appendix 24 - WAVE Report - index.html - rules*
+
+![WAVE Report - index.html](/docs/wave-test-rules.png)
+
+*Appendix 25 - WAVE Report - index.html - game*
+
+![WAVE Report - index.html](/docs/wave-test-game.png)
+
+*Appendix 26 - WAVE Report - leaderboard.html*
+
+![WAVE Report - leaderboard.html](/docs/wave-test-leaderboard.png)
+
+*Appendix 27 - WAVE Report - 404.html*
+
+![WAVE Report - 404.html](/docs/wave-test-404.png)
+
+*Appendix 28 - WAVE Contrast Report*
+
+![WAVE Contrast Report](/docs/wave-contrast.png)
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
