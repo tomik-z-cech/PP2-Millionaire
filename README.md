@@ -25,8 +25,13 @@
     - [6.4. Future Features](https://github.com/tomik-z-cech/PP2-Millionaire#64-future-features)
 - [7. Wireframes](https://github.com/tomik-z-cech/PP2-Millionaire#7-wireframes)
 - [8. Testing](https://github.com/tomik-z-cech/PP2-Millionaire#8-testing)
-    - [8.1. Testing via Google Chrome Developer Tools](https://github.com/tomik-z-cech/PP2-Millionaire#81-testing-via-google-chrome-dev-tools)
+    - [8.1. Testing via Google Chrome Developer Tools](https://github.com/tomik-z-cech/PP2-Millionaire#81-testing-via-google-chrome-developer-tools)
     - [8.2. Physical testing by developer](https://github.com/tomik-z-cech/PP2-Millionaire#82-physical-testing-by-developer)
+    - [8.3. Physical testing by users](https://github.com/tomik-z-cech/PP2-Millionaire#83-physical-testing-by-users)
+    - [8.4. Lighthouse testing](https://github.com/tomik-z-cech/PP2-Millionaire#84-lighthouse-testing)
+    - [8.5. Validators testing](https://github.com/tomik-z-cech/PP2-Millionaire#85-validators-testing)
+    - [8.6. Accessibility testing (WAVE Web Accessibility Evaluation Tools)](https://github.com/tomik-z-cech/PP2-Millionaire#86-accesibility-testing-wave-web-accessibility-evaluation-tools)
+    - [8.7. Bugs](https://github.com/tomik-z-cech/PP2-Millionaire#87-bugs)
 
 ---
 
@@ -263,6 +268,30 @@
 - **Expected result :** After answering all questions, score is recorded in local storage, otherwise reason for not being succesful is given to user.
 - **Actual result :**  As expected, tested scenarios were working without problems, lifelines were used without problems. Score is beaing read, sliced and recorded every time tested.
 - **Overall result :** Pass
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+---
+
+## **8.3. Physical testing by users**
+- **Task :** To test "user-friendliness" and possible bugs that weren't found by developer testing.
+- **Method :** Group of users were given link to deployed project to play with and send feedback.
+
+|User|Amy Parlon  |
+|--|--|
+| Feedback given | Very enjoyable and user friendly. Love trivia games and this is super easy to navigate through. Check spelling of questions. |
+| Applied changes | Spell check on question.json performed. Commit [bec6d30](https://github.com/tomik-z-cech/PP2-Millionaire/commit/bec6d30315fc2c262d4c8d6c8df1670ad2d5ac32)  |
+---
+|User|Kyle Kennedy  |
+|--|--|
+| Feedback given | When the levels are all complete there isn't natural wayto start a new game. |
+| Applied changes | Added "Play again button" to the bottom of leader board. Commit [2e1f750](https://github.com/tomik-z-cech/PP2-Millionaire/commit/2e1f750822edf11a13403fccb1bb6e0baf7b18c1). |
+---
+|User|Eamonn Ryan   |
+|--|--|
+| Feedback given | All looks good and working just fine. Might be no harm to add rotate your phone icon. |
+| Applied changes | Added "Rotate your phone" to the vertical mask to `*.html` |
+---
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
