@@ -2,16 +2,16 @@
 ---
 # **1. Key project information**
 
-- **Description :** This Portfolio Project 2 website called **Millionare** is an online game (quiz) that allows the user to test their general knowledge, collect points into score that is time relevant and make an entry to lederboard.
+- **Description :** This Portfolio Project 2 website called **Millionaire** is an online game (quiz) that allows the user to test their general knowledge, collect points into score that is time relevant and make an entry to leder board.
 - **Key project goal :** To entertain users of this page and test their trivia knowledge attempting the **Millionaire** game.
 - **Audience :** There's no age or any other limit to audience of this page. Target audience are any users searching for trivia games.
 - **Live version :** Live version of **Millionaire** game can be viewed [here](https://tomik-z-cech.github.io/PP2-Millionaire/) .
 
-![Mockup](/docs/multidevice-mockup.png)
+![Mock Up](/docs/multidevice-mockup.png)
 
 ---
 
-# **2.Table of content**
+# **2. Table of content**
 
 - [1. Key project information](https://github.com/tomik-z-cech/PP2-Millionaire#1-key-project-information)
 - [2. Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
@@ -57,7 +57,7 @@
   - Change the question (Different question is displayed) *(appendix 6)*
   - 50:50 (Two incorrect answers are removed) *(appendix 7)*
 - The score is counted the following way :
-  - Each question has a weight between € 5 and € 20.000
+  - Each question has a weight between €5 and €20.000
   - After answering the question correctly, the weight is multiplied by the time left.
   - Score for each question is added to the final score figure.
   - Current score is displayed in top left corner *(appendix 8)*.
@@ -201,7 +201,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - **File :** `index.html`
 - **Title :** `Millionaire ¦ Play !`
 - **User :** Explains the rules of this trivia game to the user and awaits for user's name input. *(appendix 17)*.
-- **Development :** User's input is read into `playerName` variable and checked against incorrect name format (name cannot be empty string and cannot containe spaces) - `function checkName()`. Page linked with `script.js` file.
+- **Development :** User's input is read into `playerName` variable and checked against incorrect name format (name cannot be empty string and cannot contain spaces) - `function checkName()`. Page linked with `script.js` file.
 
 *Appendix 17 - Rules page*
 
@@ -215,7 +215,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - **Title** : `Millionaire ¦ Play !`
 - **User** : Once user inputs their name in requerequired format, the user is brought to game section of `index.html` *(appendix 18)*.
 - **Development :**
-  - After clicking "Let's play ! button" with name filled in required format, name is checked by `function checkName()` and `function prepareGameView()` is called. Page linked with `script.js` file.
+  - After clicking "Let's play !" button with name filled in required format, name is checked by `function checkName()` and `function prepareGameView()` is called. Page linked with `script.js` file.
 
 *Appendix 18 - Reservation page*
 
@@ -228,9 +228,9 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - **File** : `leaderboard.html`
 - **Title** : `Millionaire ¦ Leader Board`
 - **User** : User is able to see the top 10 players they did finish the game. *(appendix 19)*.
-- **Development :**  This page is linked with `readstorage.js` file. Leaderboard uses `localStorage` as a place to hold game data, hence the leaderboard isn't global, `function readStorage()` is called after DOM loaded.
+- **Development :**  This page is linked with `readstorage.js` file. Leader board uses `localStorage` as a place to hold game data, hence the leader board isn't global, `function readStorage()` is called after DOM loaded.
 
-*Appendix 19 - LeaderBoard page*
+*Appendix 19 - Leader Board page*
 
 ![Leader Board page - screenshot](/docs/leaderboard.png)
 
@@ -249,7 +249,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - To use globally run code and global storage to save scores online.
 - To add "question editor", to enable admins to create/edit/delete questions without manually editing `questions.json` file.
 - To add dark/light mode setting toggle.
-- Add keybord event listeners for accesibility reasons.
+- Add keyboard event listeners for accessibility reasons.
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
@@ -338,8 +338,8 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 ---
 - **Task :** To physically test navigation through the game including lifelines, correct/incorrect answers, run out of time scenario.
 - **Method :** Navigate from `index.html` to the game and play as many possible game cycles to try to simulate different game scenarios/outputs.
-- **Expected result :** After answering all questions, score is recorded in local storage, otherwise reason for not being succesful is given to user.
-- **Actual result :**  As expected, tested scenarios were working without problems, lifelines were used without problems. Score is beaing read, sliced and recorded every time tested.
+- **Expected result :** After answering all questions, score is recorded in local storage, otherwise reason for not being successful is given to user.
+- **Actual result :**  As expected, tested scenarios were working without problems, lifelines were used without problems. Score is being read, sliced and recorded every time tested.
 - **Overall result :** Pass
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
@@ -352,12 +352,12 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 |User|Amy Parlon  |
 |--|--|
-| Feedback given | Very enjoyable and user friendly. Love trivia games and this is super easy to navigate through. Check spelling of questions. |
+| Feedback given | Very enjoyable and user-friendly. Love trivia games and this is super easy to navigate through. Check spelling of questions. |
 | Applied changes | Spell check on question.json performed. Commit [bec6d30](https://github.com/tomik-z-cech/PP2-Millionaire/commit/bec6d30315fc2c262d4c8d6c8df1670ad2d5ac32)  |
 ---
 |User|Kyle Kennedy  |
 |--|--|
-| Feedback given | When the levels are all complete there isn't natural wayto start a new game. |
+| Feedback given | When the levels are all complete there isn't natural way to start a new game. |
 | Applied changes | Added "Play again button" to the bottom of leader board. Commit [2e1f750](https://github.com/tomik-z-cech/PP2-Millionaire/commit/2e1f750822edf11a13403fccb1bb6e0baf7b18c1). |
 ---
 |User|Eamonn Ryan   |
@@ -429,7 +429,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
       - Heading levels are in correct order `<h1> - <h2> - <h3>`
       - Correct contrast ratio - **minimal contrast ratio 4.5:1**
 
- - **Result :** Automated testing found no errors, 3 alerts are still present. The cuase of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*appendix 33*) for rules section and (*appendix 34*) for game section, `leaderboard.html` (*appendix 35*) and `404.html` (*appendix 36*). Contrast ratio of this project is **8.59:1** (*appendix 37*).
+ - **Result :** Automated testing found no errors, 3 alerts are still present. The cause of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*appendix 33*) for rules section and (*appendix 34*) for game section, `leaderboard.html` (*appendix 35*) and `404.html` (*appendix 36*). Contrast ratio of this project is **8.59:1** (*appendix 37*).
 
 *Appendix 33 - WAVE Report - index.html - rules*
 
@@ -509,7 +509,7 @@ There are no know unfixed bugs as of 3.7.2023.
 
 ## **10.2. Deployment to GitHub Pages**
 
-- **Task :** To ensure users are able to view live version of **Cibo Fresco** project.
+- **Task :** To ensure users are able to view live version of **Millionaire** project.
 - **Method :** 
    - initial setting in `GitHub -> PP2-Millionaire -> Settings -> Pages` needed to be performed. It did enable developer to choose what branch to deploy. 
    - all further deployments were done automatically after `git push`
@@ -521,7 +521,7 @@ There are no know unfixed bugs as of 3.7.2023.
 
 - **Task :** To use repository on local machine.
 - **Method :** 
-   - Navigate to GitHub and follow `Code -> HTTPS -> Copy button` . after those steps open your local coding enviroment and type `git clone [copied link]` .  
+   - Navigate to GitHub and follow `Code -> HTTPS -> Copy button` . After those steps open your local coding environment and type `git clone [copied link]` .  
 - **Finding :** Git Windows application needs to be installed.
 
 ---
