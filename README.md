@@ -15,7 +15,7 @@
 
 - [1. Key project information](https://github.com/tomik-z-cech/PP2-Millionaire#1-key-project-information)
 - [2. Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
-- [3. Story of creation](https://github.com/tomik-z-cech/PP2-Millionaire#3-story-of-creation)
+- [3. Rules of Game](https://github.com/tomik-z-cech/PP2-Millionaire#3-rules-of-game)
 - [4. Color palette](https://github.com/tomik-z-cech/PP2-Millionaire#4-color-palette)
 - [5. Site map](https://github.com/tomik-z-cech/PP2-Millionaire#5-site-map)
 - [6. Features](https://github.com/tomik-z-cech/PP2-Millionaire#4-features)
@@ -36,7 +36,63 @@
 ---
 
 
-# **3. Story of creation**
+# **3. Rules of Game**
+
+- User can toggle the switches for background music and sound effects for the best game experience (Only available on PC) *(appendix 1)*.
+- User starts the game by filling their name in the text field on the bottom of page, name cannot contain any spaces *(appendix 2)*.
+- User has 30 seconds per question, time will start right away as the game elements display and timer is displayed in top right corner *(appendix 3)*.
+- User's progress is indicated in the progress bar on the left *(appendix 4)*.
+- User can avail of three lifelines :
+  - Extra time (30seconds added to the timer) *(appendix 5)*
+  - Change the question (Different question is displayed) *(appendix 6)*
+  - 50:50 (Two incorrect answers are removed) *(appendix 7)*
+- The score is counted the following way :
+  - Each question has a weight between € 5 and € 20.000
+  - After answering the question correctly, the weight is multiplied by the time left.
+  - Score for each question is added to the final score figure.
+  - Current score is displayed in top left corner *(appendix 8)*.
+- There're 10 questions in total, with 3 different levels of difficulty
+  - Questions 1-3 : Easy
+  - Questions 4-6 : Medium
+  - Questions 4-6 : Hard
+  - Final Question 10 : Super Hard
+- The game is over when :
+  - User runs out of time on any question - no win.
+  - User answers wrong any of the questions - no win.
+  - User answers all questions correctly - user wins.
+- If user wins the game, the final score will be recorded in the leader board in user's local browser.
+ 
+*Appendix 1 - Sound effects toggles*
+
+![Sound effects toggles](/assets/images/rules-images/settings.png)
+
+*Appendix 2- Name input field*
+
+![Name input field](/assets/images/rules-images/name.png)
+
+*Appendix 3 - Timer container*
+
+![Timer container](/assets/images/rules-images/timer.png)
+
+*Appendix 4 - Progress Bar (Money bar)*
+
+![Progress bar (Money bar)](/assets/images/rules-images/moneybar.png)
+
+*Appendix 5 - Extra Time*
+
+![Extra Time](/assets/images/rules-images/time-lifeline.png)
+
+*Appendix 6 - Different question*
+
+![Different Question](/assets/images/rules-images/question-lifeline.png)
+
+*Appendix 7 - 50:50*
+
+![50:50](/assets/images/rules-images/question-lifeline.png)
+
+*Appendix 8 - Score container*
+
+![Score container](/assets/images/rules-images/score.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
