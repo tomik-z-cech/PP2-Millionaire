@@ -35,6 +35,10 @@
 - [9. JavaScript](https://github.com/tomik-z-cech/PP2-Millionaire#9-JavaScript)
     - [9.1. Flowchart](https://github.com/tomik-z-cech/PP2-Millionaire#91-flow-chart)
     - [9.2. Question explanation](https://github.com/tomik-z-cech/PP2-Millionaire#92-question-explanation)
+- [10. Deployment ](https://github.com/tomik-z-cech/PP2-Millionaire#10-deployment)
+    - [7.1. Transfer of progress from IDE](https://github.com/tomik-z-cech/PP2-Millionaire#101-transfer-of-progress-from-ide)
+    - [7.2. Deployment to GitHub Pages](https://github.com/tomik-z-cech/PP2-Millionaire#102-deployement-to-github-pages)
+    - [7.3. Offline cloning](https://github.com/tomik-z-cech/PP2-Millionaire#103-offline-cloning)
 
 ---
 
@@ -466,13 +470,13 @@ There are no know unfixed bugs as of 3.7.2023.
 ---
 
 # **9. JavaScript**
-## **9.1 Flow Chart**
+## **9.1. Flow Chart**
 
 *Appendix 38 - Flow Chart*
 
 ![Flow Chart](/docs/flowchart.png)
 
-## **9.2 Question Explanation**
+## **9.2. Question Explanation**
 
 - All questions are stored as objects in `questions.json` file. Key of each object q0 - q15 serves as pointer for randomly selected question.
 - Key *"question"* is a question that is displayed in question area.
@@ -485,3 +489,36 @@ There are no know unfixed bugs as of 3.7.2023.
 ![Sample question](/docs/question-json.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+---
+
+# **10. Deployment**
+## **10.1. Transfer of progress from IDE**
+
+- **Task :** To ensure regular commitments are done to avoid any data/progress loss.
+- **Method :** 
+   - commands `git add [filename]` was used to add specific file to staging area, alternatively command `git add .` was used to add all changed files to staging area
+   - command `git commit -m "[commit description]"` was used to add commitments into queue
+   - command `git push` was used to push all commitments to remote repository on GitHub
+- **Finding :** CodeAnywhere IDE only holds up to 3 commitments in queue, regular `git push` needed to be used.
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+## **10.2. Deployment to GitHub Pages**
+
+- **Task :** To ensure users are able to view live version of **Cibo Fresco** project.
+- **Method :** 
+   - initial setting in `GitHub -> PP2-Millionaire -> Settings -> Pages` needed to be performed. It did enable developer to choose what branch to deploy. 
+   - all further deployments were done automatically after `git push`
+- **Finding :** It takes approximately 2 minutes from `git push` command to live version being updated.
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+## **10.3. Offline cloning**
+
+- **Task :** To use repository on local machine.
+- **Method :** 
+   - Navigate to GitHub and follow `Code -> HTTPS -> Copy button` . after those steps open your local coding enviroment and type `git clone [copied link]` .  
+- **Finding :** Git Windows application needs to be installed.
+
+---
