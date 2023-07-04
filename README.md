@@ -32,6 +32,9 @@
     - [8.5. Validators testing](https://github.com/tomik-z-cech/PP2-Millionaire#85-validators-testing)
     - [8.6. Accessibility testing (WAVE Web Accessibility Evaluation Tools)](https://github.com/tomik-z-cech/PP2-Millionaire#86-accesibility-testing-wave-web-accessibility-evaluation-tools)
     - [8.7. Bugs](https://github.com/tomik-z-cech/PP2-Millionaire#87-bugs)
+- [9. JavaScript](https://github.com/tomik-z-cech/PP2-Millionaire#9-JavaScript)
+    - [9.1. Flowchart](https://github.com/tomik-z-cech/PP2-Millionaire#91-flow-chart)
+    - [9.2. Question explanation](https://github.com/tomik-z-cech/PP2-Millionaire#92-question-explanation)
 
 ---
 
@@ -461,3 +464,24 @@ There are no know unfixed bugs as of 3.7.2023.
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ---
+
+# **9. JavaScript**
+## **9.1 Flow Chart**
+
+*Appendix 38 - Flow Chart*
+
+![Flow Chart](/docs/flowchart.png)
+
+## **9.2 Question Explanation**
+
+- All questions are stored as objects in `questions.json` file. Key of each object q0 - q15 serves as pointer for randomly selected question.
+- Key *"question"* is a question that is displayed in question area.
+- Key *"options"* with array of answers contain 4 answers with index 0-3 (0 = option A, 1 = option B, 2 = option C and 3 = option D).
+- Key *"answer"* could have values 0-3 and points to the correct answer where 0 = option A, 1 = option B, 2 = option C and 3 = option D.
+- Sample of question in `questions.json` *appendix 39*
+
+*Appendix 39 - Sample question*
+
+![Sample question](/docs/question-json.png)
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
