@@ -7,7 +7,7 @@
 
 /** COLOR PALETTE **/
 --light-blue: #77aaf7;
---gey-transparent: rgba(49, 54, 57, 0.95);
+--grey-transparent: rgba(49, 54, 57, 0.95);
 --purple: #3a1f64;
 --dark-blue-bg: #053278;
 --off-white-text: #f5eed8;
@@ -77,7 +77,7 @@ p {/** properties of p elements **/
     background-color: var(--hover-color);
 }
 .grey-background {/** grey background class for elements **/
-    background-color: var(--gey-transparent);
+    background-color: var(--grey-transparent);
 }
 ::placeholder {/** color of placeholder text **/
     color: var(--light-blue);
@@ -89,7 +89,7 @@ p {/** properties of p elements **/
     width: 10px;
 }
 ::-webkit-scrollbar-track {/** scrollbars styling **/
-    background: var(--gey-transparent);
+    background: var(--grey-transparent);
 }
 ::-webkit-scrollbar-thumb {/** scrollbars styling **/
     background: var(--light-blue);
