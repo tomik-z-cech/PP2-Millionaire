@@ -122,63 +122,63 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 ## **6.1. Features used in every HTML document**
 
 ### **Header**
-- Header contains a Logo section *(appendix 2)* which is also used as a link to Home page `index.html` in the left top corner and Menu section *(appendix 3)* for easy navigation through both project pages. Menu is designed to change to "hamburger menu" *(appendix 4)* when the resolution changes to less than 1140 pixels in width.
+- Header contains a Logo section *(appendix 10)* which is also used as a link to Home page `index.html` in the left top corner and Menu section *(appendix 11)* for easy navigation through both project pages. Menu is designed to change to "hamburger menu" *(appendix 12)* when the resolution changes to less than 1140 pixels in width.
 - Header is designed to have fixed position on top of page `top: 0px` through all browsing.
 - Header is designed to cover full width `width: 100%` of the browsing window.
 - Header is semi-transparent using `background-color: rgba(65, 15, 60, 0.85);`.
 - This will allow user to navigate through the `index.html` and `leaderboard.html` when clicked.
 - Header appears same on all devices.
 
-*Appendix 2 - Logo*
+*Appendix 10 - Logo*
 
 ![Header - Logo](/docs/logo.png)
 
-*Appendix 3 - Menu*
+*Appendix 11 - Menu*
 
 ![Header - Menu](/docs/menu.png)
 
-*Appendix 4 - "Hamburger menu"*
+*Appendix 12 - "Hamburger menu"*
 
 ![Header - Hamburger Menu](/docs/hamburger-menu.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP1-Cibo-Fresco#2table-of-content)
 
 ### **Footer**
-- Footer is designed to allow user to visit profiles/pages of real "Who wants to be a millionaire" TV show of Social network platforms (Facebook, Twitter, Instagram) via links that open in new browser tabs *(appendix 5)*.
+- Footer is designed to allow user to visit profiles/pages of real "Who wants to be a millionaire" TV show of Social network platforms (Facebook, Twitter, Instagram) via links that open in new browser tabs *(appendix 13)*.
 - Footer is designed to have fixed position on the bottom of page `bottom: 0px` through all browsing.
 - Footer is designed to cover full width `width: 100%` of the browsing window.
 - Footer is semi-transparent using `background-color: rgba(65, 15, 60, 0.85);;`.
 - This will allow user to open all social networks links in new tabs.
 - Footer appears same on all devices.
 
-*Appendix 5 - Social links*
+*Appendix 13 - Social links*
 
 ![Footer - Social links](/docs/socails.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ### **Favicon**
-- Both of the HTML documents in this project are equipped with Favicon. This is to ease navigation for user in case of more tabs opened. Logo of *Who wants to be a millionaire TV show* was selected as Favicon *(appendix 6)*. 
+- Both of the HTML documents in this project are equipped with Favicon. This is to ease navigation for user in case of more tabs opened. Logo of *Who wants to be a millionaire TV show* was selected as Favicon *(appendix 14)*. 
 
-*Appendix 6 - Favicon*
+*Appendix 14 - Favicon*
 
 ![Favicon](/docs/favicon.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ### **404.html**
-- This project is designed to have custom `404.html` page *(appendix 7)*. In case of user clicks on broken link user isn't completely "cut off" from browsing, instead a page with header and footer appears and user is informed of the situation. 
+- This project is designed to have custom `404.html` page *(appendix 15)*. In case of user clicks on broken link user isn't completely "cut off" from browsing, instead a page with header and footer appears and user is informed of the situation. 
 
-*Appendix 7 - 404.html*
+*Appendix 15 - 404.html*
 
 ![404 page](/docs/404.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ### **Scroll bar**
-- This project is designed to browse without scrolling on the main HTML documents. Scrolling is used to navigate through `rules container` and `leaderboard` container *(appendix 8)*.
+- This project is designed to browse without scrolling on the main HTML documents. Scrolling is used to navigate through `rules container` and `leaderboard` container *(appendix 16)*.
 
-*Appendix 8 - Scroll bar*
+*Appendix 16 - Scroll bar*
 
 ![Scrollbar](/docs/scrollbar.png)
 
@@ -190,10 +190,10 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 - **File :** `index.html`
 - **Title :** `Millionaire ¦ Play !`
-- **User :** Explains the rules of this trivia game to the user and awaits for user's name input. *(appendix 9)*.
+- **User :** Explains the rules of this trivia game to the user and awaits for user's name input. *(appendix 17)*.
 - **Development :** User's input is read into `playerName` variable and checked against incorrect name format (name cannot be empty string and cannot containe spaces) - `function checkName()`. Page linked with `script.js` file.
 
-*Appendix 9 - Rules page*
+*Appendix 17 - Rules page*
 
 ![Rules page - screenshot](/docs/rules.png)
 
@@ -203,11 +203,11 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 - **File** : `index.html`
 - **Title** : `Millionaire ¦ Play !`
-- **User** : Once user inputs their name in requerequired format, the user is brought to game section of `index.html` *(appendix 10)*.
+- **User** : Once user inputs their name in requerequired format, the user is brought to game section of `index.html` *(appendix 18)*.
 - **Development :**
   - After clicking "Let's play ! button" with name filled in required format, name is checked by `function checkName()` and `function prepareGameView()` is called. Page linked with `script.js` file.
 
-*Appendix 10 - Reservation page*
+*Appendix 18 - Reservation page*
 
 ![Game page - screenshot](/docs/game.png)
 
@@ -217,10 +217,10 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 - **File** : `leaderboard.html`
 - **Title** : `Millionaire ¦ Leader Board`
-- **User** : User is able to see the top 10 players they did finish the game. *(appendix 11)*.
+- **User** : User is able to see the top 10 players they did finish the game. *(appendix 19)*.
 - **Development :**  This page is linked with `readstorage.js` file. Leaderboard uses `localStorage` as a place to hold game data, hence the leaderboard isn't global, `function readStorage()` is called after DOM loaded.
 
-*Appendix 11 - LeaderBoard page*
+*Appendix 19 - LeaderBoard page*
 
 ![Leader Board page - screenshot](/docs/leaderboard.png)
 
@@ -248,45 +248,45 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 # **7. Wireframes**
 | Name of page | Wireframe PC | Wireframe Phone
 |--|--|--|
-| **index.html - rules section** | *appendix 12* | *appendix 13*  |
-| **index.html - game section** | *appendix 14* | *appendix 15*  |
-| **leaderboard.html** | *appendix 16* | *appendix 17*  |
-| **vertical mask for screens with width > height** | N/A | *appendix 18*  |
+| **index.html - rules section** | *appendix 20* | *appendix 21*  |
+| **index.html - game section** | *appendix 22* | *appendix 23*  |
+| **leaderboard.html** | *appendix 24* | *appendix 25*  |
+| **vertical mask for screens with width > height** | N/A | *appendix 26*  |
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
-*Appendix 12 - Wireframe - index.html - rules section - PC*
+*Appendix 20 - Wireframe - index.html - rules section - PC*
 
-![Appendix 12 - Wireframe - index.html - rules section - PC](docs/rules-wireframe-pc.png)
+![Wireframe - index.html - rules section - PC](docs/rules-wireframe-pc.png)
 
-*Appendix 13 - Wireframe - index.html - rules section - Phone*
+*Appendix 21 - Wireframe - index.html - rules section - Phone*
 
-![Appendix 13 - Wireframe - index.html - rules section - Phone](docs/rules-wireframe-mobile.png)
-
-
-*Appendix 14 - Wireframe - index.html - game section - PC*
-
-![Appendix 14 - Wireframe - index.html - game section - PC](docs/game-wireframe-pc.png)
+![Wireframe - index.html - rules section - Phone](docs/rules-wireframe-mobile.png)
 
 
-*Appendix 15 - Wireframe - index.html - game section - Phone*
+*Appendix 22 - Wireframe - index.html - game section - PC*
 
-![Appendix 15 - Wireframe - index.html - game section - Phone](docs/game-wireframe-mobile.png)
-
-
-*Appendix 16 - Wireframe - leaderboard.html PC*
-
-![Appendix 16 - Wireframe - leaderboard.html PC](docs/leaderboard-wireframe-pc.png)
+![Wireframe - index.html - game section - PC](docs/game-wireframe-pc.png)
 
 
-*Appendix 17 - Wireframe - leaderboard.html Phone*
+*Appendix 23 - Wireframe - index.html - game section - Phone*
 
-![Appendix 17 - Wireframe - leaderboard.html Phone](docs/leaderboard-wireframe-mobile.png)
+![Wireframe - index.html - game section - Phone](docs/game-wireframe-mobile.png)
 
 
-*Appendix 18 - Wireframe - vertical mask - only applicable on screens with width > height*
+*Appendix 24 - Wireframe - leaderboard.html PC*
 
-![Appendix 18 - Wireframe - vertical mask](docs/vertical-mask-wireframe.png)
+![Wireframe - leaderboard.html PC](docs/leaderboard-wireframe-pc.png)
+
+
+*Appendix 25 - Wireframe - leaderboard.html Phone*
+
+![Wireframe - leaderboard.html Phone](docs/leaderboard-wireframe-mobile.png)
+
+
+*Appendix 26 - Wireframe - vertical mask - only applicable on screens with width > height*
+
+![Wireframe - vertical mask](docs/vertical-mask-wireframe.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
@@ -364,11 +364,11 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ### Jigsaw CSS validator
 - **Method :** Project (`styles.css`) was tested by  [W3C CSS Validator](https://jigsaw.w3.org/).
-- **Result :** No errors were found when tested (*appendix 19*).
+- **Result :** No errors were found when tested (*appendix 27*).
 
-*Appendix 19 - Jigsaw CSS Validator testing - `styles.css`*
+*Appendix 27 - Jigsaw CSS Validator testing - `styles.css`*
 
-![Appendix 19 - Jigsaw testing - styles.css](docs/css-validator.png)
+![Jigsaw testing - styles.css](docs/css-validator.png)
 
 ### W3C HTML validator
 - **Method :** Every HTML document was tested by  [W3C Validator](https://validator.w3.org/).
@@ -378,35 +378,35 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 |File|Appendix  |
 |--|--|
-|`index.html`  |*appendix 20*  |
-|`leaderboard.html`  |*appendix 21*  |
-|`404.html`  |*appendix 22*  |
+|`index.html`  |*appendix 28*  |
+|`leaderboard.html`  |*appendix 29*  |
+|`404.html`  |*appendix 30*  |
 
-*Appendix 20 - W3C Validator testing - `index.html`*
+*Appendix 28 - W3C Validator testing - `index.html`*
 
-![Appendix 21 - W3C Validator testing - index.html](docs/html-validator-index.png)
+![W3C Validator testing - index.html](docs/html-validator-index.png)
 
-*Appendix 21 - W3C Validator testing - `leaderboard.html`*
+*Appendix 29 - W3C Validator testing - `leaderboard.html`*
 
-![Appendix 22 - W3C Validator testing - leaderboard.html](docs/html-validator-leaderboard.png)
+![W3C Validator testing - leaderboard.html](docs/html-validator-leaderboard.png)
 
-*Appendix 22 - W3C Validator testing - `404.html`*
+*Appendix 30 - W3C Validator testing - `404.html`*
 
-![Appendix 23 - W3C Validator testing - 404.html](docs/html-validator-404.png)
+![W3C Validator testing - 404.html](docs/html-validator-404.png)
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ### JSHint Java Script validator
 - **Method :** `*.js` files were tested using  [JS Hint Validator](https://jshint.com/) using `//jshint esversion: 6` as first line to enable version 6 of Java Script to be taken into consideration
-- **Result :** Initial validating found multiple errors with unnecessary semicolons `;`. This was adjusted and there are no more errors. Three functions are being seen as unused. They are used, but being called from `index.html` as stated in bugs section. This validator also display two warnings stating that loops are calling global variables.
+- **Result :** Initial validating found multiple errors with unnecessary semicolons `;`. This was adjusted and there are no more errors. Three functions are being seen as unused. They are used, but being called from `index.html` as stated in bugs section. This validator also display two warnings stating that loops are calling global variables *(appendix 31 and appendix 32)*.
 
-*Appendix 24 - JS Hint Validator testing - `script.js`*
+*Appendix 31 - JS Hint Validator testing - `script.js`*
 
-![Appendix 24 - JS Hint Validator testing - script.js](docs/jshint-script.png)
+![JS Hint Validator testing - script.js](docs/jshint-script.png)
 
-*Appendix 25 - JS Hint Validator testing - `readstorage.js`*
+*Appendix 32 - JS Hint Validator testing - `readstorage.js`*
 
-![Appendix 25 - JS Hint Validator testing - readstorage.js](docs/jshint-readstorage.png)
+![JS Hint Validator testing - readstorage.js](docs/jshint-readstorage.png)
 
 ## **8.6. Accessibility testing (WAVE Web Accessibility Evaluation Tools)**
 
@@ -419,25 +419,25 @@ Following color palette was chosen as it does resemble colors of the Millionaire
       - Heading levels are in correct order `<h1> - <h2> - <h3>`
       - Correct contrast ratio - **minimal contrast ratio 4.5:1**
 
- - **Result :** Automated testing found no errors, 3 alerts are still present. The cuase of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*Appendix 26*) for rules section and (*Appendix 27*) for game section, `leaderboard.html` (*Appendix 28*) and `404.html` (*Appendix 29*). Contrast ratio of this project is **8.59:1** (*Appendix 30*).
+ - **Result :** Automated testing found no errors, 3 alerts are still present. The cuase of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*appendix 33*) for rules section and (*appendix 34*) for game section, `leaderboard.html` (*appendix 35*) and `404.html` (*appendix 36*). Contrast ratio of this project is **8.59:1** (*appendix 37*).
 
-*Appendix 26 - WAVE Report - index.html - rules*
+*Appendix 33 - WAVE Report - index.html - rules*
 
 ![WAVE Report - index.html](/docs/wave-test-rules.png)
 
-*Appendix 27 - WAVE Report - index.html - game*
+*Appendix 34 - WAVE Report - index.html - game*
 
 ![WAVE Report - index.html](/docs/wave-test-game.png)
 
-*Appendix 28 - WAVE Report - leaderboard.html*
+*Appendix 35 - WAVE Report - leaderboard.html*
 
 ![WAVE Report - leaderboard.html](/docs/wave-test-leaderboard.png)
 
-*Appendix 29 - WAVE Report - 404.html*
+*Appendix 36 - WAVE Report - 404.html*
 
 ![WAVE Report - 404.html](/docs/wave-test-404.png)
 
-*Appendix 30 - WAVE Contrast Report*
+*Appendix 37 - WAVE Contrast Report*
 
 ![WAVE Contrast Report](/docs/wave-contrast.png)
 
