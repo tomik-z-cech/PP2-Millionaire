@@ -36,9 +36,12 @@
     - [9.1. Flowchart](https://github.com/tomik-z-cech/PP2-Millionaire#91-flow-chart)
     - [9.2. Question explanation](https://github.com/tomik-z-cech/PP2-Millionaire#92-question-explanation)
 - [10. Deployment ](https://github.com/tomik-z-cech/PP2-Millionaire#10-deployment)
-    - [7.1. Transfer of progress from IDE](https://github.com/tomik-z-cech/PP2-Millionaire#101-transfer-of-progress-from-ide)
-    - [7.2. Deployment to GitHub Pages](https://github.com/tomik-z-cech/PP2-Millionaire#102-deployement-to-github-pages)
-    - [7.3. Offline cloning](https://github.com/tomik-z-cech/PP2-Millionaire#103-offline-cloning)
+    - [10.1. Transfer of progress from IDE](https://github.com/tomik-z-cech/PP2-Millionaire#101-transfer-of-progress-from-ide)
+    - [10.2. Deployment to GitHub Pages](https://github.com/tomik-z-cech/PP2-Millionaire#102-deployement-to-github-pages)
+    - [10.3. Offline cloning](https://github.com/tomik-z-cech/PP2-Millionaire#103-offline-cloning)
+- [11. Technologies & Credits](https://github.com/tomik-z-cech/PP2-Millionaire#11-technologies--credits)
+  - [11.1. Technologies used to develop and deploy this project](https://github.com/tomik-z-cech/PP2-Millionaire#111-technologies-used-to-develop-and-deploy-this-project)
+  - [11.2. Credits](https://github.com/tomik-z-cech/PP2-Millionaire#112-credits)
 
 ---
 
@@ -522,3 +525,21 @@ There are no know unfixed bugs as of 3.7.2023.
 - **Finding :** Git Windows application needs to be installed.
 
 ---
+
+# **11. Technologies & Credits**
+## 11.1. Technologies used to develop and deploy this project
+
+- **Balsamiq** - to create wireframes [https://balsamiq.com/](https://balsamiq.com/)
+- **HTML** - main programming language for this project [W3C HTML](https://www.w3.org/html/)
+- **CSS** - styling the project via external CSS file `/asssets/css/styles.css` [W3C CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- **Java Script** - to create functionality of the game [MDN - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- **CodeAnywhere** - to write and save the code [CodeAnywhere](https://app.codeanywhere.com/)
+- **GitBash** - to make commitments of progress and push the results back to GitHub [git - scm](https://git-scm.com/downloads)
+- **ConText** - code off-line in "doodle-zone" mode [ConTEXT editor](https://www.contexteditor.org/)
+- **GitHub** - to record all commitments and deployment the live project [GitHub](https://github.com/)
+
+## 11.2. Credits
+- **FontAwesome** - to find and use icons [FontAwesome](https://fontawesome.com/)
+- **TinyPNG** - to compress images [TinyPNG](https://tinypng.com/)
+- **code-boxx.com** - help with hamburger menu [Code Boxx](https://code-boxx.com/)
+- **W3Schools** - useful information and cheat sheets [W3Schools](https://www.w3schools.com/)
