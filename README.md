@@ -101,6 +101,12 @@
 
 # **4. Color palette**
 
+Following color palette was chosen as it does resemble colors of the Millionaire TV show logo *(appendix 9)*.
+
+*Appendix 9 - Color palette*
+
+![Color palette](/docs/colors.png)
+
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
 ---
