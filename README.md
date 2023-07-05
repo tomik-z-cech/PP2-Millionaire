@@ -18,7 +18,7 @@
 - [3. Rules of Game](https://github.com/tomik-z-cech/PP2-Millionaire#3-rules-of-game)
 - [4. Color palette](https://github.com/tomik-z-cech/PP2-Millionaire#4-color-palette)
 - [5. Site map](https://github.com/tomik-z-cech/PP2-Millionaire#5-site-map)
-- [[6. Features](https://github.com/tomik-z-cech/PP2-Millionaire#6-features)
+- [6. Features](https://github.com/tomik-z-cech/PP2-Millionaire#6-features)
     - [6.1. Features used in every HTML document](https://github.com/tomik-z-cech/PP2-Millionaire#61-features-used-in-every-html-document)
     - [6.2. Main HTML documents](https://github.com/tomik-z-cech/PP2-Millionaire#62-main-html-documents)
     - [6.3. Existing Features summary](https://github.com/tomik-z-cech/PP2-Millionaire#63-existing-features-summary)
@@ -105,7 +105,7 @@
 
 ![Score container](/assets/images/rules-images/score.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -118,7 +118,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Color palette](/docs/colors.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -152,7 +152,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Header - Hamburger Menu](/docs/hamburger-menu.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP1-Cibo-Fresco#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### **Footer**
 - Footer is designed to allow user to visit profiles/pages of real "Who wants to be a millionaire" TV show of Social network platforms (Facebook, Twitter, Instagram) via links that open in new browser tabs *(appendix 13)*.
@@ -166,7 +166,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Footer - Social links](/docs/socails.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### **Favicon**
 - Both of the HTML documents in this project are equipped with Favicon. This is to ease navigation for user in case of more tabs opened. Logo of *Who wants to be a millionaire TV show* was selected as Favicon *(appendix 14)*. 
@@ -175,7 +175,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Favicon](/docs/favicon.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### **404.html**
 - This project is designed to have custom `404.html` page *(appendix 15)*. In case of user clicks on broken link user isn't completely "cut off" from browsing, instead a page with header and footer appears and user is informed of the situation. 
@@ -184,7 +184,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![404 page](/docs/404.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### **Scroll bar**
 - This project is designed to browse without scrolling on the main HTML documents. Scrolling is used to navigate through `rules container` and `leaderboard` container *(appendix 16)*.
@@ -193,7 +193,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Scrollbar](/docs/scrollbar.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## 6.2. Main HTML documents
 
@@ -208,7 +208,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Rules page - screenshot](/docs/rules.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP1-Cibo-Fresco#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### **Game Page**
 
@@ -222,7 +222,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Game page - screenshot](/docs/game.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### **Leader Board Page**
 
@@ -235,7 +235,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Leader Board page - screenshot](/docs/leaderboard.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **6.3. Existing Features summary**
 - Users of this site are able to read the rules of the game, enter their game name, stitch on/off (off by default) the back ground music and/or sound effects on the rules page.
@@ -244,7 +244,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - After answering all questions correctly, score is stored in local storage.
 - Site responses to different view-port sizes.
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **6.4. Future Features**
 - To use globally run code and global storage to save scores online.
@@ -252,7 +252,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - To add dark/light mode setting toggle.
 - Add keyboard event listeners for accessibility reasons.
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -264,7 +264,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 | **leaderboard.html** | *appendix 24* | *appendix 25*  |
 | **vertical mask for screens with width > height** | N/A | *appendix 26*  |
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 *Appendix 20 - Wireframe - index.html - rules section - PC*
 
@@ -299,7 +299,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Wireframe - vertical mask](docs/vertical-mask-wireframe.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -311,7 +311,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - **Actual result :** Project is fully responsive in three levels, view-port width **up to 1140px** (mobile phone devices and tablets), **view-port width 1141px - 1600px** (laptops) and **view-port width over 1600px** (full HD devices). No content is distorted.
 - **Overall result :** Pass
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **8.2. Physical testing by developer**
 - **Task :** To physically test the final project responsiveness on different devices with different view-port.
@@ -343,7 +343,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - **Actual result :**  As expected, tested scenarios were working without problems, lifelines were used without problems. Score is being read, sliced and recorded every time tested.
 - **Overall result :** Pass
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -367,7 +367,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 | Applied changes | Added "Rotate your phone" to the vertical mask to `*.html`. Commit [e0fa355](https://github.com/tomik-z-cech/PP2-Millionaire/commit/e0fa355180211d558bbd78f96dc548812be6e003) |
 ---
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -379,7 +379,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![Lighthouse testing - index.html](docs/lighthouse.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -397,7 +397,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 - **Method :** Every HTML document was tested by  [W3C Validator](https://validator.w3.org/).
 - **Result :** Initial validating found 1 error (stray `</img>` tags. Stray tags were removed and there were no future errors found after this fix. Commit [f66c933](https://github.com/tomik-z-cech/PP2-Millionaire/commit/f66c933fb608ccd7affed0a8e73c3ac19ff52ce9).
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 |File|Appendix  |
 |--|--|
@@ -417,7 +417,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![W3C Validator testing - 404.html](docs/html-validator-404.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ### JSHint Java Script validator
 - **Method :** `*.js` files were tested using  [JS Hint Validator](https://jshint.com/) using `//jshint esversion: 6` as first line to enable version 6 of Java Script to be taken into consideration
@@ -464,7 +464,7 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ![WAVE Contrast Report](/docs/wave-contrast.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **8.7. Bugs**
 ### Fixed bugs
@@ -479,22 +479,22 @@ Throughout testing, various bugs were discovered, especially with delayed displa
  - **Fix :** Absolute position given to all answer containers.
 
 ### Unfixed bugs
-There are no know unfixed bugs as of 3.7.2023.
+There are no know unfixed bugs as of 5.7.2023.
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **8.8. Resposiveness testing**
 Tho project was tested for responsiveness using [ResponsiveDesignChecker.com](https://responsivedesignchecker.com/) with excellent results for all tested devices.
 
 Using two different screen resolutions as an example 1920x1200px *(appendix 39)* and 1024x600px *(appendix 40)*.
 
-*Appendix 39 - Responsiveness on scrren size 1920x1200px*
+*Appendix 39 - Responsiveness on screen size 1920x1200px*
 
-![Responsiveness on scrren size 1920x1200px](/docs/19201200.png)
+![Responsiveness on screen size 1920x1200px](/docs/19201200.png)
 
-*Appendix 40 - Responsiveness on scrren size 1024x600px*
+*Appendix 40 - Responsiveness on screen size 1024x600px*
 
-![Responsiveness on scrren size 1024x600px](/docs/1024600.png)
+![Responsiveness on screen size 1024x600px](/docs/1024600.png)
 
 ---
 
@@ -517,7 +517,7 @@ Using two different screen resolutions as an example 1920x1200px *(appendix 39)*
 
 ![Sample question](/docs/question-json.png)
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ---
 
@@ -531,7 +531,7 @@ Using two different screen resolutions as an example 1920x1200px *(appendix 39)*
    - command `git push` was used to push all commitments to remote repository on GitHub
 - **Finding :** CodeAnywhere IDE only holds up to 3 commitments in queue, regular `git push` needed to be used.
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **10.2. Deployment to GitHub Pages**
 
@@ -541,7 +541,7 @@ Using two different screen resolutions as an example 1920x1200px *(appendix 39)*
    - all further deployments were done automatically after `git push`
 - **Finding :** It takes approximately 2 minutes from `git push` command to live version being updated.
 
-[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2-table-of-content)
 
 ## **10.3. Offline cloning**
 
