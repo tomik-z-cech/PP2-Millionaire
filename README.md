@@ -32,6 +32,7 @@
     - [8.5. Validators testing](https://github.com/tomik-z-cech/PP2-Millionaire#85-validators-testing)
     - [8.6. Accessibility testing (WAVE Web Accessibility Evaluation Tools)](https://github.com/tomik-z-cech/PP2-Millionaire#86-accesibility-testing-wave-web-accessibility-evaluation-tools)
     - [8.7. Bugs](https://github.com/tomik-z-cech/PP2-Millionaire#87-bugs)
+    - [8.8. Resposiveness testing](https://github.com/tomik-z-cech/PP2-Millionaire#88-responsiveness-testing)
 - [9. JavaScript](https://github.com/tomik-z-cech/PP2-Millionaire#9-JavaScript)
     - [9.1. Flowchart](https://github.com/tomik-z-cech/PP2-Millionaire#91-flow-chart)
     - [9.2. Question explanation](https://github.com/tomik-z-cech/PP2-Millionaire#92-question-explanation)
@@ -370,13 +371,25 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ---
 
+---
+## **8.4. Lighthouse testing**
+- `*.html` documents were tested via Lighthouse with very good results (*appendix 27*). Suggestion was made on page `index.html` to use `webp` image format instead of current `png` format.
+
+*Appendix 27 - Lighthouse testing - `index.html`*
+
+![Lighthouse testing - index.html](docs/lighthouse.png)
+
+[Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
+
+---
+
 ## **8.5. Validators testing**
 
 ### Jigsaw CSS validator
 - **Method :** Project (`styles.css`) was tested by  [W3C CSS Validator](https://jigsaw.w3.org/).
-- **Result :** No errors were found when tested (*appendix 27*).
+- **Result :** No errors were found when tested (*appendix 28*).
 
-*Appendix 27 - Jigsaw CSS Validator testing - `styles.css`*
+*Appendix 28 - Jigsaw CSS Validator testing - `styles.css`*
 
 ![Jigsaw testing - styles.css](docs/css-validator.png)
 
@@ -388,19 +401,19 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 |File|Appendix  |
 |--|--|
-|`index.html`  |*appendix 28*  |
-|`leaderboard.html`  |*appendix 29*  |
-|`404.html`  |*appendix 30*  |
+|`index.html`  |*appendix 29*  |
+|`leaderboard.html`  |*appendix 30*  |
+|`404.html`  |*appendix 31*  |
 
-*Appendix 28 - W3C Validator testing - `index.html`*
+*Appendix 29 - W3C Validator testing - `index.html`*
 
 ![W3C Validator testing - index.html](docs/html-validator-index.png)
 
-*Appendix 29 - W3C Validator testing - `leaderboard.html`*
+*Appendix 30 - W3C Validator testing - `leaderboard.html`*
 
 ![W3C Validator testing - leaderboard.html](docs/html-validator-leaderboard.png)
 
-*Appendix 30 - W3C Validator testing - `404.html`*
+*Appendix 31 - W3C Validator testing - `404.html`*
 
 ![W3C Validator testing - 404.html](docs/html-validator-404.png)
 
@@ -408,13 +421,13 @@ Following color palette was chosen as it does resemble colors of the Millionaire
 
 ### JSHint Java Script validator
 - **Method :** `*.js` files were tested using  [JS Hint Validator](https://jshint.com/) using `//jshint esversion: 6` as first line to enable version 6 of Java Script to be taken into consideration
-- **Result :** Initial validating found multiple errors with unnecessary semicolons `;`. This was adjusted and there are no more errors. Three functions are being seen as unused. They are used, but being called from `index.html` as stated in bugs section. This validator also display two warnings stating that loops are calling global variables *(appendix 31 and appendix 32)*.
+- **Result :** Initial validating found multiple errors with unnecessary semicolons `;`. This was adjusted and there are no more errors. Three functions are being seen as unused. They are used, but being called from `index.html` as stated in bugs section. This validator also display two warnings stating that loops are calling global variables *(appendix 32 and appendix 33)*.
 
-*Appendix 31 - JS Hint Validator testing - `script.js`*
+*Appendix 32 - JS Hint Validator testing - `script.js`*
 
 ![JS Hint Validator testing - script.js](docs/jshint-script.png)
 
-*Appendix 32 - JS Hint Validator testing - `readstorage.js`*
+*Appendix 33 - JS Hint Validator testing - `readstorage.js`*
 
 ![JS Hint Validator testing - readstorage.js](docs/jshint-readstorage.png)
 
@@ -429,25 +442,25 @@ Following color palette was chosen as it does resemble colors of the Millionaire
       - Heading levels are in correct order `<h1> - <h2> - <h3>`
       - Correct contrast ratio - **minimal contrast ratio 4.5:1**
 
- - **Result :** Automated testing found no errors, 3 alerts are still present. The cause of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*appendix 33*) for rules section and (*appendix 34*) for game section, `leaderboard.html` (*appendix 35*) and `404.html` (*appendix 36*). Contrast ratio of this project is **8.59:1** (*appendix 37*).
+ - **Result :** Automated testing found no errors, 3 alerts are still present. The cause of alerts are event listeners that are waiting for mouse-click only. Those alerts could be avoided by widening the range of events (keyboard), this fact is also recorded in future features chapter. No other errors or alerts were found in `index.html` (*appendix 34*) for rules section and (*appendix 35*) for game section, `leaderboard.html` (*appendix 36*) and `404.html` (*appendix 37*). Contrast ratio of this project is **8.59:1** (*appendix 38*).
 
-*Appendix 33 - WAVE Report - index.html - rules*
+*Appendix 34 - WAVE Report - index.html - rules*
 
 ![WAVE Report - index.html](/docs/wave-test-rules.png)
 
-*Appendix 34 - WAVE Report - index.html - game*
+*Appendix 35 - WAVE Report - index.html - game*
 
 ![WAVE Report - index.html](/docs/wave-test-game.png)
 
-*Appendix 35 - WAVE Report - leaderboard.html*
+*Appendix 36 - WAVE Report - leaderboard.html*
 
 ![WAVE Report - leaderboard.html](/docs/wave-test-leaderboard.png)
 
-*Appendix 36 - WAVE Report - 404.html*
+*Appendix 37 - WAVE Report - 404.html*
 
 ![WAVE Report - 404.html](/docs/wave-test-404.png)
 
-*Appendix 37 - WAVE Contrast Report*
+*Appendix 38 - WAVE Contrast Report*
 
 ![WAVE Contrast Report](/docs/wave-contrast.png)
 
@@ -470,12 +483,25 @@ There are no know unfixed bugs as of 3.7.2023.
 
 [Back to Table of content](https://github.com/tomik-z-cech/PP2-Millionaire#2table-of-content)
 
+## **8.8. Resposiveness testing**
+Tho project was tested for responsiveness using [ResponsiveDesignChecker.com](https://responsivedesignchecker.com/) with excellent results for all tested devices.
+
+Using two different screen resolutions as an example 1920x1200px *(appendix 39)* and 1024x600px *(appendix 40)*.
+
+*Appendix 39 - Responsiveness on scrren size 1920x1200px*
+
+![Responsiveness on scrren size 1920x1200px](/docs/19201200.png)
+
+*Appendix 40 - Responsiveness on scrren size 1024x600px*
+
+![Responsiveness on scrren size 1024x600px](/docs/1024600.png)
+
 ---
 
 # **9. JavaScript**
 ## **9.1. Flow Chart**
 
-*Appendix 38 - Flow Chart*
+*Appendix 41 - Flow Chart*
 
 ![Flow Chart](/docs/flowchart.png)
 
@@ -485,9 +511,9 @@ There are no know unfixed bugs as of 3.7.2023.
 - Key *"question"* is a question that is displayed in question area.
 - Key *"options"* with array of answers contain 4 answers with index 0-3 (0 = option A, 1 = option B, 2 = option C and 3 = option D).
 - Key *"answer"* could have values 0-3 and points to the correct answer where 0 = option A, 1 = option B, 2 = option C and 3 = option D.
-- Sample of question in `questions.json` *appendix 39*
+- Sample of question in `questions.json` *(appendix 42)*
 
-*Appendix 39 - Sample question*
+*Appendix 42 - Sample question*
 
 ![Sample question](/docs/question-json.png)
 
@@ -537,6 +563,7 @@ There are no know unfixed bugs as of 3.7.2023.
 - **GitBash** - to make commitments of progress and push the results back to GitHub [git - scm](https://git-scm.com/downloads)
 - **ConText** - code off-line in "doodle-zone" mode [ConTEXT editor](https://www.contexteditor.org/)
 - **GitHub** - to record all commitments and deployment the live project [GitHub](https://github.com/)
+- **Responsive design checker** - to check responsive design on multiple screen resolutions [ResponsiveDesignChecker.com](https://responsivedesignchecker.com/)
 
 ## 11.2. Credits
 - **FontAwesome** - to find and use icons [FontAwesome](https://fontawesome.com/)
