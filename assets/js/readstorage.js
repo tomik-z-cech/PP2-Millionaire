@@ -23,7 +23,6 @@ function readStorage(){
         });
         // color first = gold, second = silver and third = bronze in the leader board list
         const ratingColor = document.getElementsByClassName('leaderboard-row');
-        console.log(ratingColor);
         for (let i = 0; i < bestPlayers.length; i++){
             switch (i){
             case 0 :    ratingColor[i].style.color = 'var(--gold)';
